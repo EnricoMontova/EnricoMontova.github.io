@@ -22,7 +22,7 @@ Registro do padrão visual aprovado e do que já foi testado e descartado. Antes
   - Linha fina com quadradinho de 7 px na ponta abrindo cada bloco.
   - Rótulos em letra de máquina, caixa alta.
   - Quadrados de borda fina para certificados e disciplinas, sempre com a mesma estrutura: topo (logo ou semestre, data ou carga horária), nome, rodapé (carga horária e link, média, "cursando" ou "aproveitada").
-  - Listas roláveis com barra fina grafite e aviso no título (`8, ROLE PARA BAIXO` ou `ROLE PARA O LADO`).
+  - Listas roláveis com barra fina grafite, sem aviso de rolagem e sem contagem: o site deve ser intuitivo pelo próprio design.
   - Logos sempre na cor da tinta, ao lado do texto (nunca em cima), e a empresa vem antes da função.
 - **Ordem no computador:** título CARREIRA e frase de abertura, trajetória em cota (horizontal, trechos proporcionais ao tempo), certificados ao lado dos cargos (estágio, fretes, jovem aprendiz), formação FAESA embaixo com as disciplinas roláveis para baixo, ferramentas (grade 4 colunas com linhas finas), rodapé.
 - **Ordem em tela estreita / celular:** cargos, formação, certificados (rolando para o lado, quadrados do mesmo tamanho do computador), ferramentas. A trajetória continua horizontal e rola para o lado.

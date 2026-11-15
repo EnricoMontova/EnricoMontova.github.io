@@ -11,13 +11,13 @@ Estudante de Engenharia da Computação no 9º período, pela FAESA. Hoje sou es
 | Período | Onde | Função |
 |---|---|---|
 | jul. 2024 a set. 2025 (14 meses) | Gol Linhas Aéreas | Jovem aprendiz, RH |
-| set. 2025 a fev. 2026 (5 meses) | Fretes com meu pai, caminhoneiro | Ajudante de mudanças |
-| fev. 2026 até hoje | ArcelorMittal Tubarão, LTQ | Estagiário de engenharia de software |
+| set. 2025 a fev. 2026 (5 meses) | Fretes (ícone de caminhão) | Ajudante de mudanças |
+| fev. 2026 até hoje | ArcelorMittal, Tubarão Aços Planos | Estagiário de Engenharia de Software |
 
 ## Experiências
 
-- **ArcelorMittal Tubarão, Laminação de Tiras a Quente (LTQ)**, estagiário de engenharia de software, fev. 2026 até hoje. Atuo na automação da LTQ, em sistemas de Nível 2: a camada que liga o controle da planta (Nível 1) à gestão da produção (Nível 3). Estágio termina em fev. 2027.
-- **Com meu pai, caminhoneiro**, ajudante de mudanças, set. 2025 a fev. 2026. Trabalhei ao lado do meu pai em fretes de mudança, no carregamento e transporte de móveis.
+- **ArcelorMittal, Tubarão Aços Planos**, Estagiário de Engenharia de Software, fev. 2026 até hoje. Atuo na automação da LTQ, em sistemas de Nível 2: a camada que liga o controle da planta (Nível 1) à gestão da produção (Nível 3). Estágio termina em fev. 2027.
+- **Mudanças e Fretes** (ícone de caminhão), Ajudante de mudanças, set. 2025 a fev. 2026. Trabalhei ao lado do meu pai em fretes e mudanças, no carregamento e transporte de móveis.
 - **Gol Linhas Aéreas**, jovem aprendiz em Recursos Humanos, jul. 2024 a set. 2025. Apoiei o setor de RH com controle de planilhas e suporte às rotinas administrativas.
 - **FAESA**, Engenharia da Computação, 9º período, formatura prevista para ago. 2027, TCC em andamento. Em paralelo, estudo Engenharia de Dados na DataCamp.
 

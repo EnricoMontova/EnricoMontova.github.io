@@ -29,7 +29,7 @@ Registro do padrão visual aprovado e do que já foi testado e descartado. Antes
 
 ## Transição entre menu e Carreira
 
-Escaneamento de xerox: a tela de destino nasce coberta pelo papel com a mensagem (`> ABRIR /CARREIRA`, `> VOLTAR /MENU`) e uma barra de scanner desce revelando a página. A capa some sozinha em no máximo 1,4 s. Nada de visibilidade pode depender de animação de entrada (o canvas às vezes não roda essas animações).
+Escaneamento de xerox: a tela de destino nasce coberta pelo papel com a mensagem (`> ABRIR /CARREIRA`, `> VOLTAR /MENU`) e uma barra de scanner desce revelando a página. O movimento é feito quadro a quadro em JavaScript (requestAnimationFrame), porque o canvas congela animações CSS que começam junto com a página. A capa some sozinha em no máximo 3 s. Nada de visibilidade pode depender de animação CSS de entrada.
 
 ## Testado e descartado
 

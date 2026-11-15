@@ -4,9 +4,16 @@ Portfólio pessoal de Enrico Montovanelli, estudante de Engenharia da Computaç�
 
 O site tem um menu de entrada e uma página de Carreira. As páginas de Projetos pessoais e Hobbies ainda serão criadas.
 
+## Como ver o site
+
+- **No computador:** abra o `index.html` com dois cliques.
+- **Na internet (GitHub Pages):** no GitHub, vá em Settings › Pages, escolha "Deploy from a branch", branch `main`, pasta `/ (root)` e salve. Em alguns minutos o site fica em `https://enricomontova.github.io/montovanelli-portfolio/`.
+
 ## Estrutura da pasta
 
 ```
+index.html            menu (computador e celular na mesma página)
+carreira.html         página de carreira (computador e celular na mesma página)
 design/canvas/        telas do site no formato do canvas do Claude (.dc.html)
   Main.dc.html          menu principal (computador; vira layout de celular em tela estreita)
   MenuCelular.dc.html   prévia do menu na largura de celular
@@ -27,9 +34,11 @@ O design vive num canvas do Claude (artefato "Portfólio Enrico Montovanelli"). 
 
 ## Próximos passos
 
-1. Converter o menu e a Carreira em HTML estático (`index.html` e `carreira.html`) para publicar no GitHub Pages.
+1. Publicar no GitHub Pages (passo acima).
 2. Preencher os links reais de LinkedIn, GitHub e dos certificados.
 3. Criar as páginas de Projetos pessoais e Hobbies no mesmo padrão.
+
+As páginas `index.html` e `carreira.html` foram geradas a partir das telas do canvas. Ao mudar o design, atualize as duas versões.
 
 ## Documentos
 

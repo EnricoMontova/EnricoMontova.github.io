@@ -38,6 +38,10 @@ Escaneamento de xerox: a tela de destino nasce coberta pelo papel com a mensagem
 - Na Carreira: diagrama dos níveis 1, 2 e 3, etiqueta "EM PORTFÓLIO", código como textura, linha "TÉCNICA : NÍVEL 2", números nos links do menu, nome com desfoque.
 - Logos redesenhados: não fazer; usar os arquivos oficiais em uma cor só.
 
+## Computador e celular
+
+O conteúdo é sempre o mesmo nas duas versões (textos, links, dados). Só muda a forma de mostrar: layout, tamanho e direção de rolagem.
+
 ## Como pedir mudanças
 
 - Mudar só o que foi pedido e manter os padrões acima.

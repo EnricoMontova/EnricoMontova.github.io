@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Enrico Montovanelli, menu no celular</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tektur:wdth,wght@75..125,400..900&amp;family=Marcellus&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0;background:#E8E6E1}
+a{color:#2E2E2E;text-decoration:none}
+a:focus-visible{outline:1px solid #2E2E2E;outline-offset:5px}
+@keyframes surge{0%{opacity:0}100%{opacity:1}}
+@keyframes cursor{0%,49%{opacity:1}50%,100%{opacity:0}}
+.item-x{display:inline-block;padding:10px 8px;margin:0 -8px}
+.item-x:hover,.item-x:focus-visible{background:#2E2E2E;color:#E8E6E1;outline:none}
+.so-cel{display:none}
+@keyframes scan-pisca{0%,49%{opacity:1}50%,100%{opacity:0}}
+.tela-scan{position:fixed;inset:0;z-index:50;pointer-events:none;background:#E8E6E1;display:flex;align-items:flex-end;padding:0 0 22px clamp(16px,3vw,32px);box-sizing:border-box}
+.barra-scan{position:fixed;left:0;right:0;top:0;height:3px;z-index:51;pointer-events:none;background:#2E2E2E;box-shadow:0 -18px 36px rgba(46,46,46,0.22),0 0 0 1px rgba(46,46,46,0.1)}
+@media (prefers-reduced-motion: reduce){.tela-scan,.barra-scan{display:none !important}}
+@media (max-width: 760px){
+.so-pc{display:none !important}
+.so-cel{display:inline !important}
+.linha-links{padding-left:0 !important;flex-direction:column !important;align-items:flex-start !important}
+.linha-links ul{flex-direction:column !important;align-items:flex-start !important;gap:2px !important}
+.linha-links .fio{display:none !important}
+.item-x{padding:12px 8px !important}
+}
+@media (prefers-reduced-motion: reduce){
+.entrada{animation:none !important;opacity:1 !important}
+.pisca{animation:none !important}
+}
+</style>
+</helmet>
+
+<main style="position: relative; overflow: hidden; width: 100%; height: 100vh; min-height: 600px; background: #E8E6E1; color: #2E2E2E; font-family: 'Marcellus', Georgia, serif; display: grid; grid-template-rows: auto minmax(0, 1fr) auto">
+
+<!-- bobinadeira e cubinhos: só entre as duas barras -->
+<canvas class="entrada" aria-hidden="true" ref="{{canvasRef}}" style="position: absolute; grid-row: 2; grid-column: 1; inset: 0; width: 100%; height: 100%; display: block"></canvas>
+
+<!-- textura de papel -->
+<svg aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0.75; mix-blend-mode: multiply; pointer-events: none"><filter id="papel"><feTurbulence type="fractalNoise" baseFrequency="0.95" numOctaves="3" stitchTiles="stitch"></feTurbulence><feColorMatrix type="saturate" values="0"></feColorMatrix></filter><rect width="100%" height="100%" filter="url(#papel)"></rect></svg>
+
+<!-- barra de cima, como um terminal -->
+<header class="entrada" style="position: relative; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 12px clamp(16px, 3vw, 32px); font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; border-bottom: 2px solid #2E2E2E">
+<span><span class="so-pc">Enrico.Montovanelli / portfólio</span><span class="so-cel">E.Montovanelli</span></span>
+<span>{{hora}}</span>
+</header>
+
+<div class="entrada" style="position: relative; box-sizing: border-box; padding: 24px 0 24px clamp(20px, 9vw, 150px); display: flex; flex-direction: column; justify-content: center">
+
+<div style="position: relative; align-self: flex-start; max-width: calc(100% - 40px); padding-right: 30px">
+<h1 style="margin: 0; font-family: 'Tektur', system-ui, sans-serif; font-weight: 500; font-stretch: 125%; font-size: clamp(30px, 4.4vw, 72px); line-height: 1.05; letter-spacing: 0.01em; text-transform: uppercase">Enrico Montovanelli</h1>
+<svg aria-hidden="true" viewBox="0 0 40 40" style="position: absolute; right: -6px; top: -18px; width: 34px; height: 34px" fill="#2E2E2E"><path d="M20 0 L22 18 L40 20 L22 22 L20 40 L18 22 L0 20 L18 18 Z"></path></svg>
+<svg aria-hidden="true" viewBox="0 0 600 14" preserveAspectRatio="none" style="display: block; width: 72%; height: 14px; margin-top: 10px" fill="none" stroke="#2E2E2E" stroke-width="1.4" vector-effect="non-scaling-stroke"><path d="M1 0 V12 H600" vector-effect="non-scaling-stroke"></path><path d="M380 12 V6 H430 V12" vector-effect="non-scaling-stroke"></path></svg>
+</div>
+
+<div class="linha-links" style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px 22px; margin-top: 18px; padding-left: clamp(0px, 14vw, 260px)">
+<svg aria-hidden="true" viewBox="0 0 187 26" style="display: block; height: 26px; width: auto; flex: none" fill="#2E2E2E"><rect x="0" y="0" width="2" height="26"></rect><rect x="3" y="0" width="1" height="26"></rect><rect x="6" y="0" width="2" height="26"></rect><rect x="9" y="0" width="2" height="26"></rect><rect x="13" y="0" width="2" height="26"></rect><rect x="17" y="0" width="2" height="26"></rect><rect x="21" y="0" width="1" height="26"></rect><rect x="24" y="0" width="3" height="26"></rect><rect x="28" y="0" width="1" height="26"></rect><rect x="30" y="0" width="3" height="26"></rect><rect x="34" y="0" width="1" height="26"></rect><rect x="36" y="0" width="1" height="26"></rect><rect x="39" y="0" width="2" height="26"></rect><rect x="43" y="0" width="2" height="26"></rect><rect x="46" y="0" width="1" height="26"></rect><rect x="48" y="0" width="3" height="26"></rect><rect x="53" y="0" width="2" height="26"></rect><rect x="57" y="0" width="2" height="26"></rect><rect x="61" y="0" width="3" height="26"></rect><rect x="65" y="0" width="1" height="26"></rect><rect x="68" y="0" width="2" height="26"></rect><rect x="72" y="0" width="3" height="26"></rect><rect x="77" y="0" width="2" height="26"></rect><rect x="81" y="0" width="2" height="26"></rect><rect x="85" y="0" width="2" height="26"></rect><rect x="89" y="0" width="2" height="26"></rect><rect x="93" y="0" width="2" height="26"></rect><rect x="97" y="0" width="1" height="26"></rect><rect x="99" y="0" width="2" height="26"></rect><rect x="103" y="0" width="2" height="26"></rect><rect x="106" y="0" width="3" height="26"></rect><rect x="111" y="0" width="2" height="26"></rect><rect x="115" y="0" width="2" height="26"></rect><rect x="119" y="0" width="1" height="26"></rect><rect x="122" y="0" width="3" height="26"></rect><rect x="127" y="0" width="2" height="26"></rect><rect x="130" y="0" width="2" height="26"></rect><rect x="133" y="0" width="1" height="26"></rect><rect x="135" y="0" width="1" height="26"></rect><rect x="137" y="0" width="2" height="26"></rect><rect x="141" y="0" width="2" height="26"></rect><rect x="145" y="0" width="2" height="26"></rect><rect x="149" y="0" width="2" height="26"></rect><rect x="152" y="0" width="1" height="26"></rect><rect x="155" y="0" width="2" height="26"></rect><rect x="158" y="0" width="2" height="26"></rect><rect x="161" y="0" width="1" height="26"></rect><rect x="164" y="0" width="2" height="26"></rect><rect x="168" y="0" width="2" height="26"></rect><rect x="171" y="0" width="1" height="26"></rect><rect x="174" y="0" width="2" height="26"></rect><rect x="178" y="0" width="3" height="26"></rect><rect x="182" y="0" width="1" height="26"></rect><rect x="184" y="0" width="1" height="26"></rect></svg>
+<nav aria-label="Seções">
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 26px; font-size: clamp(16px, 1.25vw, 19px); letter-spacing: 0.12em; text-transform: uppercase">
+<li><a class="item-x" href="CarreiraCelular.dc.html" onClick="{{vaiC}}" onMouseEnter="{{miraC}}" onFocus="{{miraC}}" onMouseLeave="{{solta}}" onBlur="{{solta}}">Carreira</a></li>
+<li><a class="item-x" href="#projetos" onMouseEnter="{{miraP}}" onFocus="{{miraP}}" onMouseLeave="{{solta}}" onBlur="{{solta}}">Projetos pessoais</a></li>
+<li><a class="item-x" href="#hobbies" onMouseEnter="{{miraH}}" onFocus="{{miraH}}" onMouseLeave="{{solta}}" onBlur="{{solta}}">Hobbies</a></li>
+</ul>
+</nav>
+<div class="fio" aria-hidden="true" style="flex: 1 1 60px; min-width: 40px; height: 1.4px; background: #2E2E2E"></div>
+</div>
+
+</div>
+
+<!-- barra de baixo -->
+<footer class="entrada" style="position: relative; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 12px clamp(16px, 3vw, 32px); font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; border-top: 2px solid #2E2E2E">
+<span aria-live="polite">{{status}}<span class="pisca" aria-hidden="true" style="display: inline-block; width: 0.6em; height: 1em; margin-left: 6px; vertical-align: -2px; background: #2E2E2E; animation: cursor 1s steps(1) infinite"></span></span>
+<span>2026</span>
+</footer>
+
+<sc-if value="{{cobrindo}}" hint-placeholder-val="{{ false }}">
+<div aria-hidden="true" class="tela-scan" ref="{{refCapa}}"><svg aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0.5; mix-blend-mode: multiply; pointer-events: none"><filter id="grao-in"><feTurbulence type="fractalNoise" baseFrequency="1.05" numOctaves="3" stitchTiles="stitch"></feTurbulence><feColorMatrix type="saturate" values="0"></feColorMatrix></filter><rect width="100%" height="100%" filter="url(#grao-in)"></rect></svg><p style="position: relative; margin: 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #2E2E2E">{{msgCapa}}<span aria-hidden="true" style="display: inline-block; width: 0.6em; height: 1em; margin-left: 6px; vertical-align: -2px; background: #2E2E2E; animation: scan-pisca 0.5s steps(1) infinite"></span></p></div>
+<div aria-hidden="true" class="barra-scan" ref="{{refBarra}}"></div>
+</sc-if>
+</main>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"animate":{"editor":"boolean","default":true},"speed":{"editor":"range","default":1,"min":0.2,"max":3,"step":0.1},"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+  componentDidMount() {
+    var rm = false;
+    try { rm = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
+    this.semMovimento = rm;
+    var msg = null;
+    try { msg = window.sessionStorage.getItem('scan-msg'); window.sessionStorage.removeItem('scan-msg'); } catch (e) {}
+    if (!rm) {
+      var eu = this;
+      this.setState({ cobrindo: true, msgCapa: msg || '> /menu' });
+      this.capaTimer = window.setTimeout(function () { eu.setState({ cobrindo: false }); }, 1400);
+    }
+    this.reduce = this.semMovimento;
+    this.t = 0;
+    this.last = null;
+    var self = this;
+    this.tick = function () {
+      var d = new Date();
+      var p = function (n) { return (n < 10 ? '0' : '') + n; };
+      self.setState({ hora: p(d.getHours()) + ':' + p(d.getMinutes()) + ':' + p(d.getSeconds()) });
+    };
+    this.tick();
+    this.clock = window.setInterval(this.tick, 1000);
+    this.loop = function (now) {
+      self.frame(now);
+      self.raf = window.requestAnimationFrame(self.loop);
+    };
+    this.raf = window.requestAnimationFrame(this.loop);
+  }
+  componentWillUnmount() {
+    if (this.raf) window.cancelAnimationFrame(this.raf);
+    if (this.clock) window.clearInterval(this.clock);
+    if (this.capaTimer) window.clearTimeout(this.capaTimer);
+  }
+  rand(seed) {
+    var x = Math.sin(seed * 12.9898) * 43758.5453;
+    return x - Math.floor(x);
+  }
+  setup(W, H, dpr) {
+    var mk = function () { var c = document.createElement('canvas'); c.width = Math.round(W * dpr); c.height = Math.round(H * dpr); return c; };
+    this.ink = mk();
+    // desgaste de xerox: manchas que apagam a tinta
+    var nw = Math.max(1, Math.round(W / 3)), nh = Math.max(1, Math.round(H / 3));
+    var small = document.createElement('canvas'); small.width = nw; small.height = nh;
+    var sc = small.getContext('2d'), img = sc.createImageData(nw, nh);
+    for (var i = 0; i < nw * nh; i++) {
+      if (Math.random() < 0.26) img.data[i * 4 + 3] = Math.round(255 * (0.4 + Math.random() * 0.6));
+    }
+    sc.putImageData(img, 0, 0);
+    this.noise = mk();
+    var nc = this.noise.getContext('2d');
+    nc.drawImage(small, 0, 0, this.noise.width, this.noise.height);
+    var fine = nc.createImageData(this.noise.width, this.noise.height);
+    for (var j = 0; j < fine.data.length / 4; j++) {
+      if (Math.random() < 0.1) fine.data[j * 4 + 3] = 255;
+    }
+    var tmp = document.createElement('canvas'); tmp.width = this.noise.width; tmp.height = this.noise.height;
+    tmp.getContext('2d').putImageData(fine, 0, 0);
+    nc.drawImage(tmp, 0, 0);
+    // cubinhos presos a uma grade de 8 px
+    this.pix = [];
+    for (var k = 0; k < 220; k++) {
+      var gx = 0.45 + this.rand(k + 1) * 0.55, gy = this.rand(k + 101);
+      if (this.rand(k + 401) < 0.2) gx = this.rand(k + 501) * 0.45;
+      var s = 8 * (1 + Math.floor(this.rand(k + 201) * 2));
+      this.pix.push([Math.floor(gx * W / 8) * 8, Math.floor(gy * H / 8) * 8, s, 0.05 + this.rand(k + 301) * 0.15]);
+    }
+  }
+  frame(now) {
+    var cv = this.cv;
+    if (!cv) return;
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    var w = cv.clientWidth, h = cv.clientHeight;
+    if (!w || !h) return;
+    var resized = false;
+    if (w !== this.w || h !== this.h || dpr !== this.dpr) {
+      this.w = w; this.h = h; this.dpr = dpr;
+      cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr);
+      this.ctx = cv.getContext('2d');
+      this.setup(w, h, dpr);
+      resized = true;
+    }
+    var moving = (this.props.animate ?? true) && !this.reduce;
+    var dt = this.last == null ? 0 : Math.min((now - this.last) / 1000, 0.05);
+    this.last = now;
+    if (moving) this.t += dt * (this.props.speed ?? 1);
+    else if (!resized && this.drawn) return;
+    this.draw();
+    this.drawn = true;
+  }
+  draw() {
+    var ctx = this.ctx, W = this.w, H = this.h, t = this.t, dpr = this.dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, W, H);
+
+    for (var p = 0; p < this.pix.length; p++) {
+      var q = this.pix[p];
+      var flick = 0.7 + 0.3 * Math.sin(t * 0.8 + p);
+      ctx.fillStyle = 'rgba(46,46,46,' + (q[3] * flick).toFixed(3) + ')';
+      ctx.fillRect(q[0], q[1], q[2], q[2]);
+    }
+
+    // bobinadeira (coilbox) da LTQ em tinta, numa camada à parte para receber o desgaste
+    var ic = this.ink.getContext('2d');
+    ic.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ic.globalCompositeOperation = 'source-over';
+    ic.clearRect(0, 0, W, H);
+    var narrow = W < 760;
+    var R = Math.min(H * (narrow ? 0.3 : 0.36), W * (narrow ? 0.34 : 0.22));
+    var rin = R * 0.2, K = R * R - rin * rin, pitch = narrow ? 4 : 5.5;
+    var c1x = W * (narrow ? 0.82 : 0.86), c1y = H * 0.13;
+    var c2x = W * (narrow ? 0.18 : 0.12), c2y = H * 0.87;
+
+    // a chapa vai de uma bobina para a outra e depois volta, como na bobinadeira
+    var T = 18, ciclo = (t % T) / T;
+    var sm = function (x) { return x * x * (3 - 2 * x); };
+    var pB = ciclo < 0.5 ? sm(ciclo * 2) : sm(2 - ciclo * 2);
+    var dir = ciclo < 0.5 ? 1 : -1;
+    var vel = Math.sin(Math.PI * ((ciclo * 2) % 1));
+    var r2 = Math.sqrt(rin * rin + pB * K), r1 = Math.sqrt(rin * rin + (1 - pB) * K);
+    this.fita = (this.fita || 0) + dir * vel * 2.2;
+
+    // tangente interna entre as duas bobinas: o trecho reto da chapa
+    var dx = c2x - c1x, dy = c2y - c1y, D = Math.sqrt(dx * dx + dy * dy), base = Math.atan2(dy, dx);
+    var al = Math.acos(Math.min(1, (r1 + r2) / D));
+    var nA = base + al, nB = base - al;
+    var n = (Math.sin(nA) > Math.sin(nB)) ? nA : nB;
+    var nx = Math.cos(n), ny = Math.sin(n);
+    var p1x = c1x + r1 * nx, p1y = c1y + r1 * ny, p2x = c2x - r2 * nx, p2y = c2y - r2 * ny;
+    var ang1 = Math.atan2(p1y - c1y, p1x - c1x), ang2 = Math.atan2(p2y - c2y, p2x - c2x);
+
+    var ink = 'rgba(46,46,46,0.9)';
+    var self2 = this;
+    var bobina = function (cx, cy, rout, aEnd, sentido) {
+      // contorno tracejado do tamanho máximo, como desenho técnico
+      ic.setLineDash([3, 6]);
+      ic.lineWidth = 1;
+      ic.strokeStyle = 'rgba(46,46,46,0.45)';
+      ic.beginPath(); ic.arc(cx, cy, R + 10, 0, Math.PI * 2); ic.stroke();
+      ic.setLineDash([]);
+      // espiral da chapa enrolada; a ponta de fora sai na tangente
+      var voltas = Math.max(0, (rout - rin) / pitch);
+      var passos = Math.max(2, Math.ceil(voltas * 40));
+      ic.lineWidth = narrow ? 1.1 : 1.4;
+      ic.strokeStyle = ink;
+      ic.beginPath();
+      for (var i = 0; i <= passos; i++) {
+        var f = i / passos;
+        var th = aEnd - sentido * (1 - f) * voltas * Math.PI * 2;
+        var r = rin + (rout - rin) * f;
+        var X = cx + Math.cos(th) * r, Y = cy + Math.sin(th) * r;
+        if (i === 0) ic.moveTo(X, Y); else ic.lineTo(X, Y);
+      }
+      ic.stroke();
+      // miolo oco: a bobinadeira enrola sem mandril
+      ic.lineWidth = 2;
+      ic.beginPath(); ic.arc(cx, cy, rin, 0, Math.PI * 2); ic.stroke();
+      ic.lineWidth = 1;
+      ic.beginPath(); ic.arc(cx, cy, rin * 0.35, 0, Math.PI * 2); ic.stroke();
+      ic.beginPath(); ic.moveTo(cx - rin * 0.6, cy); ic.lineTo(cx + rin * 0.6, cy); ic.moveTo(cx, cy - rin * 0.6); ic.lineTo(cx, cy + rin * 0.6); ic.stroke();
+    };
+    bobina(c1x, c1y, r1, ang1, 1);
+    bobina(c2x, c2y, r2, ang2, 1);
+
+    // a chapa: faixa dupla com marcas correndo no sentido do movimento
+    var ux = p2x - p1x, uy = p2y - p1y, len = Math.sqrt(ux * ux + uy * uy);
+    ux /= len; uy /= len;
+    var ox = -uy, oy = ux, meia = narrow ? 3 : 4.5;
+    ic.lineWidth = 1.4;
+    ic.strokeStyle = ink;
+    ic.beginPath();
+    ic.moveTo(p1x + ox * meia, p1y + oy * meia); ic.lineTo(p2x + ox * meia, p2y + oy * meia);
+    ic.moveTo(p1x - ox * meia, p1y - oy * meia); ic.lineTo(p2x - ox * meia, p2y - oy * meia);
+    ic.stroke();
+    var passo = 22, off = ((this.fita % passo) + passo) % passo;
+    ic.lineWidth = 1;
+    ic.beginPath();
+    for (var d = off; d < len; d += passo) {
+      var mx = p1x + ux * d, my = p1y + uy * d;
+      ic.moveTo(mx + ox * meia, my + oy * meia); ic.lineTo(mx - ox * meia, my - oy * meia);
+    }
+    ic.stroke();
+
+    // rolos prensadores dos dois lados da chapa
+    var rr = narrow ? 7 : 11;
+    var rolos = [[0.14, 1], [0.14, -1], [0.86, 1], [0.86, -1]];
+    for (var q2 = 0; q2 < rolos.length; q2++) {
+      var at = rolos[q2][0], lado = rolos[q2][1];
+      var rx = p1x + ux * len * at + ox * lado * (meia + rr + 1), ry = p1y + uy * len * at + oy * lado * (meia + rr + 1);
+      var giro = this.fita / rr * lado;
+      ic.lineWidth = 1.4;
+      ic.beginPath(); ic.arc(rx, ry, rr, 0, Math.PI * 2); ic.stroke();
+      ic.beginPath(); ic.moveTo(rx, ry); ic.lineTo(rx + Math.cos(giro) * rr, ry + Math.sin(giro) * rr); ic.stroke();
+    }
+
+    ic.setTransform(1, 0, 0, 1, 0, 0);
+    ic.globalCompositeOperation = 'destination-out';
+    ic.drawImage(this.noise, 0, 0);
+    ic.globalCompositeOperation = 'source-over';
+
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.globalAlpha = narrow ? 0.4 : 0.8;
+    ctx.drawImage(this.ink, 0, 0);
+    ctx.globalAlpha = 1;
+  }
+  renderVals() {
+    var self = this;
+    if (!this.canvasRef) this.canvasRef = function (el) { self.cv = el; self.drawn = false; };
+    if (!this.mira) {
+      this.mira = function (alvo) { return function () { self.setState({ alvo: alvo }); }; };
+      this.miraC = this.mira('/carreira'); this.miraP = this.mira('/projetos'); this.miraH = this.mira('/hobbies');
+      this.solta = function () { self.setState({ alvo: null }); };
+    }
+    if (!this.refCapa) {
+      var ease = 'cubic-bezier(0.6, 0, 0.3, 1)';
+      this.refCapa = function (el) {
+        if (el && el.animate) el.animate([{ clipPath: 'inset(0 0 0 0)' }, { clipPath: 'inset(100% 0 0 0)' }], { duration: 850, delay: 250, easing: ease, fill: 'forwards' });
+      };
+      this.refBarra = function (el) {
+        if (el && el.animate) el.animate([{ top: '0%', opacity: 1 }, { top: '96%', opacity: 1 }, { top: '100%', opacity: 0 }], { duration: 850, delay: 250, easing: ease, fill: 'forwards' });
+      };
+    }
+    if (!this.vaiC) {
+      this.vaiC = function () { try { window.sessionStorage.setItem('scan-msg', '> abrir /carreira'); } catch (e) {} };
+    }
+    var st = this.state || {};
+    return {
+      canvasRef: this.canvasRef,
+      hora: st.hora || '00:00:00',
+      status: st.alvo ? '> abrir ' + st.alvo : 'Selecione uma seção',
+      miraC: this.miraC, miraP: this.miraP, miraH: this.miraH, solta: this.solta,
+      vaiC: this.vaiC, refCapa: this.refCapa, refBarra: this.refBarra,
+      cobrindo: !!st.cobrindo, msgCapa: st.msgCapa || ''
+    };
+  }
+}
+</script>
+</body>
+</html>

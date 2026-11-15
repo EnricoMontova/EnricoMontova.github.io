@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Enrico Montovanelli, menu PS3 (salvo)</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;display=swap">
+<style>
+body{margin:0;background:#000}
+a{color:#F4F5F6;text-decoration:none}
+a:hover{color:#FFFFFF;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:6px}
+a:focus-visible{outline:1px solid #FFFFFF;outline-offset:6px}
+@keyframes surge{0%{opacity:0}100%{opacity:1}}
+@keyframes nome-entra{0%{opacity:0;filter:blur(10px);letter-spacing:0.5em}100%{opacity:1;filter:blur(0);letter-spacing:0.32em}}
+@media (prefers-reduced-motion: reduce){
+.entrada{animation:none !important;opacity:1 !important;filter:none !important}
+}
+</style>
+</helmet>
+
+<main style="position: relative; overflow: hidden; width: 100%; height: 100vh; min-height: 560px; background: #000; color: #F4F5F6; font-family: 'Archivo', system-ui, sans-serif">
+
+<!-- cinza prateado: surge do preto, como a tela clareando ao ligar -->
+<div class="entrada" aria-hidden="true" style="position: absolute; inset: 0; background: radial-gradient(80% 70% at 88% 4%, rgba(226,228,231,0.5) 0%, rgba(226,228,231,0) 62%), radial-gradient(60% 50% at 6% 96%, rgba(196,199,203,0.28) 0%, rgba(196,199,203,0) 70%), linear-gradient(170deg, #4B4E53 0%, #5F6369 45%, #6D7177 75%, #858990 100%); opacity: 0; animation: surge 3s ease-out 0.4s forwards"></div>
+
+<!-- onda horizontal -->
+<canvas class="entrada" aria-hidden="true" ref="{{canvasRef}}" style="position: absolute; inset: 0; width: 100%; height: 100%; display: block; opacity: 0; animation: surge 3s ease-out 1.2s forwards"></canvas>
+
+<!-- grão -->
+<svg aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0.42; mix-blend-mode: overlay; pointer-events: none"><filter id="grao"><feTurbulence type="fractalNoise" baseFrequency="1.05" numOctaves="3" stitchTiles="stitch"></feTurbulence><feColorMatrix type="saturate" values="0"></feColorMatrix></filter><rect width="100%" height="100%" filter="url(#grao)"></rect></svg>
+
+<div style="position: relative; height: 100%; box-sizing: border-box; padding: 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: clamp(28px, 5vh, 48px)">
+<h1 class="entrada" style="margin: 0; max-width: 100%; font-weight: 300; font-stretch: 125%; font-size: clamp(22px, 3.3vw, 58px); line-height: 1.35; letter-spacing: 0.32em; margin-right: -0.32em; text-transform: uppercase; text-align: center; text-wrap: balance; opacity: 0; animation: nome-entra 2.4s cubic-bezier(0.2, 0.7, 0.2, 1) 2.2s forwards">Enrico Montovanelli</h1>
+
+<nav class="entrada" aria-label="Seções" style="opacity: 0; animation: surge 1.6s ease-out 3.6s forwards">
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 4px clamp(20px, 4vw, 64px); font-weight: 400; font-stretch: 125%; font-size: clamp(12px, 1.05vw, 15px); letter-spacing: 0.3em; text-transform: uppercase">
+<li><a href="Carreira.dc.html" style="display: inline-block; padding: 14px 2px">Carreira</a></li>
+<li><a href="#projetos" style="display: inline-block; padding: 14px 2px">Projetos pessoais</a></li>
+<li><a href="#hobbies" style="display: inline-block; padding: 14px 2px">Hobbies</a></li>
+</ul>
+</nav>
+</div>
+
+</main>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"animate":{"editor":"boolean","default":true},"speed":{"editor":"range","default":1,"min":0.2,"max":2.5,"step":0.1},"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+  componentDidMount() {
+    var reduce = false;
+    try { reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
+    this.reduce = reduce;
+    this.t = 2;
+    this.last = null;
+    var self = this;
+    this.loop = function (now) {
+      self.frame(now);
+      self.raf = window.requestAnimationFrame(self.loop);
+    };
+    this.raf = window.requestAnimationFrame(this.loop);
+  }
+  componentWillUnmount() {
+    if (this.raf) window.cancelAnimationFrame(this.raf);
+  }
+  frame(now) {
+    var cv = this.cv;
+    if (!cv) return;
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    var w = cv.clientWidth, h = cv.clientHeight;
+    if (!w || !h) return;
+    var resized = false;
+    if (w !== this.w || h !== this.h || dpr !== this.dpr) {
+      this.w = w; this.h = h; this.dpr = dpr;
+      cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr);
+      this.ctx = cv.getContext('2d');
+      resized = true;
+    }
+    var moving = (this.props.animate ?? true) && !this.reduce;
+    var dt = this.last == null ? 0 : Math.min((now - this.last) / 1000, 0.05);
+    this.last = now;
+    if (moving) this.t += dt * (this.props.speed ?? 1);
+    else if (!resized && this.drawn) return;
+    this.draw();
+    this.drawn = true;
+  }
+  draw() {
+    var ctx = this.ctx, W = this.w, H = this.h, t = this.t;
+    ctx.setTransform(this.dpr, 0, 0, this.dpr, 0, 0);
+    ctx.clearRect(0, 0, W, H);
+
+    var cy = H * 0.7;
+    var A1 = H * 0.085, A2 = H * 0.045;
+    var band = Math.min(H * 0.21, 200);
+    var N = 52, step = 6;
+    var cols = Math.ceil(W / step) + 2;
+
+    ctx.globalCompositeOperation = 'lighter';
+    var veil = ctx.createLinearGradient(0, cy - band * 1.4, 0, cy + band * 1.4);
+    veil.addColorStop(0, 'rgba(255,255,255,0)');
+    veil.addColorStop(0.5, 'rgba(255,255,255,0.05)');
+    veil.addColorStop(1, 'rgba(255,255,255,0)');
+    ctx.fillStyle = veil;
+    ctx.beginPath();
+    for (var v = 0; v <= cols; v++) {
+      var vx = v * step;
+      var vy = cy + Math.sin(vx * 0.0032 + t * 0.32) * A1 + Math.sin(vx * 0.0071 - t * 0.21) * A2 - band * 0.8;
+      if (v === 0) ctx.moveTo(vx, vy); else ctx.lineTo(vx, vy);
+    }
+    for (var v2 = cols; v2 >= 0; v2--) {
+      var vx2 = v2 * step;
+      var vy2 = cy + Math.sin(vx2 * 0.0032 + t * 0.32) * A1 + Math.sin(vx2 * 0.0071 - t * 0.21) * A2 + band * 0.8;
+      ctx.lineTo(vx2, vy2);
+    }
+    ctx.closePath();
+    ctx.fill();
+
+    for (var i = 0; i < N; i++) {
+      var u = i / (N - 1) - 0.5;
+      var edge = Math.abs(u) * 2;
+      ctx.lineWidth = 0.8;
+      ctx.strokeStyle = 'rgba(255,255,255,' + (0.08 + 0.32 * edge * edge).toFixed(3) + ')';
+      ctx.beginPath();
+      for (var c = 0; c <= cols; c++) {
+        var x = c * step;
+        var center = cy + Math.sin(x * 0.0032 + t * 0.32) * A1 + Math.sin(x * 0.0071 - t * 0.21) * A2;
+        var width = band * Math.sin(x * 0.0024 + t * 0.18 + u * 0.6);
+        var y = center + u * width + Math.sin(x * 0.011 + u * 4 + t * 0.6) * 4;
+        if (c === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+      }
+      ctx.stroke();
+    }
+    ctx.globalCompositeOperation = 'source-over';
+  }
+  renderVals() {
+    var self = this;
+    if (!this.canvasRef) this.canvasRef = function (el) { self.cv = el; self.drawn = false; };
+    return { canvasRef: this.canvasRef };
+  }
+}
+</script>
+</body>
+</html>

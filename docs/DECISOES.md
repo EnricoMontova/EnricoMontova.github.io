@@ -65,6 +65,9 @@ Detalhes e opções descartadas em `docs/ANALISE_REFERENCIA.md`.
 | Currículo | Uma versão por área (Dados, Software, Automação), objetivo efetivação, sem foto | Respostas do Enrico (22/11/2026) | Currículo único |
 | Dados de contato | Telefone e e-mail em `docs/privado/` (fora do GitHub) | O repositório é público | Telefone no repositório |
 
+| Fotos dos projetos | Tratamento grafite com grão em todas; quadro vertical 9:16; drone usa só a foto 01 | Coerência com a foto do Enrico; "Adapte" (fotos verticais e pequenas); a placa das fotos 02 a 06 foi entregue pronta pelo professor | Fotos coloridas; usar as fotos da placa como trabalho do grupo |
+| Motores do drone | Texto neutro "Motores e hélices" | Resposta "A descrição certa" não deixou claro qual tipo; nada sem confirmação | "Motores brushless com ESCs" (LinkedIn); "coreless" (leitura da foto) |
+
 Pendentes: escolher o modelo de Projetos, formato final do currículo, renomear o repositório e apagar o fork (no GitHub, pelo Enrico ou com login no navegador).
 
 ## Como pedir mudanças

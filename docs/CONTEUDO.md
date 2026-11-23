@@ -132,6 +132,9 @@ Fonte: prints da seção Projetos do LinkedIn, enviados em 22/11/2026. Texto cop
 - Descrição: "construção de uma balança digital funcional, aplicando a Lei de Hooke e conceitos de física, automação e programação."
 - Tecnologias: "Arduino UNO, Sensor Ultrassônico HC-SR04, Display LCD 16x2, C/C++."
 - Aprendizados: "integração de hardware e software, controle de medições e cálculos físicos automatizados."
+- Fotos (enviadas em 22/11/2026, em `assets/projetos/balanca/`):
+  - 01 `balanca-01-peso-display.png` (300 x 670 px): balança em caixa de acrílico com molas, peso metálico sobre a plataforma, display LCD marcando "Peso KG 4.494". Usada nos cards, em grafite.
+  - 02 `balanca-02-teste-mao.png` (300 x 552 px): mão pressionando a plataforma, display ligado. Guardada.
 
 ### Carrinho de Controle Remoto (apresentado no ESX 2024)
 - Descrição: "Desenvolvimento de um veículo controlado remotamente com Arduino, sensores ultrassônicos e comunicação sem fio."
@@ -143,6 +146,19 @@ Fonte: prints da seção Projetos do LinkedIn, enviados em 22/11/2026. Texto cop
 - Descrição: "construir um drone controlado por microcontrolador."
 - Foco: controle de voo e estabilidade com acelerômetro/giroscópio (MPU6050), motores brushless com ESCs, comunicação sem fio (Bluetooth / Wi-Fi) e controle remoto via ESP32, firmware em C/C++, integração de hardware e software em tempo real.
 - Tecnologias: "ESP32, sensores MPU6050, ESCs, C/C++, conceitos de controle (PID), firmware embarcado."
+- Fotos (enviadas em 22/11/2026, 515 x 913 px, em `assets/projetos/drone/`):
+  - 01 `drone-01-bancada-teste.png`: estrutura do drone com quatro motores e hélices, ligada a uma protoboard e a uma bateria, com multímetro na bancada.
+  - 02 `drone-02-multimetro-placa.png`: teste com multímetro em uma placa de circuito.
+  - 03 `drone-03-lupa-placa.png`: placa vista por uma lupa com garras, chapa aquecedora ao fundo.
+  - 04 `drone-04-chapa-aquecedora.png`: placa sobre a chapa aquecedora, controlador marcando 250.
+  - 05 `drone-05-placa-trilhas.png`: placa com as trilhas de cobre aparentes, na mão.
+  - 06 `drone-06-layout-impresso.png`: layouts de placa impressos em papel e no notebook, placa de cobre na mesa.
+  - Prova com o tratamento grafite: `assets/projetos/drone/drone-grafite-prova.jpg`.
+- Respostas do Enrico (22/11/2026):
+  - Placa das fotos 02 a 06: "Sim ela é do drone, mas foi entregue pronta pelo professor". Consequência: o site não diz que o grupo fabricou a placa; as fotos 02 a 06 ficam guardadas e não entram nos cards.
+  - Motores: resposta "A descrição certa". Aplicado no site: "Motores e hélices", sem citar brushless, coreless ou ESC, até confirmar o tipo.
+  - Resolução: "Adapte". Aplicado: quadros verticais (9:16) do tamanho das fotos.
+- Texto usado no site (22/11/2026): "Drone controlado por microcontrolador, com controle de voo e estabilidade por acelerômetro e giroscópio e controle remoto sem fio via ESP32." Tecnologias: ESP32, MPU6050, Motores e hélices, C/C++, Controle PID, Firmware embarcado.
 
 ### Sistema de Detecção de Incêndios IoT
 - Contexto: "Projeto Integrador II".

@@ -6,3 +6,8 @@ node_modules/
 # Dados pessoais: ficam só na pasta local
 docs/privado/
 assets/imagens/foto-original.jpg
+
+# Fotos com rostos de outras pessoas: só na pasta local
+assets/projetos/carrinho/carrinho-01-grupo-arena-esx.png
+assets/projetos/carrinho/carrinho-06-entrada-esx2025.png
+assets/projetos/carrinho/carrinho-07-arena-visitantes.png

@@ -140,6 +140,15 @@ Fonte: prints da seção Projetos do LinkedIn, enviados em 22/11/2026. Texto cop
 - Descrição: "Desenvolvimento de um veículo controlado remotamente com Arduino, sensores ultrassônicos e comunicação sem fio."
 - Destaque: "O projeto foi selecionado e apresentado em um dos maiores eventos de tecnologia e inovação do Espírito Santo (ESX 2024)."
 - Tecnologias: "Arduino, Bluetooth HC-05, motores DC, C/C++."
+- Fotos (enviadas em 22/11/2026, em `assets/projetos/carrinho/`):
+  - 01 `carrinho-01-grupo-arena-esx.png`: grupo de alunos com camisetas da FAESA atrás da "Arena FAESA", um campo de futebol em miniatura com vários carrinhos. Tem rostos de outras pessoas: fica só na pasta local.
+  - 02 `carrinho-02-modelo-3d.png`: modelo 3D do chassi (detalhes abaixo).
+  - 03 `carrinho-03-frente.png` e 04 `carrinho-04-lateral.png`: o carrinho pronto, com carenagem laranja decorada e o nome "MACARENA RACING", rodas amarelas. A 04 é a usada nos cards, em grafite.
+  - 05 `carrinho-05-roda-powerbank.png`: uma roda na mão e, ao lado, a carenagem com um power bank dentro.
+  - 06 `carrinho-06-entrada-esx2025.png`: entrada do evento com o letreiro "ESX" e "#ESX2025". Tem pessoas: fica só na pasta local.
+  - 07 `carrinho-07-arena-visitantes.png`: visitantes, entre eles crianças, em volta da arena com celulares na mão. Tem rostos de crianças: fica só na pasta local e não vai para o site.
+- Modelo 3D (foto 02), o que dá para ver na imagem: chassi com carenagem transparente, dois motores com caixa de redução amarelos, duas rodas amarelas com pneu, uma placa de driver de motor com dissipador e bornes, e uma placa de microcontrolador com módulo blindado. Não dá para saber pela imagem qual programa foi usado nem identificar com certeza os modelos das placas; nada disso foi para o site.
+- Conflito de ano: o LinkedIn diz "ESX 2024", a foto 06 mostra "#ESX2025". No site ficou só "Apresentado no ESX, Espírito Santo Innovation Experience", sem ano, até o Enrico confirmar.
 
 ### Drone com Sistemas Embarcados
 - Contexto: "Projeto acadêmico na disciplina de Sistemas Embarcados" (no histórico: 2025/2, 80 h, média 8,4).

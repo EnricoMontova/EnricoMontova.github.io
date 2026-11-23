@@ -67,6 +67,8 @@ Detalhes e opções descartadas em `docs/ANALISE_REFERENCIA.md`.
 
 | Fotos dos projetos | Tratamento grafite com grão em todas; quadro vertical 9:16; drone usa só a foto 01 | Coerência com a foto do Enrico; "Adapte" (fotos verticais e pequenas); a placa das fotos 02 a 06 foi entregue pronta pelo professor | Fotos coloridas; usar as fotos da placa como trabalho do grupo |
 | Motores do drone | Texto neutro "Motores e hélices" | Resposta "A descrição certa" não deixou claro qual tipo; nada sem confirmação | "Motores brushless com ESCs" (LinkedIn); "coreless" (leitura da foto) |
+| ESX no site | "Apresentado no ESX", sem ano | LinkedIn diz 2024, foto mostra #ESX2025 | "ESX 2024" |
+| Fotos com pessoas | Ficam só na pasta local (`.gitignore`) e fora do site: grupo na arena, entrada do ESX, visitantes com crianças | Rostos de terceiros e de crianças; o repositório é público | Publicar todas |
 
 Pendentes: escolher o modelo de Projetos, formato final do currículo, renomear o repositório e apagar o fork (no GitHub, pelo Enrico ou com login no navegador).
 

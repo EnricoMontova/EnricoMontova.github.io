@@ -10,6 +10,7 @@ Sugestão baseada no que funcionou (e no que deu errado) na primeira conversa.
 ## 2. Arquivos para colocar no conhecimento do projeto
 
 - `README.md`
+- `docs/ESTADO.md` (estado e pendências)
 - `docs/DECISOES.md` (o padrão visual e o que foi descartado)
 - `docs/CONTEUDO.md` (textos e dados do site)
 - As imagens de `referencias/estetica/` que ainda guiam o visual (principalmente `09-capa-foreign-xerox.jpg`, `08-swiss-international-style.jpg` e `01-glow-4eve-photobook.jpg`)
@@ -39,9 +40,6 @@ Como trabalhar comigo:
 - Para problemas, mande print ou vídeo e diga se é no Fit (computador) ou no Fill (celular).
 - Quando gostar de uma versão, diga "essa é a principal" para ela virar o padrão.
 
-## 5. Próximas conversas sugeridas
+## 5. Próximas conversas
 
-1. Converter o menu e a Carreira em HTML estático e publicar no GitHub Pages.
-2. Página de Projetos pessoais.
-3. Página de Hobbies.
-4. Links reais (LinkedIn, GitHub, certificados).
+Ver `docs/ESTADO.md` (atualizado em 22/11/2026).

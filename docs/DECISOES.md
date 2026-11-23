@@ -69,8 +69,11 @@ Detalhes e opções descartadas em `docs/ANALISE_REFERENCIA.md`.
 | Motores do drone | Texto neutro "Motores e hélices" | Resposta "A descrição certa" não deixou claro qual tipo; nada sem confirmação | "Motores brushless com ESCs" (LinkedIn); "coreless" (leitura da foto) |
 | ESX no site | "Apresentado no ESX 2025" | Confirmado pelo Enrico (a foto mostra #ESX2025; o LinkedIn diz 2024 e está errado) | "ESX 2024"; sem ano |
 | Fotos com pessoas | Ficam só na pasta local (`.gitignore`) e fora do site: grupo na arena, entrada do ESX, visitantes com crianças | Rostos de terceiros e de crianças; o repositório é público. Confirmado pelo Enrico em 22/11/2026 | Publicar todas; publicar a do grupo com consentimento |
+| Tipos de projeto | Duas seções na mesma página: "Projetos da faculdade" (os 4 atuais) e "Projetos pessoais" (em desenvolvimento) | Pedido do Enrico (22/11/2026): os 4 projetos são da faculdade; os pessoais ainda vão ser feitos | Misturar tudo como "projetos pessoais" |
+| Pastas das fotos | `assets/projetos/faculdade/<projeto>/` e `assets/projetos/pessoais/` | Pedido do Enrico: pasta nova e separação faculdade/pessoais | Uma pasta por projeto sem separar o tipo |
+| Fotos por projeto | Foto principal vertical + 1 ou 2 fotos extras em miniatura com legenda | Pedido do Enrico: usar mais de uma imagem por projeto | Uma foto só |
 
-Pendentes: escolher o modelo de Projetos, formato final do currículo, renomear o repositório e apagar o fork (no GitHub, pelo Enrico ou com login no navegador).
+Pendentes: nome do link no menu (hoje "Projetos pessoais"), escolher o modelo de Projetos, formato final do currículo, renomear o repositório e apagar o fork (no GitHub, pelo Enrico ou com login no navegador).
 
 ## Como pedir mudanças
 

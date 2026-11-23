@@ -123,7 +123,24 @@ Sem reprovações e sem a disciplina Tópicos Especiais. "aproveitada" = dispens
 
 Enviada em 22/11/2026. Original em `assets/imagens/foto-original.jpg` (fora do GitHub). Tratamento escolhido: `assets/imagens/foto-A.png` (grafite com grão). Descartado: `assets/imagens/foto-B.png` (pontilhado xerox). Lugar: Carreira, ao lado do título.
 
-## Projetos pessoais
+## Projetos
+
+Separados em duas partes (decisão de 22/11/2026):
+- Projetos da faculdade: os quatro abaixo, todos desenvolvidos na graduação na FAESA. Fotos em `assets/projetos/faculdade/<projeto>/`.
+- Projetos pessoais: ainda vão ser desenvolvidos. No site aparece só "Em desenvolvimento.". Pasta reservada: `assets/projetos/pessoais/`.
+
+### Galeria usada no site (em grafite)
+
+| Projeto | Foto principal | Fotos extras |
+|---|---|---|
+| Drone | 01 bancada de teste | 03 placa vista pela lupa (legenda: "Placa, fornecida pelo professor"); 05 trilhas da placa |
+| Carrinho | 04 lateral | 03 vista de frente; 02 modelo 3D do chassi |
+| Detecção de Incêndios | 01 montagem | 02 monitor serial (recorte) |
+| Balança | 01 display com o peso | 02 teste na plataforma |
+
+Fora do site: drone 02, 04 e 06 (processo da placa, que não foi feita pelo grupo); carrinho 01, 06 e 07 (pessoas); carrinho 05 (foto escura, com luz azul).
+
+## Projetos da faculdade (texto do LinkedIn)
 
 Fonte: prints da seção Projetos do LinkedIn, enviados em 22/11/2026. Texto copiado como está no LinkedIn.
 
@@ -132,7 +149,7 @@ Fonte: prints da seção Projetos do LinkedIn, enviados em 22/11/2026. Texto cop
 - Descrição: "construção de uma balança digital funcional, aplicando a Lei de Hooke e conceitos de física, automação e programação."
 - Tecnologias: "Arduino UNO, Sensor Ultrassônico HC-SR04, Display LCD 16x2, C/C++."
 - Aprendizados: "integração de hardware e software, controle de medições e cálculos físicos automatizados."
-- Fotos (enviadas em 22/11/2026, em `assets/projetos/balanca/`):
+- Fotos (enviadas em 22/11/2026, em `assets/projetos/faculdade/balanca/`):
   - 01 `balanca-01-peso-display.png` (300 x 670 px): balança em caixa de acrílico com molas, peso metálico sobre a plataforma, display LCD marcando "Peso KG 4.494". Usada nos cards, em grafite.
   - 02 `balanca-02-teste-mao.png` (300 x 552 px): mão pressionando a plataforma, display ligado. Guardada.
 
@@ -140,7 +157,7 @@ Fonte: prints da seção Projetos do LinkedIn, enviados em 22/11/2026. Texto cop
 - Descrição: "Desenvolvimento de um veículo controlado remotamente com Arduino, sensores ultrassônicos e comunicação sem fio."
 - Destaque: "O projeto foi selecionado e apresentado em um dos maiores eventos de tecnologia e inovação do Espírito Santo (ESX 2024)."
 - Tecnologias: "Arduino, Bluetooth HC-05, motores DC, C/C++."
-- Fotos (enviadas em 22/11/2026, em `assets/projetos/carrinho/`):
+- Fotos (enviadas em 22/11/2026, em `assets/projetos/faculdade/carrinho/`):
   - 01 `carrinho-01-grupo-arena-esx.png`: grupo de alunos com camisetas da FAESA atrás da "Arena FAESA", um campo de futebol em miniatura com vários carrinhos. Tem rostos de outras pessoas: fica só na pasta local.
   - 02 `carrinho-02-modelo-3d.png`: modelo 3D do chassi (detalhes abaixo).
   - 03 `carrinho-03-frente.png` e 04 `carrinho-04-lateral.png`: o carrinho pronto, com carenagem laranja decorada e o nome "MACARENA RACING", rodas amarelas. A 04 é a usada nos cards, em grafite.
@@ -158,14 +175,14 @@ Fonte: prints da seção Projetos do LinkedIn, enviados em 22/11/2026. Texto cop
 - Descrição: "construir um drone controlado por microcontrolador."
 - Foco: controle de voo e estabilidade com acelerômetro/giroscópio (MPU6050), motores brushless com ESCs, comunicação sem fio (Bluetooth / Wi-Fi) e controle remoto via ESP32, firmware em C/C++, integração de hardware e software em tempo real.
 - Tecnologias: "ESP32, sensores MPU6050, ESCs, C/C++, conceitos de controle (PID), firmware embarcado."
-- Fotos (enviadas em 22/11/2026, 515 x 913 px, em `assets/projetos/drone/`):
+- Fotos (enviadas em 22/11/2026, 515 x 913 px, em `assets/projetos/faculdade/drone/`):
   - 01 `drone-01-bancada-teste.png`: estrutura do drone com quatro motores e hélices, ligada a uma protoboard e a uma bateria, com multímetro na bancada.
   - 02 `drone-02-multimetro-placa.png`: teste com multímetro em uma placa de circuito.
   - 03 `drone-03-lupa-placa.png`: placa vista por uma lupa com garras, chapa aquecedora ao fundo.
   - 04 `drone-04-chapa-aquecedora.png`: placa sobre a chapa aquecedora, controlador marcando 250.
   - 05 `drone-05-placa-trilhas.png`: placa com as trilhas de cobre aparentes, na mão.
   - 06 `drone-06-layout-impresso.png`: layouts de placa impressos em papel e no notebook, placa de cobre na mesa.
-  - Prova com o tratamento grafite: `assets/projetos/drone/drone-grafite-prova.jpg`.
+  - Prova com o tratamento grafite: `assets/projetos/faculdade/drone/drone-grafite-prova.jpg`.
 - Respostas do Enrico (22/11/2026):
   - Placa das fotos 02 a 06: "Sim ela é do drone, mas foi entregue pronta pelo professor". Consequência: o site não diz que o grupo fabricou a placa; as fotos 02 a 06 ficam guardadas e não entram nos cards.
   - Motores: resposta "A descrição certa". Aplicado no site: "Motores e hélices", sem citar brushless, coreless ou ESC, até confirmar o tipo.
@@ -177,7 +194,7 @@ Fonte: prints da seção Projetos do LinkedIn, enviados em 22/11/2026. Texto cop
 - Descrição: "sistema IoT de monitoramento de temperatura e gases em ambientes industriais e recicladoras, com sensores de chama e gases (MQ-135, MLX90614) e microcontrolador."
 - Tecnologias: "Arduino, sensores infravermelho e de gás, C/C++, IoT."
 - Objetivo: "prevenção e monitoramento automatizado de focos de incêndio."
-- Fotos (enviadas em 22/11/2026, em `assets/projetos/incendio/`):
+- Fotos (enviadas em 22/11/2026, em `assets/projetos/faculdade/incendio/`):
   - 01 `incendio-01-montagem.png`: protoboard com módulos de sensores (dois sensores de gás e um módulo de sensor pequeno) e um componente cilíndrico preto, ligados por jumpers a um Arduino UNO conectado ao notebook por USB. Usada nos cards, em grafite.
   - 02 `incendio-02-monitor-serial.png`: recorte da tela da IDE do Arduino com o fim do código e o monitor serial mostrando "leitura do sensor: 20" e "Gás tóxico detectado!". O original tem a lista de servidores do Discord do Enrico na parte de baixo: fica só na pasta local (`incendio-02-monitor-serial-original.png`).
 

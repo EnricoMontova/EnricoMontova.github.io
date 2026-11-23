@@ -177,6 +177,9 @@ Fonte: prints da seção Projetos do LinkedIn, enviados em 22/11/2026. Texto cop
 - Descrição: "sistema IoT de monitoramento de temperatura e gases em ambientes industriais e recicladoras, com sensores de chama e gases (MQ-135, MLX90614) e microcontrolador."
 - Tecnologias: "Arduino, sensores infravermelho e de gás, C/C++, IoT."
 - Objetivo: "prevenção e monitoramento automatizado de focos de incêndio."
+- Fotos (enviadas em 22/11/2026, em `assets/projetos/incendio/`):
+  - 01 `incendio-01-montagem.png`: protoboard com módulos de sensores (dois sensores de gás e um módulo de sensor pequeno) e um componente cilíndrico preto, ligados por jumpers a um Arduino UNO conectado ao notebook por USB. Usada nos cards, em grafite.
+  - 02 `incendio-02-monitor-serial.png`: recorte da tela da IDE do Arduino com o fim do código e o monitor serial mostrando "leitura do sensor: 20" e "Gás tóxico detectado!". O original tem a lista de servidores do Discord do Enrico na parte de baixo: fica só na pasta local (`incendio-02-monitor-serial-original.png`).
 
 ### Dúvidas sobre os projetos
 - Balança: o "1º período" corresponde a qual disciplina do histórico?

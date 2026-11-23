@@ -101,7 +101,7 @@ Estudante de Engenharia da Computação (9º período, FAESA) e estagiário na a
 - Dados: SQL, Databricks
 - Documentação técnica
 
-**Projetos:** Drone com Sistemas Embarcados; Carrinho de Controle Remoto (apresentado no ESX 2024); Detecção de Incêndios IoT.
+**Projetos:** Drone com Sistemas Embarcados; Carrinho de Controle Remoto (apresentado no ESX 2025, com controle pelo celular pelos visitantes); Detecção de Incêndios IoT.
 
 **Certificações:** só as mais ligadas à área (a definir).
 

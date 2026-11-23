@@ -136,7 +136,7 @@ Fonte: prints da seção Projetos do LinkedIn, enviados em 22/11/2026. Texto cop
   - 01 `balanca-01-peso-display.png` (300 x 670 px): balança em caixa de acrílico com molas, peso metálico sobre a plataforma, display LCD marcando "Peso KG 4.494". Usada nos cards, em grafite.
   - 02 `balanca-02-teste-mao.png` (300 x 552 px): mão pressionando a plataforma, display ligado. Guardada.
 
-### Carrinho de Controle Remoto (apresentado no ESX 2024)
+### Carrinho de Controle Remoto (apresentado no ESX 2025)
 - Descrição: "Desenvolvimento de um veículo controlado remotamente com Arduino, sensores ultrassônicos e comunicação sem fio."
 - Destaque: "O projeto foi selecionado e apresentado em um dos maiores eventos de tecnologia e inovação do Espírito Santo (ESX 2024)."
 - Tecnologias: "Arduino, Bluetooth HC-05, motores DC, C/C++."
@@ -148,7 +148,10 @@ Fonte: prints da seção Projetos do LinkedIn, enviados em 22/11/2026. Texto cop
   - 06 `carrinho-06-entrada-esx2025.png`: entrada do evento com o letreiro "ESX" e "#ESX2025". Tem pessoas: fica só na pasta local.
   - 07 `carrinho-07-arena-visitantes.png`: visitantes, entre eles crianças, em volta da arena com celulares na mão. Tem rostos de crianças: fica só na pasta local e não vai para o site.
 - Modelo 3D (foto 02), o que dá para ver na imagem: chassi com carenagem transparente, dois motores com caixa de redução amarelos, duas rodas amarelas com pneu, uma placa de driver de motor com dissipador e bornes, e uma placa de microcontrolador com módulo blindado. Não dá para saber pela imagem qual programa foi usado nem identificar com certeza os modelos das placas; nada disso foi para o site.
-- Conflito de ano: o LinkedIn diz "ESX 2024", a foto 06 mostra "#ESX2025". No site ficou só "Apresentado no ESX, Espírito Santo Innovation Experience", sem ano, até o Enrico confirmar.
+- Ano do ESX: o LinkedIn diz "ESX 2024", mas o Enrico confirmou 2025 (22/11/2026), como mostra a foto 06. Sugestão: corrigir no LinkedIn.
+- Confirmado pelo Enrico (22/11/2026): no ESX os visitantes controlavam os carrinhos pelo celular.
+- Texto usado no site (22/11/2026): "Veículo controlado remotamente com Arduino, sensores ultrassônicos e comunicação sem fio. No estande da FAESA no ESX 2025, os visitantes controlavam os carrinhos pelo celular numa arena de futebol de robôs."
+- Fotos 01, 06 e 07 (com pessoas): o Enrico decidiu deixar fora do site (22/11/2026).
 
 ### Drone com Sistemas Embarcados
 - Contexto: "Projeto acadêmico na disciplina de Sistemas Embarcados" (no histórico: 2025/2, 80 h, média 8,4).

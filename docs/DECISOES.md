@@ -42,6 +42,31 @@ Escaneamento de xerox: a tela de destino nasce coberta pelo papel com a mensagem
 
 O conteúdo é sempre o mesmo nas duas versões (textos, links, dados). Só muda a forma de mostrar: layout, tamanho e direção de rolagem.
 
+## Decisões de 22/11/2026 (análise da referência luan-k10)
+
+Detalhes e opções descartadas em `docs/ANALISE_REFERENCIA.md`.
+
+| Tema | Escolhido | Motivo | Descartado |
+|---|---|---|---|
+| Estrutura | Híbrido: manter menu + páginas; barras de terminal do menu recebem uma linha de apresentação e os links de contato e currículo | Resolve o primeiro clique sem mudar o padrão aprovado | Só acrescentar páginas; página única como a referência |
+| Tecnologia | Continuar em HTML estático | Já funciona e publica direto no GitHub Pages | Migrar para Astro |
+| Endereço | Renomear o repositório para `EnricoMontova.github.io` (site em `enricomontova.github.io`) | Endereço mais curto | Manter `montovanelli-portfolio` |
+| README do GitHub | No visual do site (papel, grafite, vermelho #D21A16), cabeçalho em SVG | Coerência com o site e diferenciação da referência | Modelo da referência recolorido; só texto |
+| Idioma do README | Português e inglês | Pedido do Enrico | Só um idioma |
+| Projetos | Os 4 projetos do LinkedIn (balança, carrinho ESX, drone, detecção de incêndios) | Escolha do Enrico | OPTATIVA, projeto_reconhecimento, workshop-springboot3-jpa |
+| Foto | Usar foto no site | Escolha do Enrico | Sem foto |
+| Fork anuraghazra | Apagar | Escolha do Enrico | Manter |
+| Currículo | Montar junto, por perguntas, em `docs/CURRICULO.md` | Pedido do Enrico | |
+
+| Tratamento da foto | A, grafite com grão (`assets/imagens/foto-A.png`) | Escolha do Enrico (22/11/2026) | B, pontilhado xerox |
+| Lugar da foto | Na Carreira, ao lado do título e da frase de abertura | Escolha do Enrico (22/11/2026) | No menu; nas duas páginas |
+| Publicação no GitHub | Repositório ligado à sessão do Claude com permissão de envio; Claude publica por git | Escolha do Enrico (22/11/2026) | Enrico executa tudo; Claude pelo navegador logado |
+| Página de Projetos | Quatro modelos no canvas (A arquivo, B monitor, C ficha, D painel), um por referência nova (10 a 13) | Enrico enviou as referências e pediu modelos para escolher | Padrão suíço da Carreira; xerox do menu; estética nova sem referência |
+| Currículo | Uma versão por área (Dados, Software, Automação), objetivo efetivação, sem foto | Respostas do Enrico (22/11/2026) | Currículo único |
+| Dados de contato | Telefone e e-mail em `docs/privado/` (fora do GitHub) | O repositório é público | Telefone no repositório |
+
+Pendentes: escolher o modelo de Projetos, formato final do currículo, renomear o repositório e apagar o fork (no GitHub, pelo Enrico ou com login no navegador).
+
 ## Como pedir mudanças
 
 - Mudar só o que foi pedido e manter os padrões acima.

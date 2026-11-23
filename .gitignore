@@ -2,3 +2,7 @@
 Thumbs.db
 *.tmp
 node_modules/
+
+# Dados pessoais: ficam só na pasta local
+docs/privado/
+assets/imagens/foto-original.jpg

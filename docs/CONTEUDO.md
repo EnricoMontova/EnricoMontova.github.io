@@ -2,6 +2,10 @@
 
 Textos e dados que aparecem no site. Fonte: o que o Enrico informou nas conversas e o histórico escolar da FAESA (o PDF do histórico não fica no repositório porque tem dados pessoais).
 
+## TCC
+
+Desenvolvimento de um sistema digital para rastreabilidade e gestão de análises de risco no ponto de trabalho em plantas siderúrgicas.
+
 ## Abertura da Carreira
 
 Estudante de Engenharia da Computação no 9º período, pela FAESA. Hoje sou estagiário de engenharia de software na automação da Laminação de Tiras a Quente da ArcelorMittal Tubarão.
@@ -104,8 +108,57 @@ Sem reprovações e sem a disciplina Tópicos Especiais. "aproveitada" = dispens
 | 2022/2 | Técnicas de Programação | 40 h | aproveitada |
 | 2022/2 | Pensamento Matemático | 80 h | aproveitada |
 
+## Links
+
+- LinkedIn: https://www.linkedin.com/in/enricomontovanelli/
+- GitHub: https://github.com/EnricoMontova
+- Site (após renomear o repositório): https://enricomontova.github.io
+
+## Contato
+
+- Cidade: Vitória, ES.
+- E-mail e telefone: em `docs/privado/CONTATO.md`, fora do GitHub.
+
+## Foto
+
+Enviada em 22/11/2026. Original em `assets/imagens/foto-original.jpg` (fora do GitHub). Tratamento escolhido: `assets/imagens/foto-A.png` (grafite com grão). Descartado: `assets/imagens/foto-B.png` (pontilhado xerox). Lugar: Carreira, ao lado do título.
+
+## Projetos pessoais
+
+Fonte: prints da seção Projetos do LinkedIn, enviados em 22/11/2026. Texto copiado como está no LinkedIn.
+
+### Balança Digital com Arduino
+- Contexto: "Projeto integrador desenvolvido no 1º período".
+- Descrição: "construção de uma balança digital funcional, aplicando a Lei de Hooke e conceitos de física, automação e programação."
+- Tecnologias: "Arduino UNO, Sensor Ultrassônico HC-SR04, Display LCD 16x2, C/C++."
+- Aprendizados: "integração de hardware e software, controle de medições e cálculos físicos automatizados."
+
+### Carrinho de Controle Remoto (apresentado no ESX 2024)
+- Descrição: "Desenvolvimento de um veículo controlado remotamente com Arduino, sensores ultrassônicos e comunicação sem fio."
+- Destaque: "O projeto foi selecionado e apresentado em um dos maiores eventos de tecnologia e inovação do Espírito Santo (ESX 2024)."
+- Tecnologias: "Arduino, Bluetooth HC-05, motores DC, C/C++."
+
+### Drone com Sistemas Embarcados
+- Contexto: "Projeto acadêmico na disciplina de Sistemas Embarcados" (no histórico: 2025/2, 80 h, média 8,4).
+- Descrição: "construir um drone controlado por microcontrolador."
+- Foco: controle de voo e estabilidade com acelerômetro/giroscópio (MPU6050), motores brushless com ESCs, comunicação sem fio (Bluetooth / Wi-Fi) e controle remoto via ESP32, firmware em C/C++, integração de hardware e software em tempo real.
+- Tecnologias: "ESP32, sensores MPU6050, ESCs, C/C++, conceitos de controle (PID), firmware embarcado."
+
+### Sistema de Detecção de Incêndios IoT
+- Contexto: "Projeto Integrador II".
+- Descrição: "sistema IoT de monitoramento de temperatura e gases em ambientes industriais e recicladoras, com sensores de chama e gases (MQ-135, MLX90614) e microcontrolador."
+- Tecnologias: "Arduino, sensores infravermelho e de gás, C/C++, IoT."
+- Objetivo: "prevenção e monitoramento automatizado de focos de incêndio."
+
+### Dúvidas sobre os projetos
+- Balança: o "1º período" corresponde a qual disciplina do histórico?
+- Carrinho: em qual período ou disciplina foi feito?
+- Drone: o drone chegou a voar? Qual foi o resultado?
+- Incêndios: "Projeto Integrador II" é o de 2023/2 (Projeto Integrador Engenharias II) ou o de 2024/2 (Projeto Integrador Engenharia da Computação II)?
+- Existem fotos, vídeos ou código de algum deles?
+
 ## A preencher
 
-- Links reais de LinkedIn e GitHub (GitHub provável: github.com/EnricoMontova).
 - Links dos certificados.
-- Conteúdo de Projetos pessoais e Hobbies.
+- Respostas das dúvidas sobre os projetos e fotos ou vídeos de cada um (o Enrico tem, vai enviar depois).
+- Conteúdo de Hobbies.

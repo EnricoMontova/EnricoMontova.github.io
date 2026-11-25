@@ -80,8 +80,12 @@ Detalhes e opções descartadas em `docs/ANALISE_REFERENCIA.md`.
 | Modelo da página de Projetos | Modelo A, arquivo (ref. 10): fundo preto, estrela de quatro pontas se desfazendo em partículas, título listrado em Syncopate | Escolha do Enrico (25/11/2026) | B monitor, C ficha, D painel (guardados no canvas, marcados como não escolhidos) |
 | Celular | Mesma página, adaptada: uma coluna, título com mínimo de 46 px, fotos com até 300 px de largura, estrela com até 340 px | Regra do site: mesmo conteúdo no computador e no celular | Página separada para celular |
 | Página estática | `projetos.html`, gerada do modelo A, com as fotos de `assets/projetos/faculdade/`, carregamento sob demanda das fotos e a mesma transição de scanner das outras páginas | Padrão das páginas existentes (B: HTML estático) | |
+| Link no menu | "Projetos" (antes "Projetos pessoais"), abrindo `projetos.html` com a transição de scanner | Escolha do Enrico (25/11/2026): opção 1 | Dois links, "Faculdade" e "Pessoais" |
+| Ordem das seções | Projetos pessoais primeiro (Setor 01), faculdade depois (Setor 02) | Pedido do Enrico (25/11/2026) | Faculdade primeiro |
+| Fotos na página | Fora por enquanto (`FOTOS=False` em `design/canvas/geradores/a.py`); arquivos continuam em `assets/projetos/faculdade/` | O Enrico achou que as fotos quebravam demais a tela (25/11/2026) | Foto principal vertical com miniaturas |
+| Texto de abertura | "Projetos pessoais e projetos da graduação em Engenharia da Computação, na FAESA." | A página agora cobre as duas seções | Texto só sobre a graduação |
 
-Pendentes: nome do link no menu (hoje "Projetos pessoais"), escolher o modelo de Projetos, formato final do currículo, renomear o repositório e apagar o fork (no GitHub, pelo Enrico ou com login no navegador).
+Pendentes: ver `docs/ESTADO.md`, formato final do currículo, renomear o repositório e apagar o fork (no GitHub, pelo Enrico ou com login no navegador).
 
 ## Como pedir mudanças
 

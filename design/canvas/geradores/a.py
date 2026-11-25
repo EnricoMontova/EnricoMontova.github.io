@@ -1,4 +1,5 @@
 import sys; sys.path.insert(0,'/home/claude/gen')
+VOLTAR='MenuCelular.dc.html' if len(sys.argv)>3 and int(sys.argv[3])<800 else 'Main.dc.html'
 from data import *; from svgs import *
 BG="#0B0B0C"; FG="#E8E6E1"; MU="#A3A19C"
 fonts="family=Syncopate:wght@400;700&amp;family=Inter+Tight:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500"
@@ -29,11 +30,12 @@ def img_a(p):
 <span aria-hidden="true" style="position: absolute; left: 50%; top: 50%; width: 1px; height: 22px; background: {MU}; transform: translate(-50%, -50%)"></span>
 <span style="position: absolute; bottom: 10px; left: 12px">[Foto do projeto]</span>
 </div>'''
+FOTOS=False  # 25/11/2026: fotos fora da página por decisão do Enrico; arquivos continuam em assets/projetos/faculdade/
 def proj(p):
     tags=" • ".join(p['hw']+p['sw'])
     dest = f'<p style="margin: 0; {mono}; color: {FG}">✦ {p["dest"]}</p>'.replace("✦ ","") if p['dest'] else ''
     if p['dest']: dest=f'<p style="margin: 0; display: flex; gap: 10px; align-items: center; {mono}; color: {FG}">{sq%FG} {p["dest"]}</p>'
-    return f'''<article class="proj-a" style="display: grid; grid-template-columns: 200px minmax(0, 1fr) 240px; gap: 32px; align-items: start; padding: 40px 0; border-top: 1px solid rgba(232,230,225,0.28)">
+    return f'''<article class="proj-a" style="display: grid; grid-template-columns: {'200px minmax(0, 1fr) 240px' if FOTOS else '200px minmax(0, 1fr)'}; gap: 32px; align-items: start; padding: 40px 0; border-top: 1px solid rgba(232,230,225,0.28)">
 <div style="display: flex; flex-direction: column; gap: 10px; {mono}">
 <span style="color: {FG}">Arquivo / {p["n"]}</span>
 <span style="color: {MU}; letter-spacing: 0.06em; line-height: 1.5">{p["ctx"]}</span>
@@ -44,14 +46,14 @@ def proj(p):
 {dest}
 <p style="margin: 0; {mono}; color: {MU}; letter-spacing: 0.06em; line-height: 1.7">{tags}</p>
 </div>
-{img_a(p)}
+{img_a(p) if FOTOS else ''}
 </article>'''
 body=f'''<div style="position: relative; overflow: hidden; background: {BG}; color: {FG}; font-family: 'Inter Tight', 'Helvetica Neue', Arial, sans-serif; font-size: 15px; line-height: 1.45">
 {grao(0.22,"screen","grao-a")}
 <div style="position: relative; max-width: 1280px; margin: 0 auto; padding: clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 56px">
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; {mono}">
 <div style="display: flex; align-items: center; gap: 14px"><span style="font-weight: 500">EM // Arquivo de projetos</span><span style="display: flex; gap: 4px">{sq%FG}{sq%FG}{sq%MU}{sq%MU}</span></div>
-<div style="display: flex; align-items: center; gap: 28px"><span style="color: {MU}">Embarcados • IoT • Automação</span><a href="Main.dc.html" style="padding: 10px 0; text-underline-offset: 4px">Voltar ao menu</a></div>
+<div style="display: flex; align-items: center; gap: 28px"><span style="color: {MU}">Embarcados • IoT • Automação</span><a href="{VOLTAR}" style="padding: 10px 0; text-underline-offset: 4px">Voltar ao menu</a></div>
 </div>
 <div class="hero-a" style="display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 32px; align-items: center">
 <div style="display: flex; flex-direction: column; gap: 26px">
@@ -63,20 +65,21 @@ body=f'''<div style="position: relative; overflow: hidden; background: {BG}; col
 </div>
 <div class="estrela-a">{stars}</div>
 </div>
-{linha_pontos("Setor / 01 · Faculdade")}
-<section aria-labelledby="sec-fac" style="display: flex; flex-direction: column">
-<h2 id="sec-fac" style="margin: 0 0 8px; {wide}; font-weight: 400; font-size: 14px; letter-spacing: 0.3em">Projetos da faculdade</h2>
-{"".join(proj(p) for p in P)}
-</section>
-{linha_pontos("Setor / 02 · Pessoais")}
+{linha_pontos("Setor / 01 · Pessoais")}
 <section aria-labelledby="sec-pes" style="display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 32px; padding: 8px 0 24px" class="proj-a">
 <span style="{mono}; color: {MU}">Arquivo / --</span>
 <div style="display: flex; flex-direction: column; gap: 10px"><h2 id="sec-pes" style="margin: 0; {wide}; font-weight: 400; font-size: 14px; letter-spacing: 0.3em">Projetos pessoais</h2><p style="margin: 0; font-size: 16px; color: {MU}">{PESSOAIS}</p></div>
+</section>
+{linha_pontos("Setor / 02 · Faculdade")}
+<section aria-labelledby="sec-fac" style="display: flex; flex-direction: column">
+<h2 id="sec-fac" style="margin: 0 0 8px; {wide}; font-weight: 400; font-size: 14px; letter-spacing: 0.3em">Projetos da faculdade</h2>
+{"".join(proj(p) for p in P)}
 </section>
 {linha_pontos()}
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; {mono}; color: {MU}; padding-bottom: 8px"><span>Sistemas embarcados • IoT • Automação</span><span>Enrico Montovanelli • 2026</span></div>
 </div>
 </div>'''
+VOLTAR_=None
 H=int(sys.argv[2]) if len(sys.argv)>2 else 3600
 W=int(sys.argv[3]) if len(sys.argv)>3 else 1440
 html=page("Projetos" if W>800 else "Projetos, celular",fonts,style,body,H)

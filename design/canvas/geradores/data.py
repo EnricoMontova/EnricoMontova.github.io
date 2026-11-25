@@ -31,7 +31,7 @@ def thumbs(p, borda, legcss):
     n=len(p['gal'])
     itens=''.join(f'<figure style="margin: 0; display: flex; flex-direction: column; gap: 4px"><img src="{g["img"]}" alt="{g["alt"]}" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border: {borda}"><figcaption style="{legcss}">{g["leg"]}</figcaption></figure>' for g in p['gal'])
     return f'<div style="display: grid; grid-template-columns: repeat({max(n,2)}, minmax(0, 1fr)); gap: 8px">{itens}</div>'
-INTRO="Projetos de sistemas embarcados, IoT e automação desenvolvidos na graduação em Engenharia da Computação, na FAESA."
+INTRO="Projetos pessoais e projetos da graduação em Engenharia da Computação, na FAESA."
 PESSOAIS="Em desenvolvimento."
 GRAO='<svg aria-hidden="true" style="position: absolute; inset: 0; width: 100%%; height: 100%%; opacity: %s; mix-blend-mode: %s; pointer-events: none"><filter id="%s"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"></feTurbulence><feColorMatrix type="saturate" values="0"></feColorMatrix></filter><rect width="100%%" height="100%%" filter="url(#%s)"></rect></svg>'
 def grao(op,mode,id): return GRAO%(op,mode,id,id)

@@ -24,14 +24,14 @@
 
 - Modelo A escolhido para a página de Projetos. Versão de celular feita (tela "Projetos, celular" no canvas).
 - `projetos.html` gerada e enviada ao GitHub. Conferida em 1440 px e 390 px: sem rolagem lateral e com as 10 fotos carregando.
-- A página ainda não tem link no menu (depende da pendência 2).
+- Link "Projetos" no menu abrindo `projetos.html`; projetos pessoais primeiro; fotos retiradas da página (continuam nas pastas).
 - O computador do Enrico estava desconectado: a pasta local NÃO recebeu as mudanças de 25/11. Sincronizar quando ele conectar (ver pendência 10).
 
 ## Pendências
 
 ### Decisões do Enrico
 1. (Feito em 25/11/2026: modelo A.)
-2. Link do menu: trocar "Projetos pessoais" por "Projetos" (sugestão) ou ter dois links (Faculdade e Pessoais).
+2. (Feito em 25/11/2026: link "Projetos".)
 3. Currículo, rodada 2 (perguntas no fim de `docs/CURRICULO.md`): documentação técnica no estágio, papel nas demandas, números divulgáveis, fretes, formato final.
 4. Tipo de motor do drone (brushless com ESC ou coreless). Hoje o site diz "Motores e hélices".
 5. Período ou disciplina do carrinho e qual Projeto Integrador II é o de incêndios.
@@ -43,10 +43,10 @@
 
 ### Ações do Enrico na pasta local
 9. Apagar as pastas antigas `assets/projetos/drone`, `carrinho`, `incendio` e `balanca` (o conteúdo já está em `assets/projetos/faculdade/`).
-10. O `.git` da pasta local não tem remoto e está atrás do GitHub. Para sincronizar: clonar o repositório de novo (ou ligar o remoto e fazer pull). Em 25/11/2026 a pasta ficou sem as mudanças do dia (`projetos.html`, `ProjetosCelular.dc.html`, docs).
+10. O `.git` da pasta local não tem remoto e está atrás do GitHub. Para sincronizar: clonar o repositório de novo (ou ligar o remoto e fazer pull). Em 25/11/2026 a pasta ficou sem as mudanças do dia (`index.html`, `projetos.html`, telas do canvas, docs, geradores).
 
 ### Trabalho do Claude (depois das decisões)
-11. Ligar a `projetos.html` ao menu (`index.html` e telas Main e MenuCelular), depois da pendência 2. Versão de celular: feita em 25/11/2026.
+11. (Feito em 25/11/2026: página ligada ao menu e versão de celular.)
 12. Menu (decisão A3): linha de apresentação e links de contato e currículo nas barras de terminal.
 13. Foto do Enrico na Carreira, ao lado do título (decisão F1).
 14. E-mail e links (LinkedIn, GitHub) visíveis no site.

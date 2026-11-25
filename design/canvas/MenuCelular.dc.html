@@ -65,7 +65,7 @@ a:focus-visible{outline:1px solid #2E2E2E;outline-offset:5px}
 <nav aria-label="Seções">
 <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 26px; font-size: clamp(16px, 1.25vw, 19px); letter-spacing: 0.12em; text-transform: uppercase">
 <li><a class="item-x" href="CarreiraCelular.dc.html" onClick="{{vaiC}}" onMouseEnter="{{miraC}}" onFocus="{{miraC}}" onMouseLeave="{{solta}}" onBlur="{{solta}}">Carreira</a></li>
-<li><a class="item-x" href="#projetos" onMouseEnter="{{miraP}}" onFocus="{{miraP}}" onMouseLeave="{{solta}}" onBlur="{{solta}}">Projetos pessoais</a></li>
+<li><a class="item-x" href="ProjetosCelular.dc.html" onClick="{{vaiP}}" onMouseEnter="{{miraP}}" onFocus="{{miraP}}" onMouseLeave="{{solta}}" onBlur="{{solta}}">Projetos</a></li>
 <li><a class="item-x" href="#hobbies" onMouseEnter="{{miraH}}" onFocus="{{miraH}}" onMouseLeave="{{solta}}" onBlur="{{solta}}">Hobbies</a></li>
 </ul>
 </nav>
@@ -318,6 +318,7 @@ class Component extends DCLogic {
     }
     if (!this.vaiC) {
       this.vaiC = function () { try { window.sessionStorage.setItem('scan-msg', '> abrir /carreira'); } catch (e) {} };
+      this.vaiP = function () { try { window.sessionStorage.setItem('scan-msg', '> abrir /projetos'); } catch (e) {} };
     }
     var st = this.state || {};
     return {
@@ -325,7 +326,7 @@ class Component extends DCLogic {
       hora: st.hora || '00:00:00',
       status: st.alvo ? '> abrir ' + st.alvo : 'Selecione uma seção',
       miraC: this.miraC, miraP: this.miraP, miraH: this.miraH, solta: this.solta,
-      vaiC: this.vaiC, refCapa: this.refCapa, refBarra: this.refBarra,
+      vaiC: this.vaiC, vaiP: this.vaiP, refCapa: this.refCapa, refBarra: this.refBarra,
       cobrindo: !!st.cobrindo, msgCapa: st.msgCapa || ''
     };
   }

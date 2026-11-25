@@ -2,7 +2,7 @@
 
 Portfólio pessoal de Enrico Montovanelli, estudante de Engenharia da Computação (FAESA) e estagiário de engenharia de software na automação da Laminação de Tiras a Quente da ArcelorMittal Tubarão.
 
-O site tem um menu de entrada e uma página de Carreira. A página de Projetos usa o modelo A e ainda não tem link no menu e a de Hobbies ainda será criada. O estado atual e as pendências estão em `docs/ESTADO.md`.
+O site tem um menu de entrada e uma página de Carreira. A página de Projetos usa o modelo A, com os projetos pessoais primeiro e os da faculdade depois e a de Hobbies ainda será criada. O estado atual e as pendências estão em `docs/ESTADO.md`.
 
 ## Como ver o site
 

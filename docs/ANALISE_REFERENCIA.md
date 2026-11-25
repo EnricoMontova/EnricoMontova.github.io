@@ -21,7 +21,7 @@ O Luan tem o mesmo cargo do Enrico (estagiário de automação Nível 2 na Arcel
 ## 2. Estado atual do Enrico (conferido em 22/11/2026)
 
 ### Site (pasta local, repositório montovanelli-portfolio)
-- Feito: menu (xerox com terminal, bobinadeira animada) e página Carreira (estilo suíço), computador e celular. Padrão em `docs/DECISOES.md`.
+- Feito: menu (xerox com terminal, bobinadeira animada) e página Carreira (estilo suíço), computador e celular. Padrão em `DECISOES.md`.
 - Não publicado: https://enricomontova.github.io/montovanelli-portfolio/ retorna 404.
 - Faltam em relação à referência:
   - Contato (nenhum link de e-mail, LinkedIn ou GitHub nas páginas).
@@ -76,5 +76,5 @@ O Luan tem o mesmo cargo do Enrico (estagiário de automação Nível 2 na Arcel
 
 ## 6. Observações técnicas (22/11/2026)
 - A pasta local não tem repositório remoto configurado (`.git/config` sem `[remote "origin"]`).
-- `index.html`, `carreira.html`, `README.md`, `docs/CONTEUDO.md` e `docs/DECISOES.md` foram alterados depois do último commit local. Correção após clonar o GitHub (22/11/2026): esses arquivos são idênticos aos do GitHub (commit 897c98f, 15/11/2026). O que ficou para trás foi só o histórico do `.git` local.
+- `index.html`, `carreira.html`, `README.md`, `docs/CONTEUDO.md` e `DECISOES.md` foram alterados depois do último commit local. Correção após clonar o GitHub (22/11/2026): esses arquivos são idênticos aos do GitHub (commit 897c98f, 15/11/2026). O que ficou para trás foi só o histórico do `.git` local.
 - O navegador embutido do Claude não está logado no GitHub.

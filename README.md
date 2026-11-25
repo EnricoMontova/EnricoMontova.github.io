@@ -2,7 +2,7 @@
 
 Portfólio pessoal de Enrico Montovanelli, estudante de Engenharia da Computação (FAESA) e estagiário de engenharia de software na automação da Laminação de Tiras a Quente da ArcelorMittal Tubarão.
 
-O site tem um menu de entrada e uma página de Carreira. A página de Projetos usa o modelo A, com os projetos pessoais primeiro e os da faculdade depois e a de Hobbies ainda será criada. O estado atual e as pendências estão em `docs/ESTADO.md`.
+O site tem um menu de entrada e uma página de Carreira. A página de Projetos usa o modelo A, com os projetos pessoais primeiro e os da faculdade depois. A de Hobbies ainda será criada. O estado atual e as pendências estão em `CONTEXTO.md`.
 
 ## Como ver o site
 
@@ -40,14 +40,15 @@ O design vive num canvas do Claude (artefato "Portfólio Enrico Montovanelli"). 
 
 ## Próximos passos
 
-Lista completa e atualizada em `docs/ESTADO.md`. O repositório será renomeado para `EnricoMontova.github.io`; depois disso o site fica em `https://enricomontova.github.io`.
+Lista completa e atualizada em `CONTEXTO.md`. O repositório será renomeado para `EnricoMontova.github.io`; depois disso o site fica em `https://enricomontova.github.io`.
 
 As páginas `index.html` e `carreira.html` foram geradas a partir das telas do canvas. Ao mudar o design, atualize as duas versões.
 
 ## Documentos
 
-- `docs/ESTADO.md`: estado atual e pendências. Ler primeiro.
-- `docs/DECISOES.md`: o padrão visual do site, decisões com data e o que já foi testado e descartado.
+- `CONTEXTO.md`: caminhos (local, Drive, GitHub), estado atual e próximos passos. Ler primeiro.
+- `CHANGELOG.md`: data e descrição de cada mudança.
+- `DECISOES.md`: o padrão visual do site, decisões com data e o que já foi testado e descartado.
 - `docs/ANALISE_REFERENCIA.md`: análise do portfólio de referência e opções apresentadas.
 - `docs/CURRICULO.md`: currículo em construção (contato em `docs/privado/`, fora do GitHub).
 - `docs/CONTEUDO.md`: os textos e dados que aparecem no site.

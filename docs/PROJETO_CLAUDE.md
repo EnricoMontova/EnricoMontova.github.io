@@ -10,8 +10,9 @@ Sugestão baseada no que funcionou (e no que deu errado) na primeira conversa.
 ## 2. Arquivos para colocar no conhecimento do projeto
 
 - `README.md`
-- `docs/ESTADO.md` (estado e pendências)
-- `docs/DECISOES.md` (o padrão visual e o que foi descartado)
+- `CONTEXTO.md` (caminhos, estado e próximos passos)
+- `DECISOES.md` (decisões com data e o padrão visual)
+- `CHANGELOG.md` (histórico de mudanças)
 - `docs/CONTEUDO.md` (textos e dados do site)
 - As imagens de `referencias/estetica/` que ainda guiam o visual (principalmente `09-capa-foreign-xerox.jpg`, `08-swiss-international-style.jpg` e `01-glow-4eve-photobook.jpg`)
 
@@ -42,4 +43,4 @@ Como trabalhar comigo:
 
 ## 5. Próximas conversas
 
-Ver `docs/ESTADO.md` (atualizado em 22/11/2026).
+Ver `CONTEXTO.md`. Observação (25/11/2026): as instruções atuais do projeto no Claude substituem as da seção 3 deste arquivo.

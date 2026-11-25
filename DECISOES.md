@@ -1,6 +1,6 @@
-# Decisões de design
+# Decisões
 
-Registro do padrão visual aprovado e do que já foi testado e descartado. Antes de mudar qualquer coisa, conferir aqui.
+Registro com data, decisão, motivo e alternativas descartadas, mais o padrão visual aprovado. Antes de mudar qualquer coisa, conferir aqui.
 
 ## Menu (xerox com terminal)
 
@@ -84,8 +84,10 @@ Detalhes e opções descartadas em `docs/ANALISE_REFERENCIA.md`.
 | Ordem das seções | Projetos pessoais primeiro (Setor 01), faculdade depois (Setor 02) | Pedido do Enrico (25/11/2026) | Faculdade primeiro |
 | Fotos na página | Fora por enquanto (`FOTOS=False` em `design/canvas/geradores/a.py`); arquivos continuam em `assets/projetos/faculdade/` | O Enrico achou que as fotos quebravam demais a tela (25/11/2026) | Foto principal vertical com miniaturas |
 | Texto de abertura | "Projetos pessoais e projetos da graduação em Engenharia da Computação, na FAESA." | A página agora cobre as duas seções | Texto só sobre a graduação |
+| Organização da documentação | `CONTEXTO.md`, `DECISOES.md` e `CHANGELOG.md` na raiz; `docs/ESTADO.md` vira `CONTEXTO.md` | Novas instruções do projeto (25/11/2026) | Manter `docs/ESTADO.md` e `docs/DECISOES.md` |
+| Espelho no Google Drive | Pasta `portfolio-enrico-montovanelli` em Meu Drive, com todas as pastas e os arquivos de texto (docs, HTML, scripts); imagens ficam na pasta local e no GitHub | Escolha do Enrico (25/11/2026): rápido e suficiente para continuar pelo celular | Espelho completo com imagens (cerca de 100 envios a mais); só os três documentos da raiz |
 
-Pendentes: ver `docs/ESTADO.md`, formato final do currículo, renomear o repositório e apagar o fork (no GitHub, pelo Enrico ou com login no navegador).
+Pendentes: ver `CONTEXTO.md`.
 
 ## Como pedir mudanças
 

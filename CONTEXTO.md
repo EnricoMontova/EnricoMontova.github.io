@@ -29,6 +29,8 @@
 ## Estado atual
 
 - Site em HTML estático: `index.html` (menu), `carreira.html`, `projetos.html`. Ainda não publicado (GitHub Pages desativado).
+- Menu com linha de apresentação e links de LinkedIn, GitHub e Currículo nas barras de terminal. Favicon e prévia do link nas três páginas (a imagem da prévia só aparece depois do passo 4, porque usa o endereço `enricomontova.github.io`).
+- Sem foto no site e sem e-mail (decisões de 25/11/2026).
 - Projetos: modelo A escolhido em 25/11/2026. Projetos pessoais primeiro (em desenvolvimento), depois os 4 da faculdade. Sem fotos na página por enquanto (`FOTOS=False` em `design/canvas/geradores/a.py`); fotos guardadas em `assets/projetos/faculdade/`.
 - Telas de design no canvas, com cópias em `design/canvas/`. Geradores Python da página de Projetos em `design/canvas/geradores/` (`a.py` gera a tela; `estatico.py` gera `projetos.html`).
 - Dados pessoais fora do GitHub: `docs/privado/` e as fotos listadas no `.gitignore`.
@@ -49,12 +51,9 @@
 8. Pasta local: para ter o histórico do git, clonar o repositório de novo (ou ligar o remoto e fazer pull).
 
 ### Trabalho do Claude
-9. Menu (decisão A3 de 22/11): linha de apresentação e links de contato e currículo nas barras de terminal.
-10. Foto do Enrico na Carreira, ao lado do título (decisão de 22/11).
-11. E-mail e links (LinkedIn, GitHub) visíveis no site.
-12. Open Graph (prévia do link) e favicon.
-13. README do perfil do GitHub no visual do site, em português e inglês (depois do passo 4).
-14. Currículo: texto final, versão em inglês e formato escolhido.
+9. README do perfil do GitHub no visual do site, em português e inglês. Fica no repositório `EnricoMontova/EnricoMontova`, que já existe; só o link para o site depende do passo 4.
+10. Currículo: questionário (rodada 2), texto final e versão em inglês. O conteúdo entra na página Carreira (o link "Currículo" do menu já aponta para lá).
+11. Depois do passo 4: conferir a prévia do link (LinkedIn, WhatsApp) com o site no ar.
 
 ### Conteúdo faltando
 - Links de verificação dos certificados.

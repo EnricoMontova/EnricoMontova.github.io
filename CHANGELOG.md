@@ -4,6 +4,10 @@ Data e descrição de cada mudança. Mais recente primeiro. Detalhe técnico de 
 
 ## 25/11/2026
 
+- Menu: linha de apresentação na barra de cima; LinkedIn, GitHub e Currículo (aponta para a Carreira) na barra de baixo, no lugar do "2026" (`index.html`, telas Main e MenuCelular no canvas).
+- Menu: animação da bobinadeira presa entre as barras (antes invadia a barra de baixo).
+- Favicon e prévia do link (Open Graph) nas três páginas: `assets/favicon.svg`, `assets/favicon-32.png`, `assets/apple-touch-icon.png`, `assets/og.jpg`.
+- Foto do Enrico retirada dos planos do site; e-mail fora do site (`DECISOES.md`, `docs/CONTEUDO.md`).
 - Objetivo do projeto atualizado no `CONTEXTO.md` e registrado no `DECISOES.md`: site único (currículo, site pessoal, vitrine) e GitHub com a mesma identidade visual; referência luan-k10 adaptada; princípios prático, bonito e único.
 - Envio ao GitHub feito depois da autorização do Enrico (a primeira tentativa de ligar o repositório à sessão foi bloqueada).
 - Tentativa de mover os itens obsoletos para `_apagar` pelo controle remoto do computador, sem sucesso (Explorador limitado a cliques). Pendência registrada no `CONTEXTO.md`, item 7.

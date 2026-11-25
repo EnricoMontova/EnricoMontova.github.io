@@ -117,11 +117,15 @@ Sem reprovações e sem a disciplina Tópicos Especiais. "aproveitada" = dispens
 ## Contato
 
 - Cidade: Vitória, ES.
-- E-mail e telefone: em `docs/privado/CONTATO.md`, fora do GitHub.
+- E-mail e telefone: em `docs/privado/CONTATO.md`, fora do GitHub. Não aparecem no site (decisão de 25/11/2026): o contato no site é só LinkedIn e GitHub.
+
+## Linha de apresentação (barra de cima do menu)
+
+Eng. de Software na automação · ArcelorMittal Tubarão · Eng. da Computação · Vitória, ES
 
 ## Foto
 
-Enviada em 22/11/2026. Original em `assets/imagens/foto-original.jpg` (fora do GitHub). Tratamento escolhido: `assets/imagens/foto-A.png` (grafite com grão). Descartado: `assets/imagens/foto-B.png` (pontilhado xerox). Lugar: Carreira, ao lado do título.
+Enviada em 22/11/2026. Original em `assets/imagens/foto-original.jpg` (fora do GitHub). Tratamento escolhido: `assets/imagens/foto-A.png` (grafite com grão). Descartado: `assets/imagens/foto-B.png` (pontilhado xerox). Lugar: nenhum. Em 25/11/2026 o Enrico decidiu não colocar foto no site; os arquivos continuam guardados.
 
 ## Projetos
 

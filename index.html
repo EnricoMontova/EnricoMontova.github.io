@@ -3,7 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="data:,">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#E8E6E1">
+<meta name="description" content="Portfólio de Enrico Montovanelli: estudante de Engenharia da Computação (FAESA) e estagiário de Engenharia de Software na automação da ArcelorMittal Tubarão.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Enrico Montovanelli">
+<meta property="og:title" content="Enrico Montovanelli">
+<meta property="og:description" content="Portfólio de Enrico Montovanelli: estudante de Engenharia da Computação (FAESA) e estagiário de Engenharia de Software na automação da ArcelorMittal Tubarão.">
+<meta property="og:url" content="https://enricomontova.github.io/">
+<meta property="og:image" content="https://enricomontova.github.io/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Enrico Montovanelli, portfólio: papel de xerox com barras de terminal">
+<meta name="twitter:card" content="summary_large_image">
 <title>Enrico Montovanelli</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tektur:wdth,wght@75..125,400..900&amp;family=Marcellus&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
@@ -16,6 +31,16 @@ a:focus-visible{outline:1px solid #2E2E2E;outline-offset:5px}
 .item-x{display:inline-block;padding:10px 8px;margin:0 -8px}
 .item-x:hover,.item-x:focus-visible{background:#2E2E2E;color:#E8E6E1;outline:none}
 .so-cel{display:none}
+.item-t{display:inline-block;padding:4px 6px;margin:-4px -6px}
+.item-t:hover,.item-t:focus-visible{background:#2E2E2E;color:#E8E6E1;outline:none}
+.apresentacao{flex:1 1 auto;text-align:center;min-width:0}
+.apresentacao>span{white-space:nowrap}
+.apresentacao>span:not(:last-child)::after{content:" \00B7"}
+.contatos{display:flex;flex-wrap:wrap;gap:6px 22px;list-style:none;margin:0;padding:0}
+@media (max-width: 1100px){
+.barra-topo{flex-wrap:wrap !important;row-gap:6px !important}
+.apresentacao{order:3;flex-basis:100%;text-align:left}
+}
 @keyframes scan-pisca{0%,49%{opacity:1}50%,100%{opacity:0}}
 .tela-scan{position:fixed;inset:0;z-index:50;pointer-events:none;background:#E8E6E1;display:flex;align-items:flex-end;padding:0 0 22px clamp(16px,3vw,32px);box-sizing:border-box}
 .barra-scan{position:fixed;left:0;right:0;top:0;height:3px;z-index:51;pointer-events:none;background:#2E2E2E;box-shadow:0 -18px 36px rgba(46,46,46,0.22),0 0 0 1px rgba(46,46,46,0.1)}
@@ -27,6 +52,7 @@ a:focus-visible{outline:1px solid #2E2E2E;outline-offset:5px}
 .linha-links ul{flex-direction:column !important;align-items:flex-start !important;gap:2px !important}
 .linha-links .fio{display:none !important}
 .item-x{padding:12px 8px !important}
+.barra-baixo{flex-wrap:wrap !important;row-gap:10px !important}
 }
 @media (prefers-reduced-motion: reduce){
 .entrada{animation:none !important;opacity:1 !important}
@@ -38,18 +64,19 @@ a:focus-visible{outline:1px solid #2E2E2E;outline-offset:5px}
 <main style="position: relative; overflow: hidden; width: 100%; height: 100vh; min-height: 600px; background: #E8E6E1; color: #2E2E2E; font-family: 'Marcellus', Georgia, serif; display: grid; grid-template-rows: auto minmax(0, 1fr) auto">
 
 <!-- bobinadeira e cubinhos: só entre as duas barras -->
-<canvas class="entrada" aria-hidden="true" id="cena" style="position: absolute; grid-row: 2; grid-column: 1; inset: 0; width: 100%; height: 100%; display: block"></canvas>
+<canvas class="entrada" aria-hidden="true" id="cena" style="position: relative; grid-row: 2; grid-column: 1; width: 100%; height: 100%; min-height: 0; display: block"></canvas>
 
 <!-- textura de papel -->
 <svg aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0.75; mix-blend-mode: multiply; pointer-events: none"><filter id="papel"><feTurbulence type="fractalNoise" baseFrequency="0.95" numOctaves="3" stitchTiles="stitch"></feTurbulence><feColorMatrix type="saturate" values="0"></feColorMatrix></filter><rect width="100%" height="100%" filter="url(#papel)"></rect></svg>
 
 <!-- barra de cima, como um terminal -->
-<header class="entrada" style="position: relative; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 12px clamp(16px, 3vw, 32px); font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; border-bottom: 2px solid #2E2E2E">
+<header class="entrada barra-topo" style="position: relative; grid-row: 1; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 12px clamp(16px, 3vw, 32px); font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; border-bottom: 2px solid #2E2E2E">
 <span>Enrico.Montovanelli / portfólio</span>
+<span class="apresentacao"><span>Eng. de Software na automação</span> <span>ArcelorMittal Tubarão</span> <span>Eng. da Computação</span> <span>Vitória, ES</span></span>
 <span id="hora">00:00:00</span>
 </header>
 
-<div class="entrada" style="position: relative; box-sizing: border-box; padding: 24px 0 24px clamp(20px, 9vw, 150px); display: flex; flex-direction: column; justify-content: center">
+<div class="entrada" style="position: relative; grid-row: 2; grid-column: 1; box-sizing: border-box; padding: 24px 0 24px clamp(20px, 9vw, 150px); display: flex; flex-direction: column; justify-content: center">
 
 <div style="position: relative; align-self: flex-start; max-width: calc(100% - 40px); padding-right: 30px">
 <h1 style="margin: 0; font-family: 'Tektur', system-ui, sans-serif; font-weight: 500; font-stretch: 125%; font-size: clamp(30px, 4.4vw, 72px); line-height: 1.05; letter-spacing: 0.01em; text-transform: uppercase">Enrico Montovanelli</h1>
@@ -72,9 +99,15 @@ a:focus-visible{outline:1px solid #2E2E2E;outline-offset:5px}
 </div>
 
 <!-- barra de baixo -->
-<footer class="entrada" style="position: relative; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 12px clamp(16px, 3vw, 32px); font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; border-top: 2px solid #2E2E2E">
+<footer class="entrada barra-baixo" style="position: relative; grid-row: 3; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 12px clamp(16px, 3vw, 32px); font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; border-top: 2px solid #2E2E2E">
 <span aria-live="polite"><span id="status">Selecione uma seção</span><span class="pisca" aria-hidden="true" style="display: inline-block; width: 0.6em; height: 1em; margin-left: 6px; vertical-align: -2px; background: #2E2E2E; animation: cursor 1s steps(1) infinite"></span></span>
-<span>2026</span>
+<nav aria-label="Contato">
+<ul class="contatos">
+<li><a class="item-t" href="https://www.linkedin.com/in/enricomontovanelli/" target="_blank" rel="noopener" data-alvo="linkedin ↗">LinkedIn ↗</a></li>
+<li><a class="item-t" href="https://github.com/EnricoMontova" target="_blank" rel="noopener" data-alvo="github ↗">GitHub ↗</a></li>
+<li><a class="item-t" href="carreira.html" data-alvo="/currículo" data-transicao="&gt; abrir /carreira">Currículo</a></li>
+</ul>
+</nav>
 </footer>
 
 <div aria-hidden="true" class="tela-scan" id="capa" style="display: none"><svg aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0.5; mix-blend-mode: multiply; pointer-events: none"><filter id="grao-in"><feTurbulence type="fractalNoise" baseFrequency="1.05" numOctaves="3" stitchTiles="stitch"></feTurbulence><feColorMatrix type="saturate" values="0"></feColorMatrix></filter><rect width="100%" height="100%" filter="url(#grao-in)"></rect></svg><p style="position: relative; margin: 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #2E2E2E"><span id="capa-msg">&gt; /menu</span><span aria-hidden="true" style="display: inline-block; width: 0.6em; height: 1em; margin-left: 6px; vertical-align: -2px; background: #2E2E2E; animation: scan-pisca 0.5s steps(1) infinite"></span></p></div>

@@ -87,6 +87,14 @@ Detalhes e opções descartadas em `docs/ANALISE_REFERENCIA.md`.
 | Organização da documentação | `CONTEXTO.md`, `DECISOES.md` e `CHANGELOG.md` na raiz; `docs/ESTADO.md` vira `CONTEXTO.md` | Novas instruções do projeto (25/11/2026) | Manter `docs/ESTADO.md` e `docs/DECISOES.md` |
 | Espelho no Google Drive | Pasta `portfolio-enrico-montovanelli` em Meu Drive, com todas as pastas e os arquivos de texto (docs, HTML, scripts); imagens ficam na pasta local e no GitHub | Escolha do Enrico (25/11/2026): rápido e suficiente para continuar pelo celular | Espelho completo com imagens (cerca de 100 envios a mais); só os três documentos da raiz |
 | Objetivo do projeto | Dois objetivos: (1) site único que serve de currículo, site pessoal e vitrine de projetos; (2) GitHub atualizado com a mesma identidade visual. Referência: luan-k10 (GitHub e site), adaptada ao estilo próprio. Princípios: prático, bonito e único | Pedido do Enrico (25/11/2026) | Objetivo restrito ao site; copiar a referência como está |
+| Foto no site | Sem foto | Escolha do Enrico (25/11/2026); substitui a decisão de 22/11 ("Usar foto no site", "Na Carreira, ao lado do título") | Foto na Carreira ao lado do título |
+| Contato no site | Só LinkedIn e GitHub, na barra de baixo do menu | Escolha do Enrico (25/11/2026): nada pessoal exposto | Mostrar o e-mail; e-mail montado só no clique |
+| Link "Currículo" | Aponta para a Carreira por enquanto; quando o questionário do currículo for respondido, o conteúdo entra na Carreira (mesclado ou como bloco novo) | Escolha do Enrico (25/11/2026) | Deixar o link fora até o currículo ficar pronto; fazer o currículo antes |
+| Linha de apresentação | "Eng. de Software na automação · ArcelorMittal Tubarão · Eng. da Computação · Vitória, ES", centralizada na barra de cima; abaixo de 1100 px vai para uma segunda linha, quebrando sempre depois do "·" | Escolha do Enrico (25/11/2026) | Cargo + cidade; área + cidade |
+| Barra de baixo do menu | Status à esquerda; à direita LinkedIn ↗, GitHub ↗ e Currículo, que invertem ao passar o mouse (bloco grafite) e escrevem no status, como os links do menu. Substitui o "2026" | Decisão A3 de 22/11 | |
+| Favicon | Estrela de quatro pontas do menu, grafite, num quadrado de papel com borda (`assets/favicon.svg`, `favicon-32.png`, `apple-touch-icon.png`) | A estrela já é a assinatura do nome | Iniciais "EM" |
+| Prévia do link (Open Graph) | Imagem 1200×630 no visual do menu (`assets/og.jpg`), mesma imagem nas três páginas; endereço absoluto `https://enricomontova.github.io/assets/og.jpg` | Coerência com o menu | Uma imagem por página |
+| Animação do menu | A bobinadeira fica presa entre as duas barras (canvas na linha 2 da grade) | Corrige a regra "nada da animação passa das barras": a animação invadia a barra de baixo | |
 
 Pendentes: ver `CONTEXTO.md`.
 

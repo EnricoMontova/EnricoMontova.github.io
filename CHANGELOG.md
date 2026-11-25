@@ -4,6 +4,7 @@ Data e descrição de cada mudança. Mais recente primeiro. Detalhe técnico de 
 
 ## 25/11/2026
 
+- Canvas: passa a abrir no menu da B3 (antes abria o menu antigo); telas da B3 ligadas entre si (menu, Carreira, Projetos, "< /menu", Currículo).
 - Site: sistema B3 aplicado às três páginas (`index.html`, `carreira.html`, `projetos.html`) por `design/canvas/geradores/aplicar_b3.py`. Fundo preto com grão, barras de terminal em todas as páginas, títulos em Tektur com estrela, subtítulos em Marcellus, rótulos em JetBrains Mono, logos invertidos.
 - Menu: bobinadeira e cubinhos retirados do fundo (código da animação removido).
 - Versão anterior guardada em `versoes/2026-11-25-tres-estilos/`; no canvas, telas antigas marcadas como "versão anterior, salva".

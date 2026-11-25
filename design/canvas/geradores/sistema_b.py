@@ -306,6 +306,16 @@ if __name__ == "__main__":
         (SAIDA / f"Sistema{nome}Menu.dc.html").write_text(menu(v, nome + "m", pal, arte_fundo=(nome != "B3")), encoding="utf-8")
         (SAIDA / f"Sistema{nome}Carreira.dc.html").write_text(carreira(v, nome + "c", pal), encoding="utf-8")
         (SAIDA / f"Sistema{nome}Projetos.dc.html").write_text(projetos(v, nome + "p", pal), encoding="utf-8")
+    # B3: telas ligadas entre si no canvas (menu, Carreira e Projetos navegáveis)
+    import re as _re
+    for tela in ("Menu", "Carreira", "Projetos"):
+        f = SAIDA / f"SistemaB3{tela}.dc.html"
+        h = f.read_text(encoding="utf-8")
+        h = _re.sub(r'<a href="#" (style="[^"]*">)(Carreira|Projetos)</a>', lambda m: f'<a href="SistemaB3{m.group(2)}.dc.html" {m.group(1)}{m.group(2)}</a>', h)
+        h = h.replace('<a href="#" style="color: #E8E6E1">Currículo</a>', '<a href="SistemaB3Carreira.dc.html" style="color: #E8E6E1">Currículo</a>')
+        h = h.replace('<span>&lt; /menu</span>', '<a href="SistemaB3Menu.dc.html" style="color: #E8E6E1">&lt; /menu</a>')
+        h = h.replace('<span>&gt; voltar /menu', '<span><a href="SistemaB3Menu.dc.html" style="color: #E8E6E1">&gt; voltar /menu</a>')
+        f.write_text(h, encoding="utf-8")
     for nome, v in VARIANTES.items():
         (SAIDA / f"Sistema{nome}Menu.dc.html").write_text(menu(v, nome + "m"), encoding="utf-8")
         (SAIDA / f"Sistema{nome}Carreira.dc.html").write_text(carreira(v, nome + "c"), encoding="utf-8")

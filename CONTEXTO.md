@@ -88,6 +88,8 @@ Para atualizar um arquivo no Drive: procurar pelo título dentro da pasta (paren
 | referencias | 13za36F_TIgw9izOv38JcxjaANenDfvl9 |
 | referencias/estetica | 1hbRWwyOyzdM5PY57qXydvpnM19xO-LTb |
 | referencias/logos-originais | 1TUHicIF10qvBedW1f-H8ORQGZKUE8YwF |
+| versoes | 1irC7xHIUCHJTi4uaelKd9Sy6JuwGcUZH |
+| versoes/2026-11-25-tres-estilos | 11w4R0Oq4q_fkobu8VTfLOAE3_aImsHc4 |
 
 As pastas de imagens existem no Drive, mas ficam vazias (decisão de 25/11/2026).
 

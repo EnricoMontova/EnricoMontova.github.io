@@ -92,4 +92,4 @@ As pastas de imagens existem no Drive, mas ficam vazias (decisão de 25/11/2026)
 
 ## Pendências de sincronização
 
-Nenhuma em 25/11/2026 (pasta local, GitHub e Drive atualizados nesta data).
+Pasta local atrás do GitHub e do Drive desde 25/11/2026 (o notebook saiu do ar durante a sessão). Copiar do GitHub para a pasta local: `CONTEXTO.md`, `DECISOES.md`, `CHANGELOG.md`, `README.md`, `referencias/README.md`, `design/canvas/canvas.json`, `design/canvas/geradores/sistema_b.py` e os seis `design/canvas/SistemaB*.dc.html`. As 7 referências novas já estão na pasta local (foi de lá que vieram).

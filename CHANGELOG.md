@@ -4,6 +4,10 @@ Data e descrição de cada mudança. Mais recente primeiro. Detalhe técnico de 
 
 ## 25/11/2026
 
+- Site: sistema B3 aplicado às três páginas (`index.html`, `carreira.html`, `projetos.html`) por `design/canvas/geradores/aplicar_b3.py`. Fundo preto com grão, barras de terminal em todas as páginas, títulos em Tektur com estrela, subtítulos em Marcellus, rótulos em JetBrains Mono, logos invertidos.
+- Menu: bobinadeira e cubinhos retirados do fundo (código da animação removido).
+- Versão anterior guardada em `versoes/2026-11-25-tres-estilos/`; no canvas, telas antigas marcadas como "versão anterior, salva".
+- Favicon e imagem de prévia refeitos no preto.
 - Canvas: B3 e B4 refeitas com a tipografia da B1 (o Enrico tinha escrito B2 por engano).
 - Canvas: modelos B3 (tudo preto) e B4 (tudo preto com barras de papel). Gerador `sistema_b.py` passou a aceitar paletas; vermelho de texto sobre preto ajustado para `#EA3E34` (também nas telas de Projetos da B1 e da B2).
 - Canvas: modelos da direção B ("dia e noite") em duas variantes, B1 (Tektur larga + Marcellus) e B2 (Antonio condensada com ponto vermelho), cada uma com menu, Carreira e Projetos. Gerador em `design/canvas/geradores/sistema_b.py`.

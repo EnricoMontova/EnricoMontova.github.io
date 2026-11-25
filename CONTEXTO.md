@@ -11,7 +11,7 @@
 
 ## Objetivo
 
-1. **Site:** um único site que funcione ao mesmo tempo como currículo, site pessoal e vitrine dos projetos do Enrico. Páginas: menu (xerox com terminal), Carreira (suíço), Projetos (arquivo, fundo preto) e Hobbies (a fazer).
+1. **Site:** um único site que funcione ao mesmo tempo como currículo, site pessoal e vitrine dos projetos do Enrico. Páginas: menu, Carreira, Projetos e Hobbies (a fazer), todas no sistema visual B3 (preto com grão, barras de terminal, Tektur, Marcellus e JetBrains Mono).
 2. **GitHub:** atualizar o GitHub mantendo a mesma identidade visual do site.
 
 **Referência:** https://github.com/luan-k10 e https://luan-k10.github.io/ (análise em `docs/ANALISE_REFERENCIA.md`). Seguir a referência, mas do nosso jeito, para manter a identidade própria (padrões visuais em `DECISOES.md`).
@@ -31,7 +31,8 @@
 - Site em HTML estático: `index.html` (menu), `carreira.html`, `projetos.html`. Ainda não publicado (GitHub Pages desativado).
 - Menu com linha de apresentação e links de LinkedIn, GitHub e Currículo nas barras de terminal. Favicon e prévia do link nas três páginas (a imagem da prévia só aparece depois do passo 4, porque usa o endereço `enricomontova.github.io`).
 - Sem foto no site e sem e-mail (decisões de 25/11/2026).
-- Unificação visual em andamento: direção B escolhida em 25/11/2026, depois refinada para tipografia da B1 (Tektur larga, estrela, Marcellus) com estética preta. Modelos B3 (tudo preto) e B4 (preto com barras de papel) no canvas, seção "Tipografia da B1 com estética preta", gerados por `design/canvas/geradores/sistema_b.py`. As páginas do site ainda usam os três estilos antigos.
+- Sistema visual B3 aplicado às três páginas em 25/11/2026 (regras no topo do `DECISOES.md`). Menu sem arte de fundo por enquanto. Versão anterior guardada em `versoes/2026-11-25-tres-estilos/`.
+- `design/canvas/geradores/aplicar_b3.py` gerou as páginas atuais a partir da versão anterior (uso único). Daqui em diante, editar as páginas da raiz direto. O `estatico.py` gera a página de Projetos no estilo antigo e não deve mais ser usado sem adaptar.
 - Projetos: modelo A escolhido em 25/11/2026. Projetos pessoais primeiro (em desenvolvimento), depois os 4 da faculdade. Sem fotos na página por enquanto (`FOTOS=False` em `design/canvas/geradores/a.py`); fotos guardadas em `assets/projetos/faculdade/`.
 - Telas de design no canvas, com cópias em `design/canvas/`. Geradores Python da página de Projetos em `design/canvas/geradores/` (`a.py` gera a tela; `estatico.py` gera `projetos.html`).
 - Dados pessoais fora do GitHub: `docs/privado/` e as fotos listadas no `.gitignore`.
@@ -40,7 +41,7 @@
 ## Próximos passos
 
 ### Decisões do Enrico
-0. Unificação visual: escolher entre B3 e B4 (ou pedir ajustes) no canvas. Depois disso o Claude aplica o sistema às três páginas.
+0. Arte de fundo nova para o menu (a bobinadeira saiu em 25/11/2026).
 1. Currículo, rodada 2 (perguntas no fim de `docs/CURRICULO.md`): documentação técnica no estágio, papel nas demandas, números divulgáveis, fretes, formato final.
 2. Tipo de motor do drone (brushless com ESC ou coreless). Hoje o site diz "Motores e hélices".
 3. Período ou disciplina do carrinho e qual Projeto Integrador II é o de incêndios.
@@ -92,4 +93,4 @@ As pastas de imagens existem no Drive, mas ficam vazias (decisão de 25/11/2026)
 
 ## Pendências de sincronização
 
-Pasta local atrás do GitHub e do Drive desde 25/11/2026 (o notebook saiu do ar durante a sessão). Copiar do GitHub para a pasta local: `CONTEXTO.md`, `DECISOES.md`, `CHANGELOG.md`, `README.md`, `referencias/README.md`, `design/canvas/canvas.json`, `design/canvas/geradores/sistema_b.py` e os doze `design/canvas/SistemaB*.dc.html` (B1 a B4). As 7 referências novas já estão na pasta local (foi de lá que vieram).
+Pasta local atrás do GitHub e do Drive desde 25/11/2026 (o notebook saiu do ar durante a sessão). Copiar do GitHub para a pasta local: `CONTEXTO.md`, `DECISOES.md`, `CHANGELOG.md`, `README.md`, `referencias/README.md`, `design/canvas/canvas.json`, `design/canvas/geradores/sistema_b.py` os doze `design/canvas/SistemaB*.dc.html` (B1 a B4), `design/canvas/geradores/aplicar_b3.py`, `index.html`, `carreira.html`, `projetos.html`, `assets/favicon.svg`, `assets/favicon-32.png`, `assets/apple-touch-icon.png`, `assets/og.jpg` e a pasta `versoes/2026-11-25-tres-estilos/` inteira. As 7 referências novas já estão na pasta local (foi de lá que vieram).

@@ -149,7 +149,7 @@ def bobinadeira(cor=GRAFITE):
             f'fill="none" stroke="{cor}" stroke-width="0.9" opacity="0.55">{"".join(p)}</svg>')
 
 
-def menu(v, nome, pal=DIA):
+def menu(v, nome, pal=DIA, arte_fundo=True):
     t, bt, ap, vm = pal["tinta"], (pal["barra"][1] if pal["barra"] else pal["tinta"]), pal["apagado"], pal["verm"]
     if v["ponto"]:
         nome_html = (f'<h1 style="margin: 0; {v["display"]}; font-size: 150px; line-height: 0.86; color: {t}">Enrico<br>Montovanelli<span style="color: {vm}">.</span></h1>')
@@ -164,7 +164,7 @@ def menu(v, nome, pal=DIA):
     corpo = f'''<main style="position: relative; overflow: hidden; width: {W}px; height: {H}px; background: {pal["fundo"]}; color: {t}; display: flex; flex-direction: column">
 {barra(t, "Enrico.Montovanelli / portfólio", f"<span>{apresentacao}</span><span>14:10:33</span>", fundo=pal["barra"])}
 <div style="position: relative; flex: 1; min-height: 0">
-{bobinadeira(t)}
+{bobinadeira(t) if arte_fundo else ""}
 <div style="position: relative; height: 100%; box-sizing: border-box; padding: 0 0 0 150px; display: flex; flex-direction: column; justify-content: center; gap: 26px">
 {nome_html}
 <div style="display: flex; align-items: center; gap: 26px; padding-left: 200px">
@@ -302,7 +302,8 @@ if __name__ == "__main__":
     # B3 e B4: tipografia da B1, tudo em preto (escolha de 25/11/2026)
     for nome, pal in (("B3", NOITE_P), ("B4", NOITE_BARRA_PAPEL)):
         v = VARIANTES["B1"]
-        (SAIDA / f"Sistema{nome}Menu.dc.html").write_text(menu(v, nome + "m", pal), encoding="utf-8")
+        # B3 escolhida em 25/11/2026: menu sem bobinadeira e sem cubinhos
+        (SAIDA / f"Sistema{nome}Menu.dc.html").write_text(menu(v, nome + "m", pal, arte_fundo=(nome != "B3")), encoding="utf-8")
         (SAIDA / f"Sistema{nome}Carreira.dc.html").write_text(carreira(v, nome + "c", pal), encoding="utf-8")
         (SAIDA / f"Sistema{nome}Projetos.dc.html").write_text(projetos(v, nome + "p", pal), encoding="utf-8")
     for nome, v in VARIANTES.items():

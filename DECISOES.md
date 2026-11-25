@@ -2,6 +2,21 @@
 
 Registro com data, decisão, motivo e alternativas descartadas, mais o padrão visual aprovado. Antes de mudar qualquer coisa, conferir aqui.
 
+## Sistema visual atual: B3 (desde 25/11/2026)
+
+Vale para todas as páginas. Modelo no canvas: telas "B3, ESCOLHIDA".
+
+- **Fundo:** preto `#0E0E0F` com grão claro em modo "screen". **Tinta:** papel `#E8E6E1`. Cinza de apoio na página de Projetos: `#A3A19C`.
+- **Vermelho único:** `#D21A16` em formas (barra da trajetória, quadradinho do atual); `#EA3E34` em texto pequeno vermelho, para ser legível sobre o preto.
+- **Fontes:** Tektur larga (125%) em caixa alta nos títulos de página, com a estrela de quatro pontas no fim; Marcellus em caixa alta nos subtítulos e nomes de projetos; JetBrains Mono nos rótulos, datas e barras; Inter Tight no texto corrido.
+- **Barras de terminal em todas as páginas:** em cima, caminho da página (`ENRICO.MONTOVANELLI / CARREIRA`), `< /menu` e relógio; embaixo, `> voltar /menu` com cursor e os links LinkedIn, GitHub e Currículo. No menu, a barra de cima traz a linha de apresentação e a de baixo o status.
+- **Marcas:** linha fina com quadradinho de 7 px abrindo blocos; quadradinho antes dos subtítulos; código de barras e colchete sob o nome no menu.
+- **Logos:** os arquivos grafite de `assets/logos/` aparecem invertidos (claros) por CSS.
+- **Menu:** fundo liso, sem a bobinadeira e sem os cubinhos (decisão de 25/11/2026; arte de fundo nova fica para depois).
+- **Transição:** o mesmo scanner, no negativo (capa preta, texto e barra claros).
+
+As seções "Menu", "Carreira" e "Transição" abaixo descrevem a versão anterior, guardada em `versoes/2026-11-25-tres-estilos/`. O que não conflitar com o sistema B3 (estrutura, ordem dos blocos, regras de celular) continua valendo.
+
 ## Menu (xerox com terminal)
 
 - **Fundo:** papel off-white `#E8E6E1` com grão forte (ruído de textura por cima de tudo).
@@ -98,6 +113,9 @@ Detalhes e opções descartadas em `docs/ANALISE_REFERENCIA.md`.
 | Unificação visual | Direção B, "dia e noite": um só sistema (papel com grão e grafite nas páginas claras, Projetos como negativo em preto com grão, barras de terminal em todas as páginas, um único vermelho #D21A16, estrela de quatro pontas, linhas finas com quadradinho, letra de máquina JetBrains Mono). Modelos B1 e B2 no canvas, a escolher | Escolha do Enrico (25/11/2026): as três páginas tinham três "vibes" (xerox, suíço, preto) | A. Papel técnico (tudo claro); C. Sinal (série numerada); D. Arquivo escuro (tudo preto) |
 | Tipografia e tom da unificação | Tipografia da B1 (Tektur larga com a estrela no fim dos títulos, Marcellus nos subtítulos) e estética preta, como a página de Projetos. Modelos B3 (as três páginas pretas) e B4 (pretas, com as barras de terminal em papel claro) no canvas, a escolher | Escolha do Enrico (25/11/2026): estética mais preta; ele escreveu "B2" e corrigiu para "B1" logo depois, e a B3 e a B4 foram refeitas com a tipografia da B1 | B2 (Antonio condensada); menu e Carreira em papel claro |
 | Vermelho sobre preto | Texto pequeno vermelho sobre preto usa `#EA3E34` (contraste de pelo menos 4,5:1); formas e o ponto dos títulos continuam `#D21A16` | Legibilidade do texto de 10 a 12 px | `#D21A16` em todo lugar |
+| Sistema aplicado ao site | B3 (tipografia da B1, tudo preto) aplicado às três páginas; versão anterior guardada em `versoes/2026-11-25-tres-estilos/` e, no canvas, telas antigas marcadas "versão anterior, salva" | Escolha do Enrico (25/11/2026): "gostei B3, pode salvar a antiga e manter essa como a nova" | B4 (barras de papel) |
+| Fundo do menu | Sem bobinadeira e sem cubinhos: fundo preto liso com grão. Uma arte de fundo nova será pensada depois | Proposta do Enrico (25/11/2026): "deixar simplista, mais tarde pensamos em algo" | Manter a bobinadeira em linhas claras |
+| Favicon e prévia do link | Refeitos no preto: estrela clara em quadrado preto; imagem de prévia com fundo preto e grão | Coerência com o sistema B3 | Manter a versão em papel |
 
 Pendentes: ver `CONTEXTO.md`.
 

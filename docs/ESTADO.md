@@ -1,6 +1,6 @@
 # Estado do projeto
 
-Última atualização: 22/11/2026. Ler este arquivo primeiro ao retomar o trabalho; depois `docs/DECISOES.md` e `docs/CONTEUDO.md`.
+Última atualização: 25/11/2026. Ler este arquivo primeiro ao retomar o trabalho; depois `docs/DECISOES.md` e `docs/CONTEUDO.md`.
 
 ## Onde as coisas estão
 
@@ -20,10 +20,17 @@
 - Fotos dos 4 projetos da faculdade em `assets/projetos/faculdade/<projeto>/`; pasta `assets/projetos/pessoais/` criada.
 - Currículo em construção: `docs/CURRICULO.md` (três versões por área).
 
+## Feito em 25/11/2026
+
+- Modelo A escolhido para a página de Projetos. Versão de celular feita (tela "Projetos, celular" no canvas).
+- `projetos.html` gerada e enviada ao GitHub. Conferida em 1440 px e 390 px: sem rolagem lateral e com as 10 fotos carregando.
+- A página ainda não tem link no menu (depende da pendência 2).
+- O computador do Enrico estava desconectado: a pasta local NÃO recebeu as mudanças de 25/11. Sincronizar quando ele conectar (ver pendência 10).
+
 ## Pendências
 
 ### Decisões do Enrico
-1. Escolher o modelo da página de Projetos (A, B, C ou D).
+1. (Feito em 25/11/2026: modelo A.)
 2. Link do menu: trocar "Projetos pessoais" por "Projetos" (sugestão) ou ter dois links (Faculdade e Pessoais).
 3. Currículo, rodada 2 (perguntas no fim de `docs/CURRICULO.md`): documentação técnica no estágio, papel nas demandas, números divulgáveis, fretes, formato final.
 4. Tipo de motor do drone (brushless com ESC ou coreless). Hoje o site diz "Motores e hélices".
@@ -36,16 +43,16 @@
 
 ### Ações do Enrico na pasta local
 9. Apagar as pastas antigas `assets/projetos/drone`, `carrinho`, `incendio` e `balanca` (o conteúdo já está em `assets/projetos/faculdade/`).
-10. O `.git` da pasta local não tem remoto e está atrás do GitHub. Para sincronizar: clonar o repositório de novo (ou ligar o remoto e fazer pull). Os arquivos da pasta já estão iguais aos do GitHub.
+10. O `.git` da pasta local não tem remoto e está atrás do GitHub. Para sincronizar: clonar o repositório de novo (ou ligar o remoto e fazer pull). Em 25/11/2026 a pasta ficou sem as mudanças do dia (`projetos.html`, `ProjetosCelular.dc.html`, docs).
 
 ### Trabalho do Claude (depois das decisões)
-11. Versão de celular do modelo escolhido e ligação da página ao menu.
+11. Ligar a `projetos.html` ao menu (`index.html` e telas Main e MenuCelular), depois da pendência 2. Versão de celular: feita em 25/11/2026.
 12. Menu (decisão A3): linha de apresentação e links de contato e currículo nas barras de terminal.
 13. Foto do Enrico na Carreira, ao lado do título (decisão F1).
 14. E-mail e links (LinkedIn, GitHub) visíveis no site.
 15. Open Graph (prévia do link) e favicon.
 16. README do perfil do GitHub no visual do site, em português e inglês (depois de renomear o repositório).
-17. Gerar `projetos.html` estático a partir do modelo escolhido e publicar.
+17. (Feito em 25/11/2026: `projetos.html`.)
 18. Currículo: texto final, versão em inglês e formato escolhido.
 
 ### Conteúdo ainda faltando

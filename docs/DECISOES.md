@@ -73,6 +73,14 @@ Detalhes e opções descartadas em `docs/ANALISE_REFERENCIA.md`.
 | Pastas das fotos | `assets/projetos/faculdade/<projeto>/` e `assets/projetos/pessoais/` | Pedido do Enrico: pasta nova e separação faculdade/pessoais | Uma pasta por projeto sem separar o tipo |
 | Fotos por projeto | Foto principal vertical + 1 ou 2 fotos extras em miniatura com legenda | Pedido do Enrico: usar mais de uma imagem por projeto | Uma foto só |
 
+## Decisões de 25/11/2026
+
+| Tema | Escolhido | Motivo | Descartado |
+|---|---|---|---|
+| Modelo da página de Projetos | Modelo A, arquivo (ref. 10): fundo preto, estrela de quatro pontas se desfazendo em partículas, título listrado em Syncopate | Escolha do Enrico (25/11/2026) | B monitor, C ficha, D painel (guardados no canvas, marcados como não escolhidos) |
+| Celular | Mesma página, adaptada: uma coluna, título com mínimo de 46 px, fotos com até 300 px de largura, estrela com até 340 px | Regra do site: mesmo conteúdo no computador e no celular | Página separada para celular |
+| Página estática | `projetos.html`, gerada do modelo A, com as fotos de `assets/projetos/faculdade/`, carregamento sob demanda das fotos e a mesma transição de scanner das outras páginas | Padrão das páginas existentes (B: HTML estático) | |
+
 Pendentes: nome do link no menu (hoje "Projetos pessoais"), escolher o modelo de Projetos, formato final do currículo, renomear o repositório e apagar o fork (no GitHub, pelo Enrico ou com login no navegador).
 
 ## Como pedir mudanças

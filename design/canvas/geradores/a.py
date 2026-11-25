@@ -6,7 +6,7 @@ style=f"""body{{margin:0;background:{BG}}}
 a{{color:{FG}}}a:hover{{color:#FFFFFF}}
 a:focus-visible{{outline:1.5px solid {FG};outline-offset:4px}}
 .listrado{{background:repeating-linear-gradient(0deg,{FG} 0 3px,transparent 3px 6px);-webkit-background-clip:text;background-clip:text;color:transparent}}
-@media (max-width: 820px){{.proj-a{{grid-template-columns:minmax(0,1fr) !important}}.hero-a{{grid-template-columns:minmax(0,1fr) !important}}}}"""
+@media (max-width: 820px){{.proj-a{{grid-template-columns:minmax(0,1fr) !important;gap:18px !important}}.hero-a{{grid-template-columns:minmax(0,1fr) !important}}.midia-a{{max-width:300px}}.estrela-a{{max-width:340px;margin:0 auto}}.proj-a h2{{font-size:21px !important}}}}"""
 mono="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase"
 wide="font-family: 'Syncopate', 'Inter Tight', sans-serif; text-transform: uppercase"
 sq='<span aria-hidden="true" style="display: inline-block; width: 6px; height: 6px; background: %s"></span>'
@@ -23,7 +23,7 @@ stars=f'''<svg viewBox="0 0 560 520" role="img" aria-label="Estrela de quatro po
 def img_a(p):
     if p["img"]:
         leg=f"font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; color: {MU}; line-height: 1.3"
-        return f'<div style="display: flex; flex-direction: column; gap: 8px"><figure style="margin: 0; aspect-ratio: 9 / 16; border: 1px solid rgba(232,230,225,0.35); overflow: hidden"><img src="{p["img"]}" alt="{p["alt"]}" style="display: block; width: 100%; height: 100%; object-fit: cover"></figure>{thumbs(p,"1px solid rgba(232,230,225,0.35)",leg)}</div>'
+        return f'<div class="midia-a" style="display: flex; flex-direction: column; gap: 8px"><figure style="margin: 0; aspect-ratio: 9 / 16; border: 1px solid rgba(232,230,225,0.35); overflow: hidden"><img src="{p["img"]}" alt="{p["alt"]}" style="display: block; width: 100%; height: 100%; object-fit: cover"></figure>{thumbs(p,"1px solid rgba(232,230,225,0.35)",leg)}</div>'
     return f'''<div style="position: relative; aspect-ratio: 9 / 16; border: 1px solid rgba(232,230,225,0.35); display: flex; align-items: center; justify-content: center; {mono}; color: {MU}">
 <span aria-hidden="true" style="position: absolute; left: 50%; top: 50%; width: 22px; height: 1px; background: {MU}; transform: translate(-50%, -50%)"></span>
 <span aria-hidden="true" style="position: absolute; left: 50%; top: 50%; width: 1px; height: 22px; background: {MU}; transform: translate(-50%, -50%)"></span>
@@ -57,11 +57,11 @@ body=f'''<div style="position: relative; overflow: hidden; background: {BG}; col
 <div style="display: flex; flex-direction: column; gap: 26px">
 <span style="align-self: flex-start; padding: 6px 16px; border: 1px solid rgba(232,230,225,0.5); border-radius: 20px; {mono}">Arquivo / 04</span>
 <span style="{mono}; font-size: 10px; color: {MU}">Enrico Montovanelli</span>
-<h1 class="listrado" style="margin: 0; {wide}; font-weight: 700; font-size: clamp(48px, 7.4vw, 104px); letter-spacing: 0.04em; line-height: 0.95">Projetos</h1>
+<h1 class="listrado" style="margin: 0; {wide}; font-weight: 700; font-size: clamp(46px, 7.4vw, 104px); letter-spacing: 0.04em; line-height: 0.95">Projetos</h1>
 <div aria-hidden="true" style="display: flex; gap: 6px"><span style="width: 30px; height: 6px; background: {FG}"></span><span style="width: 10px; height: 6px; background: {FG}"></span><span style="width: 10px; height: 6px; background: {MU}"></span><span style="width: 10px; height: 6px; background: {MU}"></span></div>
 <p style="margin: 0; max-width: 42ch; font-size: 18px; line-height: 1.5">{INTRO}</p>
 </div>
-<div>{stars}</div>
+<div class="estrela-a">{stars}</div>
 </div>
 {linha_pontos("Setor / 01 · Faculdade")}
 <section aria-labelledby="sec-fac" style="display: flex; flex-direction: column">
@@ -77,4 +77,8 @@ body=f'''<div style="position: relative; overflow: hidden; background: {BG}; col
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; {mono}; color: {MU}; padding-bottom: 8px"><span>Sistemas embarcados • IoT • Automação</span><span>Enrico Montovanelli • 2026</span></div>
 </div>
 </div>'''
-open(sys.argv[1],"w").write(page("Projetos, modelo A: arquivo",fonts,style,body,3600))
+H=int(sys.argv[2]) if len(sys.argv)>2 else 3600
+W=int(sys.argv[3]) if len(sys.argv)>3 else 1440
+html=page("Projetos" if W>800 else "Projetos, celular",fonts,style,body,H)
+html=html.replace('"width": 1440', '"width": %d' % W)
+open(sys.argv[1],"w").write(html)

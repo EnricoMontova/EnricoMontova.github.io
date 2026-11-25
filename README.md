@@ -2,7 +2,7 @@
 
 Portfólio pessoal de Enrico Montovanelli, estudante de Engenharia da Computação (FAESA) e estagiário de engenharia de software na automação da Laminação de Tiras a Quente da ArcelorMittal Tubarão.
 
-O site tem um menu de entrada e uma página de Carreira. A página de Projetos está em fase de escolha de modelo (quatro modelos no canvas) e a de Hobbies ainda será criada. O estado atual e as pendências estão em `docs/ESTADO.md`.
+O site tem um menu de entrada e uma página de Carreira. A página de Projetos usa o modelo A e ainda não tem link no menu e a de Hobbies ainda será criada. O estado atual e as pendências estão em `docs/ESTADO.md`.
 
 ## Como ver o site
 
@@ -14,6 +14,7 @@ O site tem um menu de entrada e uma página de Carreira. A página de Projetos e
 ```
 index.html            menu (computador e celular na mesma página)
 carreira.html         página de carreira (computador e celular na mesma página)
+projetos.html         página de projetos, modelo A (computador e celular na mesma página)
 design/canvas/        telas do site no formato do canvas do Claude (.dc.html)
   Main.dc.html          menu principal (computador; vira layout de celular em tela estreita)
   MenuCelular.dc.html   prévia do menu na largura de celular
@@ -21,7 +22,9 @@ design/canvas/        telas do site no formato do canvas do Claude (.dc.html)
   CarreiraCelular.dc.html  prévia da carreira na largura de celular
   MenuPS3.dc.html       versão antiga do menu, guardada (inspirada na abertura do PS3)
   Anterior.dc.html      primeira versão completa do site, só como referência
-  ProjetosA..D.dc.html  quatro modelos da página de Projetos, para escolha
+  ProjetosA.dc.html     página de Projetos (modelo A, escolhido)
+  ProjetosCelular.dc.html  prévia de Projetos na largura de celular
+  ProjetosB..D.dc.html  modelos não escolhidos, guardados
   canvas.json           posição e nome de cada tela no canvas
   geradores/            scripts Python que geram os modelos de Projetos
 assets/logos/         logos já tratados na cor do site (grafite, fundo transparente)

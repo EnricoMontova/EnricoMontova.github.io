@@ -86,6 +86,7 @@ Detalhes e opções descartadas em `docs/ANALISE_REFERENCIA.md`.
 | Texto de abertura | "Projetos pessoais e projetos da graduação em Engenharia da Computação, na FAESA." | A página agora cobre as duas seções | Texto só sobre a graduação |
 | Organização da documentação | `CONTEXTO.md`, `DECISOES.md` e `CHANGELOG.md` na raiz; `docs/ESTADO.md` vira `CONTEXTO.md` | Novas instruções do projeto (25/11/2026) | Manter `docs/ESTADO.md` e `docs/DECISOES.md` |
 | Espelho no Google Drive | Pasta `portfolio-enrico-montovanelli` em Meu Drive, com todas as pastas e os arquivos de texto (docs, HTML, scripts); imagens ficam na pasta local e no GitHub | Escolha do Enrico (25/11/2026): rápido e suficiente para continuar pelo celular | Espelho completo com imagens (cerca de 100 envios a mais); só os três documentos da raiz |
+| Objetivo do projeto | Dois objetivos: (1) site único que serve de currículo, site pessoal e vitrine de projetos; (2) GitHub atualizado com a mesma identidade visual. Referência: luan-k10 (GitHub e site), adaptada ao estilo próprio. Princípios: prático, bonito e único | Pedido do Enrico (25/11/2026) | Objetivo restrito ao site; copiar a referência como está |
 
 Pendentes: ver `CONTEXTO.md`.
 

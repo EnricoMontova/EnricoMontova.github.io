@@ -4,6 +4,8 @@ Data e descrição de cada mudança. Mais recente primeiro. Detalhe técnico de 
 
 ## 25/11/2026
 
+- Objetivo do projeto atualizado no `CONTEXTO.md` e registrado no `DECISOES.md`: site único (currículo, site pessoal, vitrine) e GitHub com a mesma identidade visual; referência luan-k10 adaptada; princípios prático, bonito e único.
+- Envio ao GitHub feito depois da autorização do Enrico (a primeira tentativa de ligar o repositório à sessão foi bloqueada).
 - Tentativa de mover os itens obsoletos para `_apagar` pelo controle remoto do computador, sem sucesso (Explorador limitado a cliques). Pendência registrada no `CONTEXTO.md`, item 7.
 - Documentação reorganizada conforme as novas instruções do projeto: `CONTEXTO.md` (substitui `docs/ESTADO.md`), `DECISOES.md` (movido de `docs/`) e este `CHANGELOG.md`, todos na raiz.
 - Espelho do projeto criado no Google Drive (pastas e arquivos de texto).

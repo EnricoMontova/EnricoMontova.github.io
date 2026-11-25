@@ -11,7 +11,12 @@
 
 ## Objetivo
 
-Um único site que sirva de currículo, site pessoal e vitrine dos projetos do Enrico, com identidade visual própria (minimalista, artística, atmosférica). Páginas: menu (xerox com terminal), Carreira (suíço), Projetos (arquivo, fundo preto) e Hobbies (a fazer).
+1. **Site:** um único site que funcione ao mesmo tempo como currículo, site pessoal e vitrine dos projetos do Enrico. Páginas: menu (xerox com terminal), Carreira (suíço), Projetos (arquivo, fundo preto) e Hobbies (a fazer).
+2. **GitHub:** atualizar o GitHub mantendo a mesma identidade visual do site.
+
+**Referência:** https://github.com/luan-k10 e https://luan-k10.github.io/ (análise em `docs/ANALISE_REFERENCIA.md`). Seguir a referência, mas do nosso jeito, para manter a identidade própria (padrões visuais em `DECISOES.md`).
+
+**Princípios:** prático, bonito e único. Identidade visual própria (minimalista, artística, atmosférica) é objetivo central.
 
 ## Como retomar
 

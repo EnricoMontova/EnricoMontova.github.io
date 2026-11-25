@@ -4,6 +4,8 @@ Data e descrição de cada mudança. Mais recente primeiro. Detalhe técnico de 
 
 ## 25/11/2026
 
+- Canvas: modelos da direção B ("dia e noite") em duas variantes, B1 (Tektur larga + Marcellus) e B2 (Antonio condensada com ponto vermelho), cada uma com menu, Carreira e Projetos. Gerador em `design/canvas/geradores/sistema_b.py`.
+- Referências: 7 imagens novas em `referencias/estetica/`, descritas no `referencias/README.md`.
 - Menu: linha de apresentação na barra de cima; LinkedIn, GitHub e Currículo (aponta para a Carreira) na barra de baixo, no lugar do "2026" (`index.html`, telas Main e MenuCelular no canvas).
 - Menu: animação da bobinadeira presa entre as barras (antes invadia a barra de baixo).
 - Favicon e prévia do link (Open Graph) nas três páginas: `assets/favicon.svg`, `assets/favicon-32.png`, `assets/apple-touch-icon.png`, `assets/og.jpg`.

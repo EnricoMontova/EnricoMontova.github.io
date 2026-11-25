@@ -31,6 +31,7 @@
 - Site em HTML estático: `index.html` (menu), `carreira.html`, `projetos.html`. Ainda não publicado (GitHub Pages desativado).
 - Menu com linha de apresentação e links de LinkedIn, GitHub e Currículo nas barras de terminal. Favicon e prévia do link nas três páginas (a imagem da prévia só aparece depois do passo 4, porque usa o endereço `enricomontova.github.io`).
 - Sem foto no site e sem e-mail (decisões de 25/11/2026).
+- Unificação visual em andamento: direção B ("dia e noite") escolhida em 25/11/2026. Modelos B1 e B2 no canvas (seção "Direção B"), gerados por `design/canvas/geradores/sistema_b.py`. As páginas do site ainda usam os três estilos antigos.
 - Projetos: modelo A escolhido em 25/11/2026. Projetos pessoais primeiro (em desenvolvimento), depois os 4 da faculdade. Sem fotos na página por enquanto (`FOTOS=False` em `design/canvas/geradores/a.py`); fotos guardadas em `assets/projetos/faculdade/`.
 - Telas de design no canvas, com cópias em `design/canvas/`. Geradores Python da página de Projetos em `design/canvas/geradores/` (`a.py` gera a tela; `estatico.py` gera `projetos.html`).
 - Dados pessoais fora do GitHub: `docs/privado/` e as fotos listadas no `.gitignore`.
@@ -39,6 +40,7 @@
 ## Próximos passos
 
 ### Decisões do Enrico
+0. Unificação visual: escolher entre B1 e B2 (ou pedir ajustes) no canvas. Depois disso o Claude aplica o sistema às três páginas.
 1. Currículo, rodada 2 (perguntas no fim de `docs/CURRICULO.md`): documentação técnica no estágio, papel nas demandas, números divulgáveis, fretes, formato final.
 2. Tipo de motor do drone (brushless com ESC ou coreless). Hoje o site diz "Motores e hélices".
 3. Período ou disciplina do carrinho e qual Projeto Integrador II é o de incêndios.

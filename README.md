@@ -26,7 +26,7 @@ design/canvas/        telas do site no formato do canvas do Claude (.dc.html)
   ProjetosCelular.dc.html  prévia de Projetos na largura de celular
   ProjetosB..D.dc.html  modelos não escolhidos, guardados
   canvas.json           posição e nome de cada tela no canvas
-  geradores/            scripts Python que geram os modelos de Projetos
+  geradores/            scripts Python que geram os modelos de Projetos e os modelos da direção B (sistema_b.py)
 assets/               favicon (favicon.svg, favicon-32.png, apple-touch-icon.png) e imagem de prévia do link (og.jpg)
 assets/logos/         logos já tratados na cor do site (grafite, fundo transparente)
 assets/imagens/       imagens produzidas para o site (foto do Enrico em grafite)

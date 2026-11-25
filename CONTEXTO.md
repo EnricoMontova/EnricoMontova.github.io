@@ -56,6 +56,34 @@ Um único site que sirva de currículo, site pessoal e vitrine dos projetos do E
 - Página de Hobbies.
 - Projetos pessoais (ainda vão ser desenvolvidos).
 
+## Google Drive: IDs das pastas
+
+Para atualizar um arquivo no Drive: procurar pelo título dentro da pasta (parentId), enviar a versão nova e mandar a antiga para a lixeira.
+
+| Pasta | ID |
+|---|---|
+| (raiz) portfolio-enrico-montovanelli | 1uD--Xj6kuKmcDx4ax23zRj7zIJmuMdku |
+| assets | 1YQzZXyvl8unub6NR6U2sBpyXeV7GeyIp |
+| assets/imagens | 1n0ImDJ9JLhSMplZPh1qSevpaj9ljvHpH |
+| assets/logos | 1x6lz950bobnO52XbA_yj9WaiaxHj-d_H |
+| assets/projetos | 10eLK1Zomzo9xmQ4EMqj69zX5DA9ZaNIQ |
+| assets/projetos/faculdade | 1acZmgs7itjAS55mNP5DAUGHItUpmjFhh |
+| assets/projetos/faculdade/balanca | 1fkg-KjuNd2x83TenOYQfN9WZa5-FkQ6T |
+| assets/projetos/faculdade/carrinho | 1oAGyyoc186kfUqnKs_pCAVbINAfZklgq |
+| assets/projetos/faculdade/drone | 18XuM3U6D5rg1dzeBClJ6Ecl5FKzNvBO_ |
+| assets/projetos/faculdade/incendio | 1k_oe9zXkhn3ZYcBcgyU5kW6qv-_r-jkI |
+| assets/projetos/pessoais | 1-lV6_XDV2oNwxdma-n4xfBURkbBqfm4p |
+| design | 1N14pfM764JN44x1zJP-7xP2ghI6vciNi |
+| design/canvas | 1gaLGFmY79uQt6ioGn3Jo5-tScsP04BY9 |
+| design/canvas/geradores | 1nG52A-y_pAEVvjorNDEMgUxJnoPB9uBI |
+| docs | 15ZyCKQntXanm5ukP7u43PO3Xlx0fHbko |
+| docs/privado | 1gO-M_80rc3M0L1xT9ZrWNmsWPkzku9Gb |
+| referencias | 13za36F_TIgw9izOv38JcxjaANenDfvl9 |
+| referencias/estetica | 1hbRWwyOyzdM5PY57qXydvpnM19xO-LTb |
+| referencias/logos-originais | 1TUHicIF10qvBedW1f-H8ORQGZKUE8YwF |
+
+As pastas de imagens existem no Drive, mas ficam vazias (decisão de 25/11/2026).
+
 ## Pendências de sincronização
 
 Nenhuma em 25/11/2026 (pasta local, GitHub e Drive atualizados nesta data).

@@ -40,7 +40,7 @@ Um único site que sirva de currículo, site pessoal e vitrine dos projetos do E
 4. GitHub: renomear o repositório para `EnricoMontova.github.io` e ativar o Pages (Settings, Pages, branch `main`, pasta `/ (root)`).
 5. GitHub: apagar o fork `EnricoMontova/anuraghazra` (não tem volta).
 6. LinkedIn: corrigir o ano do ESX (2024 para 2025).
-7. Pasta local: apagar as pastas antigas `assets/projetos/drone`, `carrinho`, `incendio` e `balanca` (o conteúdo já está em `assets/projetos/faculdade/`) e os arquivos `docs/ESTADO.md` e `docs/DECISOES.md` (substituídos por `CONTEXTO.md` e `DECISOES.md` na raiz; o Claude não consegue apagar arquivos na máquina).
+7. Pasta local: mover para a pasta `_apagar` (já criada na raiz, vazia) as pastas antigas `assets/projetos/drone`, `carrinho`, `incendio` e `balanca` (o conteúdo já está em `assets/projetos/faculdade/`) e os arquivos `docs/ESTADO.md` e `docs/DECISOES.md` (substituídos por `CONTEXTO.md` e `DECISOES.md` na raiz); depois apagar a `_apagar`. Nenhum desses itens está no GitHub nem no Drive. O Claude não consegue mover nem apagar arquivos na máquina: tentou pelo controle remoto em 25/11/2026, mas o Explorador só aceita cliques e a área de transferência fica bloqueada.
 8. Pasta local: para ter o histórico do git, clonar o repositório de novo (ou ligar o remoto e fazer pull).
 
 ### Trabalho do Claude

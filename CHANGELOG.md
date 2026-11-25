@@ -4,6 +4,7 @@ Data e descrição de cada mudança. Mais recente primeiro. Detalhe técnico de 
 
 ## 25/11/2026
 
+- Tentativa de mover os itens obsoletos para `_apagar` pelo controle remoto do computador, sem sucesso (Explorador limitado a cliques). Pendência registrada no `CONTEXTO.md`, item 7.
 - Documentação reorganizada conforme as novas instruções do projeto: `CONTEXTO.md` (substitui `docs/ESTADO.md`), `DECISOES.md` (movido de `docs/`) e este `CHANGELOG.md`, todos na raiz.
 - Espelho do projeto criado no Google Drive (pastas e arquivos de texto).
 - Pasta local sincronizada com as mudanças de 25/11.

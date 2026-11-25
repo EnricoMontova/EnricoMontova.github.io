@@ -96,6 +96,8 @@ Detalhes e opções descartadas em `docs/ANALISE_REFERENCIA.md`.
 | Prévia do link (Open Graph) | Imagem 1200×630 no visual do menu (`assets/og.jpg`), mesma imagem nas três páginas; endereço absoluto `https://enricomontova.github.io/assets/og.jpg` | Coerência com o menu | Uma imagem por página |
 | Animação do menu | A bobinadeira fica presa entre as duas barras (canvas na linha 2 da grade) | Corrige a regra "nada da animação passa das barras": a animação invadia a barra de baixo | |
 | Unificação visual | Direção B, "dia e noite": um só sistema (papel com grão e grafite nas páginas claras, Projetos como negativo em preto com grão, barras de terminal em todas as páginas, um único vermelho #D21A16, estrela de quatro pontas, linhas finas com quadradinho, letra de máquina JetBrains Mono). Modelos B1 e B2 no canvas, a escolher | Escolha do Enrico (25/11/2026): as três páginas tinham três "vibes" (xerox, suíço, preto) | A. Papel técnico (tudo claro); C. Sinal (série numerada); D. Arquivo escuro (tudo preto) |
+| Tipografia e tom da unificação | Tipografia da B2 (Antonio condensada em caixa alta, ponto vermelho no fim dos títulos, números de seção grandes com traço) e estética preta, como a página de Projetos. Modelos B3 (as três páginas pretas) e B4 (pretas, com as barras de terminal em papel claro) no canvas, a escolher | Escolha do Enrico (25/11/2026): "prefiro o estilo da B2, e também prefiro a estética mais preta" | B1 (Tektur larga + Marcellus); menu e Carreira em papel claro |
+| Vermelho sobre preto | Texto pequeno vermelho sobre preto usa `#EA3E34` (contraste de pelo menos 4,5:1); formas e o ponto dos títulos continuam `#D21A16` | Legibilidade do texto de 10 a 12 px | `#D21A16` em todo lugar |
 
 Pendentes: ver `CONTEXTO.md`.
 

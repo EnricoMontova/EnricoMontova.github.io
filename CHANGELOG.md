@@ -4,6 +4,7 @@ Data e descrição de cada mudança. Mais recente primeiro. Detalhe técnico de 
 
 ## 25/11/2026
 
+- Canvas: modelos B3 (tipografia da B2, tudo preto) e B4 (tudo preto com barras de papel). Gerador `sistema_b.py` passou a aceitar paletas; vermelho de texto sobre preto ajustado para `#EA3E34` (também nas telas de Projetos da B1 e da B2).
 - Canvas: modelos da direção B ("dia e noite") em duas variantes, B1 (Tektur larga + Marcellus) e B2 (Antonio condensada com ponto vermelho), cada uma com menu, Carreira e Projetos. Gerador em `design/canvas/geradores/sistema_b.py`.
 - Referências: 7 imagens novas em `referencias/estetica/`, descritas no `referencias/README.md`.
 - Menu: linha de apresentação na barra de cima; LinkedIn, GitHub e Currículo (aponta para a Carreira) na barra de baixo, no lugar do "2026" (`index.html`, telas Main e MenuCelular no canvas).

@@ -31,7 +31,7 @@
 - Site em HTML estático: `index.html` (menu), `carreira.html`, `projetos.html`. Ainda não publicado (GitHub Pages desativado).
 - Menu com linha de apresentação e links de LinkedIn, GitHub e Currículo nas barras de terminal. Favicon e prévia do link nas três páginas (a imagem da prévia só aparece depois do passo 4, porque usa o endereço `enricomontova.github.io`).
 - Sem foto no site e sem e-mail (decisões de 25/11/2026).
-- Unificação visual em andamento: direção B escolhida em 25/11/2026, depois refinada para tipografia da B2 (Antonio condensada) com estética preta. Modelos B3 (tudo preto) e B4 (preto com barras de papel) no canvas, seção "Tipografia da B2 com estética preta", gerados por `design/canvas/geradores/sistema_b.py`. As páginas do site ainda usam os três estilos antigos.
+- Unificação visual em andamento: direção B escolhida em 25/11/2026, depois refinada para tipografia da B1 (Tektur larga, estrela, Marcellus) com estética preta. Modelos B3 (tudo preto) e B4 (preto com barras de papel) no canvas, seção "Tipografia da B1 com estética preta", gerados por `design/canvas/geradores/sistema_b.py`. As páginas do site ainda usam os três estilos antigos.
 - Projetos: modelo A escolhido em 25/11/2026. Projetos pessoais primeiro (em desenvolvimento), depois os 4 da faculdade. Sem fotos na página por enquanto (`FOTOS=False` em `design/canvas/geradores/a.py`); fotos guardadas em `assets/projetos/faculdade/`.
 - Telas de design no canvas, com cópias em `design/canvas/`. Geradores Python da página de Projetos em `design/canvas/geradores/` (`a.py` gera a tela; `estatico.py` gera `projetos.html`).
 - Dados pessoais fora do GitHub: `docs/privado/` e as fotos listadas no `.gitignore`.

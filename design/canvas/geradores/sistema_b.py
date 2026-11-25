@@ -299,9 +299,9 @@ def projetos(v, nome, pal=NOITE_P):
 
 
 if __name__ == "__main__":
-    # B3 e B4: tipografia da B2, tudo em preto (escolha de 25/11/2026)
+    # B3 e B4: tipografia da B1, tudo em preto (escolha de 25/11/2026)
     for nome, pal in (("B3", NOITE_P), ("B4", NOITE_BARRA_PAPEL)):
-        v = VARIANTES["B2"]
+        v = VARIANTES["B1"]
         (SAIDA / f"Sistema{nome}Menu.dc.html").write_text(menu(v, nome + "m", pal), encoding="utf-8")
         (SAIDA / f"Sistema{nome}Carreira.dc.html").write_text(carreira(v, nome + "c", pal), encoding="utf-8")
         (SAIDA / f"Sistema{nome}Projetos.dc.html").write_text(projetos(v, nome + "p", pal), encoding="utf-8")

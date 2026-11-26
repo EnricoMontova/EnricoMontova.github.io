@@ -10,6 +10,7 @@ Data e descrição de cada mudança. Mais recente primeiro. Detalhe técnico de 
 - Currículo: textos encurtados para caber em 1 página: tópico L ("Implemento modificações na lógica do processo da LTQ em C/C++, em servidores Tru64 UNIX do Nível 2."), tópico T sem o prefixo "documentação técnica:", resumo da Automação sem "que ligam o controle da planta à gestão da produção", TCC sem "Desenvolvimento de um", descrições dos três projetos, competência Documentação resumida, certificações agrupadas por plataforma e ano, Idiomas como linha das Competências.
 - Currículo: tópico da Gol no passado ("Apoiei as rotinas administrativas do RH, com controle de planilhas."), seguindo o critério de verbo de ação.
 - `DECISOES.md`: decisões de 26/11/2026.
+- Site no ar em https://enricomontova.github.io/ (repositório renomeado para `EnricoMontova.github.io` e Pages ativado pelo Enrico). Conferidos pelo Claude: menu, Carreira com os seis PDFs, `assets/i18n.js` e um PDF em inglês.
 - `.nojekyll` na raiz: o GitHub Pages publica os arquivos como estão, sem processar pelo Jekyll.
 - Site: botão PT/EN nas três páginas (`assets/i18n.js`, incluído antes do `</body>`); `?lang=en` abre direto em inglês. Testado: troca e volta sem diferença no português.
 - Menu: nome da barra de cima não quebra mais de linha (`.barra-topo>span:first-child{white-space:nowrap}`).

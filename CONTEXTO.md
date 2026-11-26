@@ -4,7 +4,8 @@
 
 - Pasta local: `C:\Users\Enrico\OneDrive\Área de Trabalho\portfolio-enrico-montovanelli`
 - Google Drive: https://drive.google.com/drive/folders/1uD--Xj6kuKmcDx4ax23zRj7zIJmuMdku (espelho de pastas e arquivos de texto; imagens ficam na pasta local e no GitHub)
-- GitHub: https://github.com/EnricoMontova/montovanelli-portfolio (público; será renomeado para `EnricoMontova.github.io`)
+- GitHub: https://github.com/EnricoMontova/EnricoMontova.github.io (público; antes `montovanelli-portfolio`, renomeado em 26/11/2026; o endereço antigo redireciona)
+- Site no ar: https://enricomontova.github.io/ (GitHub Pages, branch `main`, pasta raiz; em inglês: https://enricomontova.github.io/?lang=en)
 - Canvas de design (Claude): https://claude.ai/artifact/UUWC6XVBm9Aggep8TgM7YU
 
 Última atualização: 26/11/2026.
@@ -28,9 +29,9 @@
 
 ## Estado atual
 
-- Site em HTML estático: `index.html` (menu), `carreira.html`, `projetos.html`. Ainda não publicado (GitHub Pages desativado).
+- Site em HTML estático: `index.html` (menu), `carreira.html`, `projetos.html`. Publicado no GitHub Pages em 26/11/2026; cada envio para a `main` atualiza o site em 1 a 3 minutos.
 - Site em português e inglês: botão PT/EN nas barras de cima; `assets/i18n.js` guarda as traduções. Link direto em inglês: acrescentar `?lang=en` ao endereço. Texto novo no site precisa de linha nova no `assets/i18n.js`.
-- Menu com linha de apresentação e links de LinkedIn, GitHub e Currículo nas barras de terminal. Favicon e prévia do link nas três páginas (a imagem da prévia só aparece depois do passo 4, porque usa o endereço `enricomontova.github.io`).
+- Menu com linha de apresentação e links de LinkedIn, GitHub e Currículo nas barras de terminal. Favicon e prévia do link nas três páginas.
 - Sem foto no site e sem e-mail (decisões de 25/11/2026).
 - Sistema visual B3 aplicado às três páginas em 25/11/2026 (regras no topo do `DECISOES.md`). Menu sem arte de fundo por enquanto. Versão anterior guardada em `versoes/2026-11-25-tres-estilos/`.
 - `design/canvas/geradores/aplicar_b3.py` gerou as páginas atuais a partir da versão anterior (uso único). Daqui em diante, editar as páginas da raiz direto. O `estatico.py` gera a página de Projetos no estilo antigo e não deve mais ser usado sem adaptar.
@@ -49,16 +50,15 @@
 3. Período ou disciplina do carrinho e qual Projeto Integrador II é o de incêndios.
 
 ### Ações do Enrico
-4. GitHub: renomear o repositório para `EnricoMontova.github.io` e ativar o Pages (Settings, Pages, branch `main`, pasta `/ (root)`).
 5. GitHub: apagar o fork `EnricoMontova/anuraghazra` (não tem volta).
 6. LinkedIn: corrigir o ano do ESX (2024 para 2025).
 7. Pasta local: mover para a pasta `_apagar` (já criada na raiz, vazia) as pastas antigas `assets/projetos/drone`, `carrinho`, `incendio` e `balanca` (o conteúdo já está em `assets/projetos/faculdade/`) e os arquivos `docs/ESTADO.md` e `docs/DECISOES.md` (substituídos por `CONTEXTO.md` e `DECISOES.md` na raiz); depois apagar a `_apagar`. Nenhum desses itens está no GitHub nem no Drive. O Claude não consegue mover nem apagar arquivos na máquina: tentou pelo controle remoto em 25/11/2026, mas o Explorador só aceita cliques e a área de transferência fica bloqueada.
-8. Pasta local: para ter o histórico do git, clonar o repositório de novo (ou ligar o remoto e fazer pull).
+8. Pasta local: para ter o histórico do git, clonar o repositório de novo de https://github.com/EnricoMontova/EnricoMontova.github.io (ou ligar o remoto e fazer pull).
 
 ### Trabalho do Claude
-9. README do perfil do GitHub no visual do site, em português e inglês. Fica no repositório `EnricoMontova/EnricoMontova`, que já existe; só o link para o site depende do passo 4.
+9. README do perfil do GitHub no visual do site, em português e inglês. Fica no repositório `EnricoMontova/EnricoMontova`, que já existe.
 10. Revisar os textos do site com base no currículo: a página Carreira ainda tem o texto antigo da GOL e a caixa "Ferramentas" ainda lista "Linguagens" e Windows 11 (o currículo mudou isso em 26/11/2026). Na máquina, o Enrico gera a versão com contato: `python curriculo/gerar.py --email ... --telefone ...` (saída em `docs/privado/curriculo/`).
-11. Depois do passo 4: conferir a prévia do link (LinkedIn, WhatsApp) com o site no ar.
+11. Enrico: colar https://enricomontova.github.io/ numa conversa do WhatsApp ou num post do LinkedIn (sem publicar) e conferir se a prévia mostra a imagem preta com o nome. O Claude não consegue testar a prévia daqui.
 
 ### Conteúdo faltando
 - Links de verificação dos certificados.

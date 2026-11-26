@@ -29,6 +29,7 @@
 ## Estado atual
 
 - Site em HTML estático: `index.html` (menu), `carreira.html`, `projetos.html`. Ainda não publicado (GitHub Pages desativado).
+- Site em português e inglês: botão PT/EN nas barras de cima; `assets/i18n.js` guarda as traduções. Link direto em inglês: acrescentar `?lang=en` ao endereço. Texto novo no site precisa de linha nova no `assets/i18n.js`.
 - Menu com linha de apresentação e links de LinkedIn, GitHub e Currículo nas barras de terminal. Favicon e prévia do link nas três páginas (a imagem da prévia só aparece depois do passo 4, porque usa o endereço `enricomontova.github.io`).
 - Sem foto no site e sem e-mail (decisões de 25/11/2026).
 - Sistema visual B3 aplicado às três páginas em 25/11/2026 (regras no topo do `DECISOES.md`). Menu sem arte de fundo por enquanto. Versão anterior guardada em `versoes/2026-11-25-tres-estilos/`.
@@ -56,7 +57,7 @@
 
 ### Trabalho do Claude
 9. README do perfil do GitHub no visual do site, em português e inglês. Fica no repositório `EnricoMontova/EnricoMontova`, que já existe; só o link para o site depende do passo 4.
-10. Site em inglês (pedido do Enrico em 26/11/2026), com base no currículo em inglês. Na máquina, o Enrico gera a versão com contato: `python curriculo/gerar.py --email ... --telefone ...` (saída em `docs/privado/curriculo/`).
+10. Revisar os textos do site com base no currículo: a página Carreira ainda tem o texto antigo da GOL e a caixa "Ferramentas" ainda lista "Linguagens" e Windows 11 (o currículo mudou isso em 26/11/2026). Na máquina, o Enrico gera a versão com contato: `python curriculo/gerar.py --email ... --telefone ...` (saída em `docs/privado/curriculo/`).
 11. Depois do passo 4: conferir a prévia do link (LinkedIn, WhatsApp) com o site no ar.
 
 ### Conteúdo faltando
@@ -97,7 +98,7 @@ As pastas de imagens existem no Drive, mas ficam vazias (decisão de 25/11/2026)
 
 ## Pendências de sincronização
 
-De 26/11/2026 (sessão sem a máquina): copiar do GitHub para a pasta local `CONTEXTO.md`, `DECISOES.md`, `CHANGELOG.md`, `docs/CURRICULO.md`, `index.html`, `carreira.html`, `projetos.html` e as pastas novas `curriculo/` e `assets/curriculo/`.
+De 26/11/2026 (sessão sem a máquina): copiar do GitHub para a pasta local `CONTEXTO.md`, `DECISOES.md`, `CHANGELOG.md`, `docs/CURRICULO.md`, `index.html`, `carreira.html`, `projetos.html`, `assets/i18n.js` e as pastas novas `curriculo/` e `assets/curriculo/`.
 
 De 25/11/2026:
 

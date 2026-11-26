@@ -12,6 +12,7 @@ Data e descrição de cada mudança. Mais recente primeiro. Detalhe técnico de 
 - `DECISOES.md`: decisões de 26/11/2026.
 - README do perfil: painel de tecnologias (`tecnologias.svg`) e painel de atividade diário (GitHub Actions); primeira execução do robô em 26/11/2026 concluída com sucesso. Ícones em `design/readme-github/icones/` (licenças em `LICENCAS.md`).
 - Commits passam a sair no nome do Enrico, com Claude como coautor.
+- README do perfil publicado (ramo `readme-novo` levado ao `main` do repositório `EnricoMontova/EnricoMontova`); painel de atividade regerado no `main` pelo GitHub Actions.
 - README do perfil: versão nova no ramo `readme-novo` do repositório `EnricoMontova/EnricoMontova`, aguardando aprovação; imagens geradas por `design/readme-github/gerar.py`.
 - Menu: link "Hobbies" retirado (`index.html`).
 - Site no ar em https://enricomontova.github.io/ (repositório renomeado para `EnricoMontova.github.io` e Pages ativado pelo Enrico). Conferidos pelo Claude: menu, Carreira com os seis PDFs, `assets/i18n.js` e um PDF em inglês.

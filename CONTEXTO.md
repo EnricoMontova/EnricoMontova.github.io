@@ -81,6 +81,7 @@ Para atualizar um arquivo no Drive: procurar pelo título dentro da pasta (paren
 | assets/projetos/faculdade/drone | 18XuM3U6D5rg1dzeBClJ6Ecl5FKzNvBO_ |
 | assets/projetos/faculdade/incendio | 1k_oe9zXkhn3ZYcBcgyU5kW6qv-_r-jkI |
 | assets/projetos/pessoais | 1-lV6_XDV2oNwxdma-n4xfBURkbBqfm4p |
+| curriculo | 1lGUfHG-ZjdMNIz10a8164xX5Q8TqWEdb |
 | design | 1N14pfM764JN44x1zJP-7xP2ghI6vciNi |
 | design/canvas | 1gaLGFmY79uQt6ioGn3Jo5-tScsP04BY9 |
 | design/canvas/geradores | 1nG52A-y_pAEVvjorNDEMgUxJnoPB9uBI |
@@ -92,7 +93,7 @@ Para atualizar um arquivo no Drive: procurar pelo título dentro da pasta (paren
 | versoes | 1irC7xHIUCHJTi4uaelKd9Sy6JuwGcUZH |
 | versoes/2026-11-25-tres-estilos | 11w4R0Oq4q_fkobu8VTfLOAE3_aImsHc4 |
 
-As pastas de imagens existem no Drive, mas ficam vazias (decisão de 25/11/2026).
+As pastas de imagens existem no Drive, mas ficam vazias (decisão de 25/11/2026). Na pasta `curriculo` do Drive fica só o `gerar.py`; fontes, HTML gerado e PDFs ficam no GitHub.
 
 ## Pendências de sincronização
 

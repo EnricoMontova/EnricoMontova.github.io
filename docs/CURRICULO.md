@@ -113,6 +113,10 @@ Estudante de Engenharia da Computação (9º período, FAESA) e estagiário na a
 
 **Certificações:** Udemy (Java, Algoritmos) e DataCamp Intermediate SQL, Introduction to Databricks e Introduction to Shell (26/11/2026).
 
+## Competências (26/11/2026)
+
+As listas de cada versão acima são o rascunho original. A versão final troca "Linguagens", "Ferramentas" e "Dados" por "Tecnologias do estágio" e "Estudos e projetos" (escolha do Enrico, opção 2); o texto exato está em `curriculo/gerar.py`.
+
 ## Rodada 2 (respondida em 26/11/2026)
 
 1. Documentação técnica (tópico T) no estágio? Resposta: "Sim, faço os documentos". Tópico mantido.

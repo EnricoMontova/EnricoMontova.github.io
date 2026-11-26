@@ -34,6 +34,7 @@ Tópicos disponíveis (cada versão usa a sua ordem):
 - (C) Participo do desenvolvimento das novas telas de operação em C# com Visual Studio 2022.
 - (D) Desenvolvo dashboards e análises de BI com dados do processo, em SQL e Databricks, para auditoria e pesquisa.
 - (R) Implemento as demandas da rotina de automação da LTQ e acompanho sua implantação em produção.
+- (M) Mantenho e monitoro o envio de dados do processo ao data lake, em Java e SQL. (26/11/2026)
 - (T) Elaboro documentação técnica: especificações funcionais e técnicas, cadernos de teste e planos de implantação e contingência.
 
 **Gol Linhas Aéreas** · Jovem Aprendiz, Recursos Humanos · jul. 2024 a set. 2025
@@ -116,6 +117,14 @@ Estudante de Engenharia da Computação (9º período, FAESA) e estagiário na a
 ## Competências (26/11/2026)
 
 As listas de cada versão acima são o rascunho original. A versão final troca "Linguagens", "Ferramentas" e "Dados" por "Tecnologias do estágio" e "Estudos e projetos" (escolha do Enrico, opção 2); o texto exato está em `curriculo/gerar.py`.
+
+## Ambiente do estágio (informado pelo Enrico em 26/11/2026)
+
+- VB6: programação numa estação remota com Windows XP.
+- C# e Visual Studio 2022 (telas novas): Windows 10.
+- Sistema CDP: envio de dados ao data lake, em Java e SQL, em Windows 10. Papel do Enrico: "Mantenho e monitoro".
+- Windows 11: não citado no estágio; saiu do currículo.
+- Ordem dos tópicos com o novo tópico M: Dados D, M, L, C, V, T; Software L, C, V, M, D, T; Automação R, L, V, C, M, D, T.
 
 ## Rodada 2 (respondida em 26/11/2026)
 

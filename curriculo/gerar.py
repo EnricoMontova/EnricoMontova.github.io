@@ -37,6 +37,7 @@ TOPICOS = {
     "V": "Mantenho e atualizo as telas de operação da laminação desenvolvidas em VB6.",
     "C": "Participo do desenvolvimento das novas telas de operação em C# com Visual Studio 2022.",
     "D": "Desenvolvo dashboards e análises de BI com dados do processo, em SQL e Databricks, para auditoria e pesquisa.",
+    "M": "Mantenho e monitoro o envio de dados do processo ao data lake, em Java e SQL.",
     "R": "Implemento as demandas da rotina de automação da LTQ e acompanho sua implantação em produção.",
     "T": "Elaboro especificações funcionais e técnicas, cadernos de teste e planos de implantação e contingência.",
 }
@@ -85,10 +86,10 @@ VERSOES = {
     "dados": {
         "rotulo": "Dados",
         "resumo": "Estudante de Engenharia da Computação (9º período, FAESA) e estagiário na automação da Laminação de Tiras a Quente da ArcelorMittal Tubarão, onde desenvolvo dashboards e análises com dados do processo em SQL e Databricks. Complemento a formação com a trilha de Engenharia de Dados da DataCamp e busco a efetivação na área de dados.",
-        "ordem": "DLCVT",
+        "ordem": "DMLCVT",
         "competencias": [
-            ("Tecnologias do estágio", "SQL e Databricks (dashboards e BI), C/C++ em Tru64 UNIX, C#, VB6"),
-            ("Estudos e projetos", "Java, Arduino, trilha de Engenharia de Dados (DataCamp)"),
+            ("Tecnologias do estágio", "SQL e Databricks (dashboards e BI), Java e SQL (envio de dados ao data lake), C/C++ em Tru64 UNIX, C# em Windows 10, VB6 em Windows XP (estação remota)"),
+            ("Estudos e projetos", "Arduino, trilha de Engenharia de Dados (DataCamp)"),
             ("Documentação", "especificações, cadernos de teste, planos de implantação e contingência"),
         ],
         "projetos": ["incendio"],
@@ -97,10 +98,10 @@ VERSOES = {
     "software": {
         "rotulo": "Desenvolvimento de Software",
         "resumo": "Estudante de Engenharia da Computação (9º período, FAESA) e estagiário de engenharia de software na ArcelorMittal Tubarão. Desenvolvo e mantenho software de sistemas industriais de Nível 2 em C/C++ sobre Tru64 UNIX, telas de operação em VB6 e as novas telas em C#. Busco a efetivação como desenvolvedor.",
-        "ordem": "LCVDT",
+        "ordem": "LCVMDT",
         "competencias": [
-            ("Tecnologias do estágio", "C/C++ em Tru64 UNIX, C# (Visual Studio 2022), VB6, SQL, Databricks"),
-            ("Estudos e projetos", "Java, Arduino, ESP32"),
+            ("Tecnologias do estágio", "C/C++ em Tru64 UNIX, C# (Visual Studio 2022, Windows 10), VB6 em Windows XP (estação remota), Java e SQL (envio de dados ao data lake), Databricks"),
+            ("Estudos e projetos", "Arduino, ESP32"),
             ("Documentação", "especificações, cadernos de teste, planos de implantação e contingência"),
         ],
         "projetos": ["drone", "incendio"],
@@ -109,10 +110,10 @@ VERSOES = {
     "automacao": {
         "rotulo": "Automação Industrial",
         "resumo": "Estudante de Engenharia da Computação (9º período, FAESA) e estagiário na automação da Laminação de Tiras a Quente da ArcelorMittal Tubarão, na lógica de processo e nas telas de operação dos sistemas de Nível 2. Experiência acadêmica com microcontroladores, IoT e controle PID. Busco a efetivação na automação.",
-        "ordem": "RLVCDT",
+        "ordem": "RLVCMDT",
         "competencias": [
             ("Automação", "sistemas de Nível 2, integração com Níveis 1 e 3"),
-            ("Tecnologias do estágio", "C/C++ em Tru64 UNIX, VB6, C#, SQL, Databricks, Windows XP, 10 e 11"),
+            ("Tecnologias do estágio", "C/C++ em Tru64 UNIX, VB6 em Windows XP (estação remota), C# em Windows 10, Java e SQL (envio de dados ao data lake), Databricks"),
             ("Estudos e projetos", "Arduino, ESP32, sensores, controle PID"),
             # Dados e Documentacao sairam em 26/11/2026: repetiam a experiencia e nao cabiam em 1 pagina.
         ],

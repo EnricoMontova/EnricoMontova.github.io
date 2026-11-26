@@ -10,6 +10,8 @@ Data e descrição de cada mudança. Mais recente primeiro. Detalhe técnico de 
 - Currículo: textos encurtados para caber em 1 página: tópico L ("Implemento modificações na lógica do processo da LTQ em C/C++, em servidores Tru64 UNIX do Nível 2."), tópico T sem o prefixo "documentação técnica:", resumo da Automação sem "que ligam o controle da planta à gestão da produção", TCC sem "Desenvolvimento de um", descrições dos três projetos, competência Documentação resumida, certificações agrupadas por plataforma e ano, Idiomas como linha das Competências.
 - Currículo: tópico da Gol no passado ("Apoiei as rotinas administrativas do RH, com controle de planilhas."), seguindo o critério de verbo de ação.
 - `DECISOES.md`: decisões de 26/11/2026.
+- README do perfil: painel de tecnologias (`tecnologias.svg`) e painel de atividade diário (GitHub Actions); primeira execução do robô em 26/11/2026 concluída com sucesso. Ícones em `design/readme-github/icones/` (licenças em `LICENCAS.md`).
+- Commits passam a sair no nome do Enrico, com Claude como coautor.
 - README do perfil: versão nova no ramo `readme-novo` do repositório `EnricoMontova/EnricoMontova`, aguardando aprovação; imagens geradas por `design/readme-github/gerar.py`.
 - Menu: link "Hobbies" retirado (`index.html`).
 - Site no ar em https://enricomontova.github.io/ (repositório renomeado para `EnricoMontova.github.io` e Pages ativado pelo Enrico). Conferidos pelo Claude: menu, Carreira com os seis PDFs, `assets/i18n.js` e um PDF em inglês.

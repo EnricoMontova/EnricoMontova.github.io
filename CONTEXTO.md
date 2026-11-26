@@ -7,7 +7,7 @@
 - GitHub: https://github.com/EnricoMontova/montovanelli-portfolio (público; será renomeado para `EnricoMontova.github.io`)
 - Canvas de design (Claude): https://claude.ai/artifact/UUWC6XVBm9Aggep8TgM7YU
 
-Última atualização: 25/11/2026.
+Última atualização: 26/11/2026.
 
 ## Objetivo
 
@@ -35,6 +35,7 @@
 - `design/canvas/geradores/aplicar_b3.py` gerou as páginas atuais a partir da versão anterior (uso único). Daqui em diante, editar as páginas da raiz direto. O `estatico.py` gera a página de Projetos no estilo antigo e não deve mais ser usado sem adaptar.
 - Projetos: modelo A escolhido em 25/11/2026. Projetos pessoais primeiro (em desenvolvimento), depois os 4 da faculdade. Sem fotos na página por enquanto (`FOTOS=False` em `design/canvas/geradores/a.py`); fotos guardadas em `assets/projetos/faculdade/`.
 - Telas de design no canvas, com cópias em `design/canvas/`. Geradores Python da página de Projetos em `design/canvas/geradores/` (`a.py` gera a tela; `estatico.py` gera `projetos.html`).
+- Currículo (26/11/2026): rodada 2 respondida; três PDFs em português de 1 página em `assets/curriculo/`, gerados por `curriculo/gerar.py`, aguardando revisão do Enrico. Ainda sem link na página Carreira.
 - Dados pessoais fora do GitHub: `docs/privado/` e as fotos listadas no `.gitignore`.
 - O `.git` da pasta local não tem remoto e está atrás do GitHub. Os arquivos da pasta são sincronizados pelo Claude, mas o histórico local não.
 
@@ -42,7 +43,7 @@
 
 ### Decisões do Enrico
 0. Arte de fundo nova para o menu (a bobinadeira saiu em 25/11/2026).
-1. Currículo, rodada 2 (perguntas no fim de `docs/CURRICULO.md`): documentação técnica no estágio, papel nas demandas, números divulgáveis, fretes, formato final.
+1. Currículo: revisar os três PDFs em `assets/curriculo/` (Dados, Software, Automação) e aprovar ou pedir ajustes.
 2. Tipo de motor do drone (brushless com ESC ou coreless). Hoje o site diz "Motores e hélices".
 3. Período ou disciplina do carrinho e qual Projeto Integrador II é o de incêndios.
 
@@ -55,7 +56,7 @@
 
 ### Trabalho do Claude
 9. README do perfil do GitHub no visual do site, em português e inglês. Fica no repositório `EnricoMontova/EnricoMontova`, que já existe; só o link para o site depende do passo 4.
-10. Currículo: questionário (rodada 2), texto final e versão em inglês. O conteúdo entra na página Carreira (o link "Currículo" do menu já aponta para lá).
+10. Currículo, depois da aprovação: link de download dos PDFs na página Carreira (o link "Currículo" do menu já aponta para lá) e versão em inglês. Na máquina, o Enrico gera a versão com contato: `python curriculo/gerar.py --email ... --telefone ...` (saída em `docs/privado/curriculo/`).
 11. Depois do passo 4: conferir a prévia do link (LinkedIn, WhatsApp) com o site no ar.
 
 ### Conteúdo faltando
@@ -94,5 +95,9 @@ Para atualizar um arquivo no Drive: procurar pelo título dentro da pasta (paren
 As pastas de imagens existem no Drive, mas ficam vazias (decisão de 25/11/2026).
 
 ## Pendências de sincronização
+
+De 26/11/2026 (sessão sem a máquina): copiar do GitHub para a pasta local `CONTEXTO.md`, `DECISOES.md`, `CHANGELOG.md`, `docs/CURRICULO.md` e as pastas novas `curriculo/` e `assets/curriculo/`.
+
+De 25/11/2026:
 
 Pasta local atrás do GitHub e do Drive desde 25/11/2026 (o notebook saiu do ar durante a sessão). Copiar do GitHub para a pasta local: `CONTEXTO.md`, `DECISOES.md`, `CHANGELOG.md`, `README.md`, `referencias/README.md`, `design/canvas/canvas.json`, `design/canvas/geradores/sistema_b.py` os doze `design/canvas/SistemaB*.dc.html` (B1 a B4), `design/canvas/geradores/aplicar_b3.py`, `index.html`, `carreira.html`, `projetos.html`, `assets/favicon.svg`, `assets/favicon-32.png`, `assets/apple-touch-icon.png`, `assets/og.jpg` e a pasta `versoes/2026-11-25-tres-estilos/` inteira. As 7 referências novas já estão na pasta local (foi de lá que vieram).

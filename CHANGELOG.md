@@ -2,6 +2,15 @@
 
 Data e descrição de cada mudança. Mais recente primeiro. Detalhe técnico de cada item: `git log`.
 
+## 26/11/2026
+
+- Sessão feita só pelo GitHub (sem a máquina do Enrico).
+- Currículo, rodada 2 respondida (`docs/CURRICULO.md`): tópico T confirmado; tópico R reescrito ("Implemento as demandas da rotina de automação da LTQ e acompanho sua implantação em produção."); sem números; Mudanças e Fretes fora; formato PDF + link no site; contato em duas versões; certificações da versão Automação definidas.
+- Currículo: gerador `curriculo/gerar.py` (HTML + PDF pelo Chrome ou Edge), fontes do site embutidas em `curriculo/fontes/` (licença OFL), HTML em `curriculo/html/`, PDFs públicos em `assets/curriculo/` (Dados, Software, Automação), cada um com 1 página.
+- Currículo: textos encurtados para caber em 1 página: tópico L ("Implemento modificações na lógica do processo da LTQ em C/C++, em servidores Tru64 UNIX do Nível 2."), tópico T sem o prefixo "documentação técnica:", resumo da Automação sem "que ligam o controle da planta à gestão da produção", TCC sem "Desenvolvimento de um", descrições dos três projetos, competência Documentação resumida, certificações agrupadas por plataforma e ano, Idiomas como linha das Competências.
+- Currículo: tópico da Gol no passado ("Apoiei as rotinas administrativas do RH, com controle de planilhas."), seguindo o critério de verbo de ação.
+- `DECISOES.md`: decisões de 26/11/2026.
+
 ## 25/11/2026
 
 - Canvas: passa a abrir no menu da B3 (antes abria o menu antigo); telas da B3 ligadas entre si (menu, Carreira, Projetos, "< /menu", Currículo).

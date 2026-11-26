@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Enrico Montovanelli · Currículo · Dados</title>
+<meta name="author" content="Enrico Montovanelli">
+<style>
+@font-face{font-family:'Tektur';src:url('../fontes/tektur-latin-standard-normal.woff2') format('woff2');font-weight:400 900;font-stretch:75% 100%}
+@font-face{font-family:'Marcellus';src:url('../fontes/marcellus-latin-400-normal.woff2') format('woff2')}
+@font-face{font-family:'JetBrains Mono';src:url('../fontes/jetbrains-mono-latin-400-normal.woff2') format('woff2');font-weight:400}
+@font-face{font-family:'JetBrains Mono';src:url('../fontes/jetbrains-mono-latin-500-normal.woff2') format('woff2');font-weight:500}
+@font-face{font-family:'Inter Tight';src:url('../fontes/inter-tight-latin-400-normal.woff2') format('woff2');font-weight:400}
+@font-face{font-family:'Inter Tight';src:url('../fontes/inter-tight-latin-500-normal.woff2') format('woff2');font-weight:500}
+@font-face{font-family:'Inter Tight';src:url('../fontes/inter-tight-latin-600-normal.woff2') format('woff2');font-weight:600}
+@font-face{font-family:'Inter Tight';src:url('../fontes/inter-tight-latin-700-normal.woff2') format('woff2');font-weight:700}
+@page{size:A4;margin:15mm 16mm 14mm}
+*{box-sizing:border-box}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{margin:0;color:#161617;font-family:'Inter Tight',Arial,sans-serif;font-size:10pt;line-height:1.36}
+a{color:inherit;text-decoration:none}
+.mono{font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.08em}
+header{margin-bottom:2mm}
+.topo{display:flex;justify-content:space-between;font-size:7.2pt;color:#555;margin-bottom:3mm}
+.nome{position:relative;display:inline-block;padding-right:16pt}
+h1{margin:0;font-family:'Tektur',sans-serif;font-weight:500;font-stretch:100%;font-size:25pt;line-height:1;text-transform:uppercase;letter-spacing:.01em}
+.estrela{position:absolute;right:0;top:-5pt;width:12pt;height:12pt;fill:#161617}
+.regua{position:relative;height:0;border-top:1.2pt solid #161617;margin:3.2mm 0 2.4mm}
+.regua::before{content:"";position:absolute;left:0;top:-4.1pt;width:7pt;height:7pt;background:#161617}
+.contato{font-size:7.8pt;color:#161617}
+.contato span+span::before{content:"·";margin:0 6pt;color:#888}
+section{margin-top:3.6mm}
+.item{break-inside:avoid}
+h2{break-after:avoid}
+h2{display:flex;align-items:center;gap:6pt;margin:0 0 2mm;font-family:'JetBrains Mono',monospace;font-weight:500;font-size:7.8pt;letter-spacing:.14em;text-transform:uppercase}
+h2::before{content:"";width:5pt;height:5pt;background:#D21A16;flex:none}
+h2::after{content:"";flex:1;border-top:.6pt solid #161617;margin-left:4pt}
+p{margin:0}
+.resumo{line-height:1.42}
+.item{margin-bottom:2.4mm}
+.item:last-child{margin-bottom:0}
+.linha{display:flex;justify-content:space-between;align-items:baseline;gap:10pt}
+h3{margin:0;font-family:'Marcellus',Georgia,serif;font-weight:400;font-size:10.2pt;letter-spacing:.06em;text-transform:uppercase}
+.data{font-family:'JetBrains Mono',monospace;font-size:7.4pt;text-transform:uppercase;letter-spacing:.06em;white-space:nowrap;color:#333}
+.sub{font-weight:600;margin-top:.6mm}
+.nota{color:#444;font-size:9pt;font-weight:400}
+ul{margin:1.2mm 0 0;padding-left:11pt}
+li{margin:.6mm 0}
+li::marker{color:#D21A16}
+.comp p{margin:.5mm 0}
+.comp b{font-weight:600}
+.cert p{margin:.8mm 0}
+</style>
+</head>
+<body>
+<header>
+<div class="topo mono"><span>Currículo · Dados</span><span>enrico.montovanelli</span></div>
+<div class="nome"><h1>Enrico Montovanelli</h1><svg class="estrela" aria-hidden="true" viewBox="0 0 40 40"><path d="M20 0 L22 18 L40 20 L22 22 L20 40 L18 22 L0 20 L18 18 Z"/></svg></div>
+<div class="regua"></div>
+<p class="contato"><span>Vitória, ES</span><span><a href="https://www.linkedin.com/in/enricomontovanelli/">linkedin.com/in/enricomontovanelli</a></span><span><a href="https://github.com/EnricoMontova">github.com/EnricoMontova</a></span><span><a href="https://enricomontova.github.io">enricomontova.github.io</a></span></p>
+</header>
+
+<section>
+<h2>Resumo</h2>
+<p class="resumo">Estudante de Engenharia da Computação (9º período, FAESA) e estagiário na automação da Laminação de Tiras a Quente da ArcelorMittal Tubarão, onde desenvolvo dashboards e análises com dados do processo em SQL e Databricks. Complemento a formação com a trilha de Engenharia de Dados da DataCamp e busco a efetivação na área de dados.</p>
+</section>
+
+<section>
+<h2>Experiência</h2>
+<div class="item">
+<div class="linha"><h3>ArcelorMittal Tubarão</h3><span class="data">fev. 2026 até o momento</span></div>
+<p class="sub">Estagiário de Engenharia de Software <span class="nota">· Automação da Laminação de Tiras a Quente (LTQ), sistemas de Nível 2</span></p>
+<ul><li>Desenvolvo dashboards e análises de BI com dados do processo, em SQL e Databricks, para auditoria e pesquisa.</li><li>Implemento modificações na lógica do processo da LTQ em C/C++, em servidores Tru64 UNIX do Nível 2.</li><li>Participo do desenvolvimento das novas telas de operação em C# com Visual Studio 2022.</li><li>Mantenho e atualizo as telas de operação da laminação desenvolvidas em VB6.</li><li>Elaboro especificações funcionais e técnicas, cadernos de teste e planos de implantação e contingência.</li></ul>
+</div>
+<div class="item">
+<div class="linha"><h3>Gol Linhas Aéreas</h3><span class="data">jul. 2024 a set. 2025</span></div>
+<p class="sub">Jovem Aprendiz, Recursos Humanos</p>
+<ul><li>Apoiei as rotinas administrativas do RH, com controle de planilhas.</li></ul>
+</div>
+</section>
+
+<section>
+<h2>Formação</h2>
+<div class="item">
+<div class="linha"><h3>FAESA</h3><span class="data">9º período · conclusão prevista para ago. 2027</span></div>
+<p class="sub">Bacharelado em Engenharia da Computação</p>
+<p class="nota">TCC: sistema digital para rastreabilidade e gestão de análises de risco no ponto de trabalho em plantas siderúrgicas.</p>
+</div>
+</section>
+
+<section class="comp">
+<h2>Competências</h2>
+<p><b>Dados:</b> SQL, Databricks, dashboards e BI</p><p><b>Linguagens:</b> C, C++, C#, Java, VB6</p><p><b>Sistemas:</b> Unix Tru64, Windows</p><p><b>Documentação:</b> especificações, cadernos de teste, planos de implantação e contingência</p><p><b>Idiomas:</b> português nativo, inglês fluente</p>
+</section>
+
+<section>
+<h2>Projetos acadêmicos</h2>
+<div class="item"><div class="linha"><h3>Detecção de Incêndios IoT</h3><span class="data">FAESA, Projeto Integrador II</span></div><p>Monitoramento IoT de temperatura e gases em indústrias e recicladoras, com MQ-135, MLX90614, Arduino e C/C++.</p></div>
+</section>
+
+<section class="cert">
+<h2>Certificações</h2>
+<p>DataCamp (2026): Intermediate SQL, Introduction to Databricks, Introduction to Shell, Introduction to SQL, Understanding Cloud Computing, Understanding Data Engineering.</p><p>Udemy (2025): Java COMPLETO: Programação Orientada a Objetos + Projetos (54,5 h); Algoritmos e Lógica de Programação (30,5 h).</p>
+</section>
+
+</body>
+</html>

@@ -117,6 +117,20 @@ Detalhes e opções descartadas em `docs/ANALISE_REFERENCIA.md`.
 | Fundo do menu | Sem bobinadeira e sem cubinhos: fundo preto liso com grão. Uma arte de fundo nova será pensada depois | Proposta do Enrico (25/11/2026): "deixar simplista, mais tarde pensamos em algo" | Manter a bobinadeira em linhas claras |
 | Favicon e prévia do link | Refeitos no preto: estrela clara em quadrado preto; imagem de prévia com fundo preto e grão | Coerência com o sistema B3 | Manter a versão em papel |
 
+## Decisões de 26/11/2026 (currículo, rodada 2)
+
+| Tema | Escolhido | Motivo | Descartado |
+|---|---|---|---|
+| Documentação técnica (tópico T) | Entra na experiência da ArcelorMittal como "Elaboro" | Resposta do Enrico: "Sim, faço os documentos" | "Contribuo com"; só nas competências |
+| Rotina de demandas (tópico R) | "Implemento as demandas da rotina de automação da LTQ e acompanho sua implantação em produção." | Resposta do Enrico: "Implemento e implanto" (recebe a demanda definida) | "Do levantamento do problema à implantação"; tirar o tópico |
+| Números no currículo | Nenhum; tópicos só qualitativos | Resposta do Enrico: "Sem números divulgáveis" | Quantidades; áreas atendidas |
+| Mudanças e Fretes | Fora do currículo; continua na página Carreira | Escolha do Enrico (Recomendado): currículo focado em 1 página | Uma linha em todas as versões; só na versão Automação |
+| Formato final | PDF por versão em `assets/curriculo/`, gerado de HTML por `curriculo/gerar.py`, com link na página Carreira | Escolha do Enrico (Recomendado): versionado no GitHub e um clique para baixar | Doc editável no Claude; só PDF fora do site |
+| Contato no PDF | Duas versões: pública (cidade, LinkedIn, GitHub, site) no repositório; com e-mail e telefone gerada na máquina, em `docs/privado/curriculo/` (fora do Git) | Escolha do Enrico (Recomendado): mantém a decisão de 25/11 "Contato no site" | E-mail no PDF público; e-mail e telefone no PDF público |
+| Certificações da versão Automação | Udemy (Java, Algoritmos) e DataCamp Intermediate SQL, Introduction to Databricks e Introduction to Shell | Escolha do Enrico (Recomendado): cabe em 1 página e mantém o que o estágio usa | Só Udemy; todas em 2 páginas |
+| Visual do PDF | Papel branco, uma coluna, texto selecionável; identidade B3 nos detalhes: nome em Tektur com a estrela, rótulos em JetBrains Mono com quadradinho vermelho `#D21A16`, nomes em Marcellus, texto em Inter Tight 10 pt; fontes embutidas de `curriculo/fontes/` | Leitura por ATS e impressão; mesma assinatura visual do site | Fundo preto (gasta tinta e atrapalha ATS); duas colunas |
+| Encaixe em 1 página | Cortar palavras em vez de reduzir a fonte (detalhes no `CHANGELOG.md`) | Critério "Uma página por versão" | Fonte menor; margens menores |
+
 Pendentes: ver `CONTEXTO.md`.
 
 ## Como pedir mudanças

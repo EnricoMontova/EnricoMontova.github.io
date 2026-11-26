@@ -1,8 +1,10 @@
-# Currículo (rascunho em construção)
+# Currículo
 
-Iniciado em 22/11/2026. Montado por perguntas e respostas. Base: `docs/CONTEUDO.md` e as respostas do Enrico em 22/11/2026.
+Iniciado em 22/11/2026. Montado por perguntas e respostas. Base: `docs/CONTEUDO.md` e as respostas do Enrico em 22/11/2026 (rodada 1) e 26/11/2026 (rodada 2).
 
-Telefone e e-mail ficam em `docs/privado/CONTATO.md`, que não vai para o GitHub (o repositório é público).
+Texto final em português (26/11/2026, aguardando aprovação do Enrico): está em `curriculo/gerar.py`, que gera `curriculo/html/` e os PDFs em `assets/curriculo/`. Este arquivo guarda os critérios, a base e o histórico das perguntas; o texto encurtado para caber em 1 página está só no gerador.
+
+Telefone e e-mail ficam em `docs/privado/CONTATO.md`, que não vai para o GitHub (o repositório é público). O PDF público sai sem os dois; a versão com contato é gerada na máquina com `python curriculo/gerar.py --email ... --telefone ...` e fica em `docs/privado/curriculo/`.
 
 ## Critérios usados
 
@@ -19,7 +21,7 @@ Telefone e e-mail ficam em `docs/privado/CONTATO.md`, que não vai para o GitHub
 ### Cabeçalho
 
 Enrico Montovanelli
-Vitória, ES · [e-mail] · [telefone] · linkedin.com/in/enricomontovanelli · github.com/EnricoMontova · enricomontova.github.io
+Vitória, ES · [e-mail e telefone só na versão privada] · linkedin.com/in/enricomontovanelli · github.com/EnricoMontova · enricomontova.github.io
 
 ### Experiência
 
@@ -31,8 +33,8 @@ Tópicos disponíveis (cada versão usa a sua ordem):
 - (V) Mantenho e atualizo as telas de operação da laminação desenvolvidas em VB6.
 - (C) Participo do desenvolvimento das novas telas de operação em C# com Visual Studio 2022.
 - (D) Desenvolvo dashboards e análises de BI com dados do processo, em SQL e Databricks, para auditoria e pesquisa.
-- (R) Atendo a rotina de demandas da automação da LTQ, do levantamento do problema à implantação da correção. [CONFIRMAR]
-- (T) Elaboro documentação técnica: especificações funcionais e técnicas, cadernos de teste e planos de implantação e contingência. [CONFIRMAR]
+- (R) Implemento as demandas da rotina de automação da LTQ e acompanho sua implantação em produção.
+- (T) Elaboro documentação técnica: especificações funcionais e técnicas, cadernos de teste e planos de implantação e contingência.
 
 **Gol Linhas Aéreas** · Jovem Aprendiz, Recursos Humanos · jul. 2024 a set. 2025
 - Apoio às rotinas administrativas do RH, com controle de planilhas.
@@ -103,12 +105,19 @@ Estudante de Engenharia da Computação (9º período, FAESA) e estagiário na a
 
 **Projetos:** Drone com Sistemas Embarcados; Carrinho de Controle Remoto (apresentado no ESX 2025, com controle pelo celular pelos visitantes); Detecção de Incêndios IoT.
 
-**Certificações:** só as mais ligadas à área (a definir).
+**Certificações:** Udemy (Java, Algoritmos) e DataCamp Intermediate SQL, Introduction to Databricks e Introduction to Shell (26/11/2026).
 
-## Perguntas em aberto (rodada 2)
+## Rodada 2 (respondida em 26/11/2026)
 
-1. A documentação técnica (tópico T) é feita na ArcelorMittal? Posso pôr como tópico do estágio?
-2. Na rotina de demandas (tópico R): você participa do levantamento do problema e da implantação, ou recebe a demanda já definida e implementa?
-3. Tem algum número que possa ser divulgado? Exemplos: quantas telas novas, quantos dashboards, quantas demandas por mês, quais áreas usam os dashboards.
-4. O trabalho com fretes fica fora do currículo? Na rodada 1 você respondeu só sobre a Gol.
-5. Formato final: página no site com botão para baixar PDF, documento editável que exporta PDF e Word, ou só o PDF?
+1. Documentação técnica (tópico T) no estágio? Resposta: "Sim, faço os documentos". Tópico mantido.
+2. Participação nas demandas (tópico R)? Resposta: "Implemento e implanto" (recebe a demanda definida). Tópico reescrito.
+3. Números divulgáveis? Resposta: "Sem números divulgáveis". Tópicos ficam qualitativos.
+4. Mudanças e Fretes no currículo? Resposta: fica fora (continua na página Carreira).
+5. Formato final? Resposta: PDF no repositório, gerado de HTML, com link na página Carreira.
+6. Contato no PDF público (conflito com a decisão de 25/11)? Resposta: duas versões, pública sem e-mail e telefone e privada com os dois.
+7. Certificações da versão Automação? Resposta: Udemy e as três DataCamp ligadas ao estágio.
+
+## Próximos passos
+
+- Enrico revisa os três PDFs em português.
+- Depois da aprovação: link de download na página Carreira e versão em inglês.

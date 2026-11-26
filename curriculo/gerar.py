@@ -112,9 +112,8 @@ VERSOES = {
         "ordem": "RLVCDT",
         "competencias": [
             ("Automação", "sistemas de Nível 2, integração com Níveis 1 e 3"),
-            ("Tecnologias do estágio", "C/C++ em Tru64 UNIX, VB6, C#, SQL, Databricks"),
+            ("Tecnologias do estágio", "C/C++ em Tru64 UNIX, VB6, C#, SQL, Databricks, Windows XP, 10 e 11"),
             ("Estudos e projetos", "Arduino, ESP32, sensores, controle PID"),
-            ("Sistemas", "Windows XP, 10 e 11"),
             # Dados e Documentacao sairam em 26/11/2026: repetiam a experiencia e nao cabiam em 1 pagina.
         ],
         "projetos": ["drone", "carrinho", "incendio"],

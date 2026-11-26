@@ -12,7 +12,7 @@
 
 ## Objetivo
 
-1. **Site:** um único site que funcione ao mesmo tempo como currículo, site pessoal e vitrine dos projetos do Enrico. Páginas: menu, Carreira, Projetos e Hobbies (a fazer), todas no sistema visual B3 (preto com grão, barras de terminal, Tektur, Marcellus e JetBrains Mono).
+1. **Site:** um único site que funcione ao mesmo tempo como currículo, site pessoal e vitrine dos projetos do Enrico. Páginas: menu, Carreira e Projetos (Hobbies adiada em 26/11/2026), todas no sistema visual B3 (preto com grão, barras de terminal, Tektur, Marcellus e JetBrains Mono).
 2. **GitHub:** atualizar o GitHub mantendo a mesma identidade visual do site.
 
 **Referência:** https://github.com/luan-k10 e https://luan-k10.github.io/ (análise em `docs/ANALISE_REFERENCIA.md`). Seguir a referência, mas do nosso jeito, para manter a identidade própria (padrões visuais em `DECISOES.md`).
@@ -62,7 +62,7 @@
 
 ### Conteúdo faltando
 - Links de verificação dos certificados.
-- Página de Hobbies.
+- Página de Hobbies: adiada (link retirado do menu em 26/11/2026; volta quando houver conteúdo).
 - Projetos pessoais (ainda vão ser desenvolvidos).
 
 ## Google Drive: IDs das pastas

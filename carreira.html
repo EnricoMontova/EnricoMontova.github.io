@@ -47,6 +47,9 @@ a:focus-visible,ul:focus-visible{outline:1.5px solid #E8E6E1;outline-offset:4px}
 .cert-wrap{min-height:0 !important}
 .cert-list{position:static !important;grid-template-columns:none !important;grid-auto-flow:column;grid-auto-columns:180px;overflow-x:auto !important;overflow-y:hidden !important;scroll-snap-type:x mandatory !important;padding:0 0 10px !important}
 }
+.cv-links{display:flex;flex-wrap:wrap;gap:10px 22px;list-style:none;margin:4px 0 0;padding:0;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase}
+.cv-links a{text-decoration:none}
+@media (max-width: 760px){.cv-grid{grid-template-columns:minmax(0,1fr) !important}}
 @media (max-width: 1000px){.ferr-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}}
 @media (max-width: 560px){.ferr-grid{grid-template-columns:minmax(0,1fr) !important}}
 @keyframes scan-pisca{0%,49%{opacity:1}50%,100%{opacity:0}}
@@ -511,13 +514,39 @@ a:focus-visible,ul:focus-visible{outline:1.5px solid #E8E6E1;outline-offset:4px}
 </div>
 </section>
 
+<!-- currículo: PDFs gerados por curriculo/gerar.py -->
+<section id="curriculo" aria-labelledby="t-cv" style="position: relative; border: 1px solid #E8E6E1; scroll-margin-top: 24px">
+<div aria-hidden="true" style="position: absolute; left: -4px; top: -4px; width: 7px; height: 7px; background: #E8E6E1"></div>
+<div aria-hidden="true" style="position: absolute; right: -4px; top: -4px; width: 7px; height: 7px; background: #E8E6E1"></div>
+<div aria-hidden="true" style="position: absolute; left: -4px; bottom: -4px; width: 7px; height: 7px; background: #E8E6E1"></div>
+<div aria-hidden="true" style="position: absolute; right: -4px; bottom: -4px; width: 7px; height: 7px; background: #E8E6E1"></div>
+<h2 id="t-cv" style="margin: 0; padding: 10px 20px; border-bottom: 1px solid #E8E6E1; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; font-weight: 400; text-transform: uppercase; letter-spacing: 0.08em">Currículo</h2>
+<div class="cv-grid" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); overflow: hidden">
+<div style="padding: 20px; box-shadow: 1px 0 0 #E8E6E1, 0 1px 0 #E8E6E1; display: flex; flex-direction: column; gap: 10px">
+<p aria-hidden="true" style="margin: 0; font-weight: 700; font-size: 36px; line-height: 1; letter-spacing: -0.03em">01</p>
+<h3 style="margin: 10px 0 0; font-weight: 700; font-size: 16px; text-transform: uppercase">Dados</h3>
+<ul class="cv-links"><li><a class="item-t" href="assets/curriculo/enrico-montovanelli-curriculo-dados.pdf" download aria-label="Baixar currículo de Dados em português (PDF)">PT ↓ PDF</a></li><li><a class="item-t" href="assets/curriculo/enrico-montovanelli-resume-data.pdf" download aria-label="Baixar currículo de Dados em inglês (PDF)">EN ↓ PDF</a></li></ul>
+</div>
+<div style="padding: 20px; box-shadow: 1px 0 0 #E8E6E1, 0 1px 0 #E8E6E1; display: flex; flex-direction: column; gap: 10px">
+<p aria-hidden="true" style="margin: 0; font-weight: 700; font-size: 36px; line-height: 1; letter-spacing: -0.03em">02</p>
+<h3 style="margin: 10px 0 0; font-weight: 700; font-size: 16px; text-transform: uppercase">Software</h3>
+<ul class="cv-links"><li><a class="item-t" href="assets/curriculo/enrico-montovanelli-curriculo-software.pdf" download aria-label="Baixar currículo de Software em português (PDF)">PT ↓ PDF</a></li><li><a class="item-t" href="assets/curriculo/enrico-montovanelli-resume-software.pdf" download aria-label="Baixar currículo de Software em inglês (PDF)">EN ↓ PDF</a></li></ul>
+</div>
+<div style="padding: 20px; box-shadow: 1px 0 0 #E8E6E1, 0 1px 0 #E8E6E1; display: flex; flex-direction: column; gap: 10px">
+<p aria-hidden="true" style="margin: 0; font-weight: 700; font-size: 36px; line-height: 1; letter-spacing: -0.03em">03</p>
+<h3 style="margin: 10px 0 0; font-weight: 700; font-size: 16px; text-transform: uppercase">Automação</h3>
+<ul class="cv-links"><li><a class="item-t" href="assets/curriculo/enrico-montovanelli-curriculo-automacao.pdf" download aria-label="Baixar currículo de Automação em português (PDF)">PT ↓ PDF</a></li><li><a class="item-t" href="assets/curriculo/enrico-montovanelli-resume-automation.pdf" download aria-label="Baixar currículo de Automação em inglês (PDF)">EN ↓ PDF</a></li></ul>
+</div>
+</div>
+</section>
+
 <footer style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 32px; padding-bottom: 8px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.3em">
 <span>Automação / Software / Dados</span>
 <span style="letter-spacing: 0.08em">Inglês fluente</span>
 </footer>
 
 </div>
-<footer class="barra-b3" style="border-top: 2px solid #E8E6E1"><span>&gt; voltar /menu<span class="pisca" aria-hidden="true" style="display: inline-block; width: 0.6em; height: 1em; margin-left: 6px; vertical-align: -2px; background: #E8E6E1; animation: cursor-b3 1s steps(1) infinite"></span></span><nav aria-label="Contato"><ul class="contatos"><li><a class="item-t" href="https://www.linkedin.com/in/enricomontovanelli/" target="_blank" rel="noopener">LinkedIn ↗</a></li><li><a class="item-t" href="https://github.com/EnricoMontova" target="_blank" rel="noopener">GitHub ↗</a></li><li><a class="item-t" href="carreira.html" data-transicao="&gt; abrir /carreira">Currículo</a></li></ul></nav></footer>
+<footer class="barra-b3" style="border-top: 2px solid #E8E6E1"><span>&gt; voltar /menu<span class="pisca" aria-hidden="true" style="display: inline-block; width: 0.6em; height: 1em; margin-left: 6px; vertical-align: -2px; background: #E8E6E1; animation: cursor-b3 1s steps(1) infinite"></span></span><nav aria-label="Contato"><ul class="contatos"><li><a class="item-t" href="https://www.linkedin.com/in/enricomontovanelli/" target="_blank" rel="noopener">LinkedIn ↗</a></li><li><a class="item-t" href="https://github.com/EnricoMontova" target="_blank" rel="noopener">GitHub ↗</a></li><li><a class="item-t" href="#curriculo">Currículo</a></li></ul></nav></footer>
 </div>
 <div aria-hidden="true" class="tela-scan" id="capa" style="display: none"><svg aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0.18; mix-blend-mode: screen; pointer-events: none"><filter id="grao-in"><feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="3" stitchTiles="stitch"></feTurbulence><feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1.6 -0.55"></feColorMatrix></filter><rect width="100%" height="100%" filter="url(#grao-in)"></rect></svg><p style="position: relative; margin: 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #E8E6E1"><span id="capa-msg">&gt; /carreira</span><span aria-hidden="true" style="display: inline-block; width: 0.6em; height: 1em; margin-left: 6px; vertical-align: -2px; background: #E8E6E1; animation: scan-pisca 0.5s steps(1) infinite"></span></p></div>
 <div aria-hidden="true" class="barra-scan" id="barra" style="display: none"></div>

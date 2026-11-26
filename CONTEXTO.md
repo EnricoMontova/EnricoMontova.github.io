@@ -35,7 +35,7 @@
 - `design/canvas/geradores/aplicar_b3.py` gerou as páginas atuais a partir da versão anterior (uso único). Daqui em diante, editar as páginas da raiz direto. O `estatico.py` gera a página de Projetos no estilo antigo e não deve mais ser usado sem adaptar.
 - Projetos: modelo A escolhido em 25/11/2026. Projetos pessoais primeiro (em desenvolvimento), depois os 4 da faculdade. Sem fotos na página por enquanto (`FOTOS=False` em `design/canvas/geradores/a.py`); fotos guardadas em `assets/projetos/faculdade/`.
 - Telas de design no canvas, com cópias em `design/canvas/`. Geradores Python da página de Projetos em `design/canvas/geradores/` (`a.py` gera a tela; `estatico.py` gera `projetos.html`).
-- Currículo (26/11/2026): português aprovado e inglês pronto; seis PDFs de 1 página em `assets/curriculo/` (Dados, Software, Automação em PT e EN), gerados por `curriculo/gerar.py`. Ainda sem link na página Carreira.
+- Currículo (26/11/2026): português aprovado e inglês pronto; seis PDFs de 1 página em `assets/curriculo/` (Dados, Software, Automação em PT e EN), gerados por `curriculo/gerar.py`. Bloco de download no fim da página Carreira (`#curriculo`).
 - Dados pessoais fora do GitHub: `docs/privado/` e as fotos listadas no `.gitignore`.
 - O `.git` da pasta local não tem remoto e está atrás do GitHub. Os arquivos da pasta são sincronizados pelo Claude, mas o histórico local não.
 
@@ -56,7 +56,7 @@
 
 ### Trabalho do Claude
 9. README do perfil do GitHub no visual do site, em português e inglês. Fica no repositório `EnricoMontova/EnricoMontova`, que já existe; só o link para o site depende do passo 4.
-10. Currículo: link de download dos seis PDFs na página Carreira (o link "Currículo" do menu já aponta para lá). Na máquina, o Enrico gera a versão com contato: `python curriculo/gerar.py --email ... --telefone ...` (saída em `docs/privado/curriculo/`).
+10. Site em inglês (pedido do Enrico em 26/11/2026), com base no currículo em inglês. Na máquina, o Enrico gera a versão com contato: `python curriculo/gerar.py --email ... --telefone ...` (saída em `docs/privado/curriculo/`).
 11. Depois do passo 4: conferir a prévia do link (LinkedIn, WhatsApp) com o site no ar.
 
 ### Conteúdo faltando
@@ -97,7 +97,7 @@ As pastas de imagens existem no Drive, mas ficam vazias (decisão de 25/11/2026)
 
 ## Pendências de sincronização
 
-De 26/11/2026 (sessão sem a máquina): copiar do GitHub para a pasta local `CONTEXTO.md`, `DECISOES.md`, `CHANGELOG.md`, `docs/CURRICULO.md` e as pastas novas `curriculo/` e `assets/curriculo/`.
+De 26/11/2026 (sessão sem a máquina): copiar do GitHub para a pasta local `CONTEXTO.md`, `DECISOES.md`, `CHANGELOG.md`, `docs/CURRICULO.md`, `index.html`, `carreira.html`, `projetos.html` e as pastas novas `curriculo/` e `assets/curriculo/`.
 
 De 25/11/2026:
 

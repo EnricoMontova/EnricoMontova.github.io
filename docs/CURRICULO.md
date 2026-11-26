@@ -37,7 +37,14 @@ Tópicos disponíveis (cada versão usa a sua ordem):
 - (T) Elaboro documentação técnica: especificações funcionais e técnicas, cadernos de teste e planos de implantação e contingência.
 
 **Gol Linhas Aéreas** · Jovem Aprendiz, Recursos Humanos · jul. 2024 a set. 2025
-- Apoio às rotinas administrativas do RH, com controle de planilhas.
+- Organizei documentos e planilhas e cuidei da emissão e do retorno de credenciais no RH (Excel, Word, PowerPoint).
+- Apoiei os agentes do serviço de bagagens (LL) no desembarque: recebimento, inspeção e liberação, tratamento de bagagens extraviadas ou danificadas, em conjunto com a segurança e o transporte do aeroporto.
+
+Texto enviado pelo Enrico em 26/11/2026 (base dos dois tópicos acima, adaptado para caber):
+"Durante meu período na GOL, atuei no setor de RH, cuidando da organização de documentos, emissão e retorno de credenciais e apoio nas rotinas operacionais de serviço de bagagens (LL).
+• Apoio ao setor de Recursos Humanos, com organização de documentos, controle de planilhas e suporte em rotinas administrativas. Principais ferramentas: Excel, PowerPoint e Word;
+• Apoio aos agentes de aeroporto, recebendo, inspecionando e liberando bagagens no desembarque, resolvendo incidentes como bagagens perdidas ou danificadas, trabalhando coordenadamente com os setores de segurança e transporte do aeroporto, garantindo que as bagagens fossem entregas corretamente;
+• Desenvolvimento de competências em trabalho em equipe, comunicação, trabalho sob pressão e processos administrativos."
 
 ### Formação
 
@@ -100,8 +107,7 @@ Estudante de Engenharia da Computação (9º período, FAESA) e estagiário na a
 - Linguagens: C, C++, C#, VB6
 - Embarcados: Arduino, ESP32, sensores, controle PID
 - Sistemas: Unix Tru64, Windows XP, 10 e 11
-- Dados: SQL, Databricks
-- Documentação técnica
+- (Dados e Documentação saíram em 26/11/2026: repetiam a experiência e não cabiam em 1 página.)
 
 **Projetos:** Drone com Sistemas Embarcados; Carrinho de Controle Remoto (apresentado no ESX 2025, com controle pelo celular pelos visitantes); Detecção de Incêndios IoT.
 

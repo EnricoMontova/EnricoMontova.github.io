@@ -10,6 +10,8 @@ Data e descrição de cada mudança. Mais recente primeiro. Detalhe técnico de 
 - Currículo: textos encurtados para caber em 1 página: tópico L ("Implemento modificações na lógica do processo da LTQ em C/C++, em servidores Tru64 UNIX do Nível 2."), tópico T sem o prefixo "documentação técnica:", resumo da Automação sem "que ligam o controle da planta à gestão da produção", TCC sem "Desenvolvimento de um", descrições dos três projetos, competência Documentação resumida, certificações agrupadas por plataforma e ano, Idiomas como linha das Competências.
 - Currículo: tópico da Gol no passado ("Apoiei as rotinas administrativas do RH, com controle de planilhas."), seguindo o critério de verbo de ação.
 - `DECISOES.md`: decisões de 26/11/2026.
+- Currículo: GOL com o texto novo do Enrico em dois tópicos (RH com credenciais e ferramentas; serviço de bagagens LL); tópico de competências comportamentais fora.
+- Currículo: carrinho em uma linha ("o público pilotava os carrinhos pelo celular"); versão Automação sem as competências "Dados" e "Documentação" para caber em 1 página.
 
 ## 25/11/2026
 

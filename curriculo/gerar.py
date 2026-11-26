@@ -45,7 +45,10 @@ GOL = {
     "empresa": "Gol Linhas Aéreas",
     "cargo": "Jovem Aprendiz, Recursos Humanos",
     "periodo": "jul. 2024 a set. 2025",
-    "topicos": ["Apoiei as rotinas administrativas do RH, com controle de planilhas."],
+    "topicos": [
+        "Organizei documentos e planilhas e cuidei da emissão e do retorno de credenciais no RH (Excel, Word, PowerPoint).",
+        "Apoiei os agentes do serviço de bagagens (LL) no desembarque: recebimento, inspeção e liberação, tratamento de bagagens extraviadas ou danificadas, em conjunto com a segurança e o transporte do aeroporto.",
+    ],
 }
 
 FORMACAO = {
@@ -69,7 +72,7 @@ PROJETOS = {
     "carrinho": {
         "nome": "Carrinho de Controle Remoto",
         "contexto": "FAESA, apresentado no ESX 2025",
-        "texto": "Arduino, sensores ultrassônicos e Bluetooth (HC-05). No ESX 2025, os visitantes controlavam os carrinhos pelo celular.",
+        "texto": "Arduino, sensores ultrassônicos e Bluetooth (HC-05). No ESX 2025, o público pilotava os carrinhos pelo celular.",
     },
     "incendio": {
         "nome": "Detecção de Incêndios IoT",
@@ -115,8 +118,7 @@ VERSOES = {
             ("Linguagens", "C, C++, C#, VB6"),
             ("Embarcados", "Arduino, ESP32, sensores, controle PID"),
             ("Sistemas", "Unix Tru64, Windows XP, 10 e 11"),
-            ("Dados", "SQL, Databricks"),
-            ("Documentação", "especificações, cadernos de teste, planos de implantação e contingência"),
+            # Dados e Documentacao sairam em 26/11/2026: repetiam a experiencia e nao cabiam em 1 pagina.
         ],
         "projetos": ["drone", "carrinho", "incendio"],
         # Decisao de 26/11/2026: so as DataCamp ligadas ao estagio, para caber em 1 pagina.

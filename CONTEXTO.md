@@ -43,7 +43,7 @@
 
 ### Decisões do Enrico
 0. Arte de fundo nova para o menu (a bobinadeira saiu em 25/11/2026).
-1. Currículo em inglês: revisar os três PDFs `assets/curriculo/enrico-montovanelli-resume-*.pdf`.
+1a. Perguntar ao gestor se pode citar no currículo público o fornecedor do Nível 2 da LTQ (o nome está na documentação interna). Se puder: incluir na nota da ArcelorMittal e na linha "Automação" das Competências.
 2. Tipo de motor do drone (brushless com ESC ou coreless). Hoje o site diz "Motores e hélices".
 3. Período ou disciplina do carrinho e qual Projeto Integrador II é o de incêndios.
 

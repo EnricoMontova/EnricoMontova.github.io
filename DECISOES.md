@@ -136,6 +136,8 @@ Detalhes e opções descartadas em `docs/ANALISE_REFERENCIA.md`.
 | Sistema CDP no currículo | Tópico novo nas três versões: "Mantenho e monitoro o envio de dados do processo ao data lake, em Java e SQL."; o nome "CDP" não aparece (sigla interna) | Resposta do Enrico: "Mantenho e monitoro" | "Desenvolvo e mantenho"; sem tópico |
 | Aprovação do português | Três versões aprovadas pelo Enrico em 26/11/2026, com o data lake no resumo da versão Dados | Pedido do Enrico | |
 | Versão em inglês | Três versões em inglês, mesmo visual e mesmos cortes; arquivos `enrico-montovanelli-resume-{data,software,automation}.pdf`; termos do setor traduzidos (Hot Strip Mill, Level 2), títulos dos cursos da Udemy mantidos em português; siglas internas (LL, CDP) fora; papel A4 | Pedido do Enrico depois da aprovação do português; títulos de curso precisam bater com o certificado | Tradução literal; títulos da Udemy traduzidos; papel Carta (EUA) |
+| Escolhas da tradução | Aprovadas pelo Enrico em 26/11/2026 | | |
+| Fornecedor do Nível 2 | Fora do currículo e do site por enquanto; o nome não é registrado neste repositório (público). Não foi achada fonte pública que cite o fornecedor (busca nos anais da ABM em 26/11/2026). Pode ser citado em entrevista | O Enrico não sabe se pode divulgar. Pendente: perguntar ao gestor | Citar agora; citar só na versão privada |
 | Encaixe em 1 página | Cortar palavras em vez de reduzir a fonte (detalhes no `CHANGELOG.md`) | Critério "Uma página por versão" | Fonte menor; margens menores |
 
 Pendentes: ver `CONTEXTO.md`.

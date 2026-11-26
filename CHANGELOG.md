@@ -10,6 +10,7 @@ Data e descrição de cada mudança. Mais recente primeiro. Detalhe técnico de 
 - Currículo: textos encurtados para caber em 1 página: tópico L ("Implemento modificações na lógica do processo da LTQ em C/C++, em servidores Tru64 UNIX do Nível 2."), tópico T sem o prefixo "documentação técnica:", resumo da Automação sem "que ligam o controle da planta à gestão da produção", TCC sem "Desenvolvimento de um", descrições dos três projetos, competência Documentação resumida, certificações agrupadas por plataforma e ano, Idiomas como linha das Competências.
 - Currículo: tópico da Gol no passado ("Apoiei as rotinas administrativas do RH, com controle de planilhas."), seguindo o critério de verbo de ação.
 - `DECISOES.md`: decisões de 26/11/2026.
+- Currículo: escolhas da tradução aprovadas; fornecedor do Nível 2 fica fora até o gestor liberar.
 - Currículo: data lake no resumo da versão Dados; português aprovado pelo Enrico.
 - Currículo: versão em inglês das três áreas (`assets/curriculo/enrico-montovanelli-resume-*.pdf`); `curriculo/gerar.py` passou a ter os textos em dois dicionários (`PT` e `EN`) e a opção `--idioma`; HTML gerado renomeado para o mesmo nome dos PDFs.
 - Currículo: VB6 em Windows XP (estação remota), C# em Windows 10 e Java e SQL (envio ao data lake) na linha "Tecnologias do estágio"; Windows 11 removido; tópico novo sobre o envio de dados ao data lake nas três versões.

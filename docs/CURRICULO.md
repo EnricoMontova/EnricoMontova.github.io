@@ -2,7 +2,7 @@
 
 Iniciado em 22/11/2026. Montado por perguntas e respostas. Base: `docs/CONTEUDO.md` e as respostas do Enrico em 22/11/2026 (rodada 1) e 26/11/2026 (rodada 2).
 
-Texto final em português (26/11/2026, aguardando aprovação do Enrico): está em `curriculo/gerar.py`, que gera `curriculo/html/` e os PDFs em `assets/curriculo/`. Este arquivo guarda os critérios, a base e o histórico das perguntas; o texto encurtado para caber em 1 página está só no gerador.
+Texto final em português aprovado pelo Enrico em 26/11/2026; versão em inglês feita no mesmo dia. Os dois textos estão em `curriculo/gerar.py` (dicionários `PT` e `EN`), que gera `curriculo/html/` e os PDFs em `assets/curriculo/`. Antes: está em `curriculo/gerar.py`, que gera `curriculo/html/` e os PDFs em `assets/curriculo/`. Este arquivo guarda os critérios, a base e o histórico das perguntas; o texto encurtado para caber em 1 página está só no gerador.
 
 Telefone e e-mail ficam em `docs/privado/CONTATO.md`, que não vai para o GitHub (o repositório é público). O PDF público sai sem os dois; a versão com contato é gerada na máquina com `python curriculo/gerar.py --email ... --telefone ...` e fica em `docs/privado/curriculo/`.
 
@@ -136,7 +136,20 @@ As listas de cada versão acima são o rascunho original. A versão final troca 
 6. Contato no PDF público (conflito com a decisão de 25/11)? Resposta: duas versões, pública sem e-mail e telefone e privada com os dois.
 7. Certificações da versão Automação? Resposta: Udemy e as três DataCamp ligadas ao estágio.
 
+## Resumo da versão Dados (26/11/2026)
+
+Pedido do Enrico: incluir o data lake. Texto: "Estudante de Engenharia da Computação (9º período, FAESA) e estagiário na automação da Laminação de Tiras a Quente da ArcelorMittal Tubarão, onde desenvolvo dashboards e análises com dados do processo em SQL e Databricks e mantenho o envio desses dados ao data lake. Complemento a formação com a trilha de Engenharia de Dados da DataCamp e busco a efetivação na área de dados."
+
+## Versão em inglês (26/11/2026)
+
+- Arquivos: `enrico-montovanelli-resume-data.pdf`, `-software.pdf`, `-automation.pdf`.
+- Termos: LTQ = Hot Strip Mill; Nível 2 = Level 2; Estagiário de Engenharia de Software = Software Engineering Intern; Jovem Aprendiz = Apprentice; 9º período = 9th semester; TCC = Capstone; efetivação = full-time role; Tecnologias do estágio = Internship stack.
+- Formação: "Bachelor of Engineering in Computer Engineering".
+- Cidade com o país: "Vitória, ES, Brazil".
+- Cursos da Udemy com o título original em português (o título precisa bater com o certificado).
+- "(LL)" do serviço de bagagens fica de fora no inglês (sigla interna, como o CDP).
+- Alguns textos mais curtos que o português para caber em 1 página (projetos, tópico do RH na GOL).
+
 ## Próximos passos
 
-- Enrico revisa os três PDFs em português.
-- Depois da aprovação: link de download na página Carreira e versão em inglês.
+- Link de download dos seis PDFs na página Carreira.

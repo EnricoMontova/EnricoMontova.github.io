@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Enrico Montovanelli · Resume · Software Development</title>
+<meta name="author" content="Enrico Montovanelli">
+<style>
+@font-face{font-family:'Tektur';src:url('../fontes/tektur-latin-standard-normal.woff2') format('woff2');font-weight:400 900;font-stretch:75% 100%}
+@font-face{font-family:'Marcellus';src:url('../fontes/marcellus-latin-400-normal.woff2') format('woff2')}
+@font-face{font-family:'JetBrains Mono';src:url('../fontes/jetbrains-mono-latin-400-normal.woff2') format('woff2');font-weight:400}
+@font-face{font-family:'JetBrains Mono';src:url('../fontes/jetbrains-mono-latin-500-normal.woff2') format('woff2');font-weight:500}
+@font-face{font-family:'Inter Tight';src:url('../fontes/inter-tight-latin-400-normal.woff2') format('woff2');font-weight:400}
+@font-face{font-family:'Inter Tight';src:url('../fontes/inter-tight-latin-500-normal.woff2') format('woff2');font-weight:500}
+@font-face{font-family:'Inter Tight';src:url('../fontes/inter-tight-latin-600-normal.woff2') format('woff2');font-weight:600}
+@font-face{font-family:'Inter Tight';src:url('../fontes/inter-tight-latin-700-normal.woff2') format('woff2');font-weight:700}
+@page{size:A4;margin:15mm 16mm 14mm}
+*{box-sizing:border-box}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{margin:0;color:#161617;font-family:'Inter Tight',Arial,sans-serif;font-size:10pt;line-height:1.36}
+a{color:inherit;text-decoration:none}
+.mono{font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.08em}
+header{margin-bottom:2mm}
+.topo{display:flex;justify-content:space-between;font-size:7.2pt;color:#555;margin-bottom:3mm}
+.nome{position:relative;display:inline-block;padding-right:16pt}
+h1{margin:0;font-family:'Tektur',sans-serif;font-weight:500;font-stretch:100%;font-size:25pt;line-height:1;text-transform:uppercase;letter-spacing:.01em}
+.estrela{position:absolute;right:0;top:-5pt;width:12pt;height:12pt;fill:#161617}
+.regua{position:relative;height:0;border-top:1.2pt solid #161617;margin:3.2mm 0 2.4mm}
+.regua::before{content:"";position:absolute;left:0;top:-4.1pt;width:7pt;height:7pt;background:#161617}
+.contato{font-size:7.8pt;color:#161617}
+.contato span+span::before{content:"·";margin:0 6pt;color:#888}
+section{margin-top:3.6mm}
+.item{break-inside:avoid}
+h2{break-after:avoid}
+h2{display:flex;align-items:center;gap:6pt;margin:0 0 2mm;font-family:'JetBrains Mono',monospace;font-weight:500;font-size:7.8pt;letter-spacing:.14em;text-transform:uppercase}
+h2::before{content:"";width:5pt;height:5pt;background:#D21A16;flex:none}
+h2::after{content:"";flex:1;border-top:.6pt solid #161617;margin-left:4pt}
+p{margin:0}
+.resumo{line-height:1.42}
+.item{margin-bottom:2.4mm}
+.item:last-child{margin-bottom:0}
+.linha{display:flex;justify-content:space-between;align-items:baseline;gap:10pt}
+h3{margin:0;font-family:'Marcellus',Georgia,serif;font-weight:400;font-size:10.2pt;letter-spacing:.06em;text-transform:uppercase}
+.data{font-family:'JetBrains Mono',monospace;font-size:7.4pt;text-transform:uppercase;letter-spacing:.06em;white-space:nowrap;color:#333}
+.sub{font-weight:600;margin-top:.6mm}
+.nota{color:#444;font-size:9pt;font-weight:400}
+ul{margin:1.2mm 0 0;padding-left:11pt}
+li{margin:.6mm 0}
+li::marker{color:#D21A16}
+.comp p{margin:.5mm 0}
+.comp b{font-weight:600}
+.cert p{margin:.8mm 0}
+</style>
+</head>
+<body>
+<header>
+<div class="topo mono"><span>Resume · Software Development</span><span>enrico.montovanelli</span></div>
+<div class="nome"><h1>Enrico Montovanelli</h1><svg class="estrela" aria-hidden="true" viewBox="0 0 40 40"><path d="M20 0 L22 18 L40 20 L22 22 L20 40 L18 22 L0 20 L18 18 Z"/></svg></div>
+<div class="regua"></div>
+<p class="contato"><span>Vitória, ES, Brazil</span><span><a href="https://www.linkedin.com/in/enricomontovanelli/">linkedin.com/in/enricomontovanelli</a></span><span><a href="https://github.com/EnricoMontova">github.com/EnricoMontova</a></span><span><a href="https://enricomontova.github.io">enricomontova.github.io</a></span></p>
+</header>
+
+<section>
+<h2>Summary</h2>
+<p class="resumo">Computer Engineering student (9th semester, FAESA) and software engineering intern at ArcelorMittal Tubarão. I develop and maintain Level 2 industrial software in C/C++ on Tru64 UNIX, operator screens in VB6 and the new screens in C#. Seeking a full-time developer role.</p>
+</section>
+
+<section>
+<h2>Experience</h2>
+<div class="item">
+<div class="linha"><h3>ArcelorMittal Tubarão</h3><span class="data">Feb. 2026 to present</span></div>
+<p class="sub">Software Engineering Intern <span class="nota">· Hot Strip Mill automation, Level 2 systems</span></p>
+<ul><li>Implement changes to the Hot Strip Mill process logic in C/C++ on Tru64 UNIX Level 2 servers.</li><li>Contribute to the development of the new operator screens in C# with Visual Studio 2022.</li><li>Maintain and update the mill's operator screens built in VB6.</li><li>Maintain and monitor the process data feed to the data lake, in Java and SQL.</li><li>Build BI dashboards and analyses from process data in SQL and Databricks for auditing and research.</li><li>Write functional and technical specifications, test plans, and deployment and contingency plans.</li></ul>
+</div>
+<div class="item">
+<div class="linha"><h3>Gol Linhas Aéreas</h3><span class="data">Jul. 2024 to Sep. 2025</span></div>
+<p class="sub">Apprentice, Human Resources</p>
+<ul><li>Organized HR documents and spreadsheets; issued and collected staff credentials (Excel, Word, PowerPoint).</li><li>Supported baggage service agents at arrivals: receiving, inspecting and releasing bags, and handling lost or damaged baggage together with airport security and transportation teams.</li></ul>
+</div>
+</section>
+
+<section>
+<h2>Education</h2>
+<div class="item">
+<div class="linha"><h3>FAESA</h3><span class="data">9th semester · expected graduation Aug. 2027</span></div>
+<p class="sub">Bachelor of Engineering in Computer Engineering</p>
+<p class="nota">Capstone: digital system for traceability and management of point-of-work risk assessments in steel plants.</p>
+</div>
+</section>
+
+<section class="comp">
+<h2>Skills</h2>
+<p><b>Internship stack:</b> C/C++ on Tru64 UNIX, C# (Visual Studio 2022, Windows 10), VB6 on Windows XP (remote station), Java and SQL (data lake feed), Databricks</p><p><b>Studies and projects:</b> Arduino, ESP32</p><p><b>Documentation:</b> specifications, test plans, deployment and contingency plans</p><p><b>Languages:</b> Portuguese (native), English (fluent)</p>
+</section>
+
+<section>
+<h2>Academic projects</h2>
+<div class="item"><div class="linha"><h3>Drone with Embedded Systems</h3><span class="data">FAESA, Embedded Systems course</span></div><p>Flight control and stabilization with MPU6050 accelerometer/gyroscope and remote control via ESP32. C/C++, PID.</p></div><div class="item"><div class="linha"><h3>IoT Fire Detection</h3><span class="data">FAESA, Integrative Project II</span></div><p>IoT monitoring of temperature and gases in industrial and recycling sites (MQ-135, MLX90614, Arduino, C/C++).</p></div>
+</section>
+
+<section class="cert">
+<h2>Certifications</h2>
+<p>Udemy (2025): Java COMPLETO: Programação Orientada a Objetos + Projetos (54.5 h); Algoritmos e Lógica de Programação (30.5 h).</p><p>DataCamp (2026): Intermediate SQL, Introduction to Databricks, Introduction to Shell, Introduction to SQL, Understanding Cloud Computing, Understanding Data Engineering.</p>
+</section>
+</body>
+</html>
